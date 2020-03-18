@@ -1,0 +1,128 @@
+/**
+ * Menu
+ * Goes underneath the footer code in decks.css
+ */
+
+.main-nav {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  padding-bottom: 30px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  transform: translateX(-150%);
+  transition: transform .4s ease;
+}
+
+.main-nav.open {
+  transform: translateX(0);
+}
+
+.main-nav svg {
+  height: 20px;
+}
+
+.main-nav button,
+.main-nav a,
+.main-nav .search,
+.main-nav .option-label {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 30px 15px 25px;
+  border: none;
+  border-left: 5px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  --bc: white;
+  --bbc: transparent;
+}
+
+.main-nav:hover :focus {
+  outline: none;
+}
+
+.main-nav button:hover,
+.main-nav a:hover {
+  background-color: #222;
+}
+
+.main-nav a,
+.main-nav .option-label {
+  display: block;
+}
+
+.main-nav .expander {
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.main-nav .expander:after {
+  filter: invert(1);
+}
+
+.main-nav .subsection a {
+  padding: 10px 30px 10px 45px;
+  --lc: #989898;
+  --lhc: white;
+}
+
+.main-nav .expander.open,
+.main-nav .expander.open + div a,
+.main-nav .option-label {
+  background-color: #222;
+  border-color: #fff;
+}
+
+.main-nav hr {
+  border: .5px solid white;
+  margin: 30px 0;
+}
+
+.main-nav .search {
+  background-color: #5f5f5f;
+  height: 58px;
+}
+
+.main-nav .search form {
+  border-bottom: 1px solid white;
+  width: 100%;
+  display: none;
+}
+
+.main-nav .search.open form {
+  display: flex;
+}
+
+.main-nav .search.open > :not(form) {
+  display: none;
+}
+
+.main-nav .search input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding-left: 0px;
+  margin: 0;
+  flex: 1;
+}
+
+.main-nav .search ::placeholder {
+  color: white;
+}
+
+.main-nav .search button {
+  padding: 0;
+  width: auto;
+}
+
+.main-nav .search form svg {
+  height: 12px;
+}
+
+.main-nav .search button:hover {
+  background-color: unset;
+}
+

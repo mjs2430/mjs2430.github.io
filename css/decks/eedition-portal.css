@@ -1,0 +1,49 @@
+/**
+ * eEdition portal page
+ */
+
+.e-edition .card {
+  overflow: hidden;
+}
+
+.e-edition .card figure {
+  padding-top: 56.25%;
+}
+
+.e-edition .card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.e-edition .package {
+  align-items: center;
+  --lhc: #222;
+  --hf: var(--sans);
+  --hw: 500;
+}
+
+.e-edition .package .button {
+  margin: 0 5px;
+}
+
+.e-edition .card:first-child {
+  flex-basis: 100%;
+}
+
+.e-edition .card:first-child h3 {
+  font-size: x-large;
+}
+
+@media(min-width: 600px) {
+  .e-edition .card:first-child .package {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .e-edition .card:first-child .buttons {
+    margin-top: 0;
+  }
+}
+

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>the-tribune</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Art">
+      <rect width="256" height="256" fill="#dbd6b3"/>
+      <rect y="256" width="256" height="256" fill="#a6b7ce"/>
+      <rect x="256" width="256" height="256" fill="#cb7229"/>
+      <rect x="256" y="256" width="256" height="256" fill="#969742"/>
+      <line y1="256" x2="512" y2="256" fill="#fff"/>
+      <rect y="244" width="512" height="24" fill="#fff"/>
+      <rect x="244" width="24" height="512" fill="#fff"/>
+    </g>
+  </g>
+</svg>

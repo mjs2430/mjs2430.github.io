@@ -1,0 +1,72 @@
+/**
+ * Utilities 
+ */
+
+summary, .summary {
+  font-size: 0.875rem;
+  font-family: var(--sans);
+}
+
+.small {
+  font-size: small;
+}
+
+.caps {
+  text-transform: uppercase;
+  --ht: uppercase;
+}
+
+.no-caps,
+.button.no-caps {
+  text-transform: none;
+  --ht: none;
+}
+
+.sans {
+  font-family: var(--sans);
+  --hf: var(--sans);
+}
+
+.serif {
+  font-family: var(--serif);
+  --hf: var(--serif);
+}
+
+.soft {
+  font-weight: 400;
+  --hw: 400;
+}
+
+.bold {
+  font-weight: 600;
+  --hw: 600;
+}
+
+.gray {
+  color: var(--tc, #707070);
+  --bc: var(--tc, #707070);
+}
+
+.cutout {
+  background-color: #f4f4f4;
+}
+
+.blue {
+  color: var(--tc, #31409F);
+}
+
+.error {
+  color: var(--tc, #D63031);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+.relative {
+  position: relative;
+}

@@ -1,0 +1,51 @@
+/**
+ * Flexbox grid
+ */
+
+.flex-columns > * {
+  margin: 30px 0;
+}
+
+.flex-columns .lead-item {
+  flex-basis: 100%;
+}
+
+@media (min-width: 690px) {
+  .flex-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .flex-columns.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex-columns > * {
+    flex: 1 1 300px;
+    margin: 15px;
+  }
+
+  .flex-columns > .flex-columns {
+    margin: 0;
+  }
+
+  .flex-columns .main-stage {
+    flex: 2 1 660px;
+    align-self: flex-start;
+  }
+
+  .flex-columns .rail {
+    flex-basis: 330px;
+    align-self: flex-start;
+  }
+
+	/** Special cases **/
+	.lead-section .main-stage > :first-child {
+		flex-basis: 100%;
+	}
+
+	.main-stage > .flex-columns + .flex-columns {
+		padding-top: 15px;
+	}
+}

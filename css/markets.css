@@ -1,0 +1,35 @@
+.market-assets {
+  margin: 30px 0;
+}
+
+.market-assets .package {
+  padding: 0;
+}
+
+.download {
+  display: block;
+  width: 100%;
+}
+
+.story-module {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.story-module:first-of-type {
+  padding-top: 0;
+}
+
+.story-module > .package {
+  padding: 0;
+}
+
+.grid.app-icons {
+  grid-template-columns: repeat(auto-fill, 75px);
+}
+
+.app-name {
+  font-size: small;
+  text-align: center;
+  align-self: center;
+}

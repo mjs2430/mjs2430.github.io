@@ -1,0 +1,15 @@
+/**
+ * In Depth card
+ */
+
+.in-depth {
+  background-color: #373737;
+}
+
+.card.in-depth figure {
+	min-height: 400px;
+}
+
+.in-depth .h1 {
+  font-size: 1.75rem;
+}

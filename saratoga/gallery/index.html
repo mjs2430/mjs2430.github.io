@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>gallery</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../../css/atoms/typography.css">
+    <link rel="stylesheet" href="../../css/atoms/media.css">
+    <link rel="stylesheet" href="../../css/atoms/section.css">
+    <link rel="stylesheet" href="../../css/atoms/button.css">
+    <link rel="stylesheet" href="../../css/atoms/inputs.css">
+
+    
+    <link rel="stylesheet" href="../../css/molecules/paper.css">
+    <link rel="stylesheet" href="../../css/molecules/package.css">
+    <link rel="stylesheet" href="../../css/molecules/impact.css">
+    <link rel="stylesheet" href="../../css/molecules/social-media.css">
+    <link rel="stylesheet" href="../../css/molecules/expander.css">
+    <link rel="stylesheet" href="../../css/molecules/utilities.css">
+    <link rel="stylesheet" href="../../css/molecules/progress.css">
+
+    
+    <link rel="stylesheet" href="../../css/cards/grid.css">
+    <link rel="stylesheet" href="../../css/cards/flex-columns.css">
+    <link rel="stylesheet" href="../../css/cards/flex-row.css">
+    <link rel="stylesheet" href="../../css/cards/ad-widget.css">
+    <link rel="stylesheet" href="../../css/cards/digest.css">
+    <link rel="stylesheet" href="../../css/cards/immersive.css">
+    <link rel="stylesheet" href="../../css/cards/story-body.css">
+    <link rel="stylesheet" href="../../css/cards/header.css">
+    <link rel="stylesheet" href="../../css/cards/series-nav.css">
+    <link rel="stylesheet" href="../../css/cards/correction.css">
+    <link rel="stylesheet" href="../../css/cards/related-stories.css">
+    <link rel="stylesheet" href="../../css/cards/author-card.css">
+    <link rel="stylesheet" href="../../css/cards/author-bio.css">
+    <link rel="stylesheet" href="../../css/cards/timeline.css">
+    <link rel="stylesheet" href="../../css/cards/transparency.css">
+    <link rel="stylesheet" href="../../css/cards/big-news.css">
+    <link rel="stylesheet" href="../../css/cards/in-depth.css">
+    <link rel="stylesheet" href="../../css/cards/swg-promo.css">
+    <link rel="stylesheet" href="../../css/cards/read-next.css">
+    <link rel="stylesheet" href="../../css/cards/section-nav.css">
+    <link rel="stylesheet" href="../../css/cards/modals.css">
+    <link rel="stylesheet" href="../../css/cards/inline-cta.css">
+    <link rel="stylesheet" href="../../css/cards/upper-nav.css">
+    <link rel="stylesheet" href="../../css/cards/sponsor.css">
+    <link rel="stylesheet" href="../../css/cards/gallery.css">
+    <link rel="stylesheet" href="../../css/cards/dsp.css">
+    <link rel="stylesheet" href="../../css/cards/hidden.css">
+
+    
+    <link rel="stylesheet" href="../../css/site.css">
+<link rel="stylesheet" href="../../css/style-guide.css">
+
+  </head>
+
+  <body class="">
+    <div class="banner paper">
+      <a href="../../" style="padding: 0;"><img class="logo" src="../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mjs2430.github.io/saratoga/" class="active">
+          <span>style guide</span>
+        </a>
+        <a href="https://mjs2430.github.io/markets/" class="">
+          <span>markets</span>
+        </a>
+        <a href="https://mjs2430.github.io/ads/" class="">
+          <span>ads</span>
+        </a>
+        <a href="https://mjs2430.github.io/labs/" class="">
+          <span>labs</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">gallery
+    </h2>
+    <p>The gallery card can be used in a story, or as a standalone card for sections or gallery detail pages. The package molecule at the bottom is flexible, and elements like the title can be removed in cases where that information isn&rsquo;t available. For examples, check out the <a href="../decks/story">story deck</a> and the <a href="../decks/section">section deck</a>.</p>
+<h4 id="example">EXAMPLE</h4>
+<figure class="gallery card">
+  <div class="gallery-panel">
+    <img class="gallery-current" src="../../img/chiefs.jpg" alt="Lorem ipsum dolor sit amet" loading="lazy">
+    <div class="gallery-marker">
+      <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M21,39 C10.5065898,39 2,30.4934102 2,20 C2,9.50658975 10.5065898,1 21,1 C31.4934102,1 40,9.50658975 40,20 C40,30.4934102 31.4934102,39 21,39 Z M27.6,14.4615385 L25.5,14.4615385 L25.021875,13.1538462 C24.7875,12.5192308 24.05625,12 23.4,12 L18.6,12 C17.94375,12 17.2125,12.5192308 16.978125,13.1538462 L16.5,14.4615385 L14.4,14.4615385 C13.078125,14.4615385 12,15.5673077 12,16.9230769 L12,25.5384615 C12,26.8942308 13.078125,28 14.4,28 L27.6,28 C28.921875,28 30,26.8942308 30,25.5384615 L30,16.9230769 C30,15.5673077 28.921875,14.4615385 27.6,14.4615385 Z M21,26 C18.7946429,26 17,24.2053571 17,22 C17,19.7946429 18.7946429,18 21,18 C23.2053571,18 25,19.7946429 25,22 C25,24.2053571 23.2053571,26 21,26 Z M21,19 C19.34375,19 18,20.34375 18,22 C18,23.65625 19.34375,25 21,25 C22.65625,25 24,23.65625 24,22 C24,20.34375 22.65625,19 21,19 Z" id="path-1"></path><filter x="-13.2%" y="-10.5%" width="126.3%" height="126.3%" filterUnits="objectBoundingBox" id="filter-2"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix></filter></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use><use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use></g></svg>
+      <span class="gallery-count">1 of 12</span>
+    </div>
+    <button class="gallery-button gallery-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/></svg></button>
+    <button class="gallery-button gallery-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+  </div>
+  <div class="package sans">
+    <h3 class="h2">Gallery title</h3>
+    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque tristique ligula in tempor. Praesent hendrerit in felis sit amet gravida. Donec mattis mi sit. <span class="credit">JOHN DOE</span></figcaption>
+  </div>
+</figure>
+
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">figure</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;gallery card&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;gallery-panel&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;gallery-current&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/chiefs.jpg&#34;</span> <span style="color:#f00">alt</span>=<span style="color:#00f">&#34;Lorem ipsum dolor sit amet&#34;</span> <span style="color:#f00">loading</span>=<span style="color:#00f">&#34;lazy&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;gallery-marker&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;42px&#34;</span> <span style="color:#f00">height</span>=<span style="color:#00f">&#34;42px&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 42 42&#34;</span> <span style="color:#f00">version</span>=<span style="color:#00f">&#34;1.1&#34;</span> <span style="color:#f00">xmlns</span>=<span style="color:#00f">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#f00">xmlns:xlink</span>=<span style="color:#00f">&#34;http://www.w3.org/1999/xlink&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">defs</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M21,39 C10.5065898,39 2,30.4934102 2,20 C2,9.50658975 10.5065898,1 21,1 C31.4934102,1 40,9.50658975 40,20 C40,30.4934102 31.4934102,39 21,39 Z M27.6,14.4615385 L25.5,14.4615385 L25.021875,13.1538462 C24.7875,12.5192308 24.05625,12 23.4,12 L18.6,12 C17.94375,12 17.2125,12.5192308 16.978125,13.1538462 L16.5,14.4615385 L14.4,14.4615385 C13.078125,14.4615385 12,15.5673077 12,16.9230769 L12,25.5384615 C12,26.8942308 13.078125,28 14.4,28 L27.6,28 C28.921875,28 30,26.8942308 30,25.5384615 L30,16.9230769 C30,15.5673077 28.921875,14.4615385 27.6,14.4615385 Z M21,26 C18.7946429,26 17,24.2053571 17,22 C17,19.7946429 18.7946429,18 21,18 C23.2053571,18 25,19.7946429 25,22 C25,24.2053571 23.2053571,26 21,26 Z M21,19 C19.34375,19 18,20.34375 18,22 C18,23.65625 19.34375,25 21,25 C22.65625,25 24,23.65625 24,22 C24,20.34375 22.65625,19 21,19 Z&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;path-1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">path</span>&gt;&lt;<span style="color:#000080;font-weight:bold">filter</span> <span style="color:#f00">x</span>=<span style="color:#00f">&#34;-13.2%&#34;</span> <span style="color:#f00">y</span>=<span style="color:#00f">&#34;-10.5%&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;126.3%&#34;</span> <span style="color:#f00">height</span>=<span style="color:#00f">&#34;126.3%&#34;</span> <span style="color:#f00">filterUnits</span>=<span style="color:#00f">&#34;objectBoundingBox&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;filter-2&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">feOffset</span> <span style="color:#f00">dx</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">dy</span>=<span style="color:#00f">&#34;1&#34;</span> <span style="color:#f00">in</span>=<span style="color:#00f">&#34;SourceAlpha&#34;</span> <span style="color:#f00">result</span>=<span style="color:#00f">&#34;shadowOffsetOuter1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">feOffset</span>&gt;&lt;<span style="color:#000080;font-weight:bold">feGaussianBlur</span> <span style="color:#f00">stdDeviation</span>=<span style="color:#00f">&#34;1.5&#34;</span> <span style="color:#f00">in</span>=<span style="color:#00f">&#34;shadowOffsetOuter1&#34;</span> <span style="color:#f00">result</span>=<span style="color:#00f">&#34;shadowBlurOuter1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">feGaussianBlur</span>&gt;&lt;<span style="color:#000080;font-weight:bold">feColorMatrix</span> <span style="color:#f00">values</span>=<span style="color:#00f">&#34;0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0&#34;</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;matrix&#34;</span> <span style="color:#f00">in</span>=<span style="color:#00f">&#34;shadowBlurOuter1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">feColorMatrix</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">filter</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">defs</span>&gt;&lt;<span style="color:#000080;font-weight:bold">g</span> <span style="color:#f00">stroke</span>=<span style="color:#00f">&#34;none&#34;</span> <span style="color:#f00">stroke-width</span>=<span style="color:#00f">&#34;1&#34;</span> <span style="color:#f00">fill</span>=<span style="color:#00f">&#34;none&#34;</span> <span style="color:#f00">fill-rule</span>=<span style="color:#00f">&#34;evenodd&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">use</span> <span style="color:#f00">fill</span>=<span style="color:#00f">&#34;black&#34;</span> <span style="color:#f00">fill-opacity</span>=<span style="color:#00f">&#34;1&#34;</span> <span style="color:#f00">filter</span>=<span style="color:#00f">&#34;url(#filter-2)&#34;</span> <span style="color:#f00">xlink:href</span>=<span style="color:#00f">&#34;#path-1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">use</span>&gt;&lt;<span style="color:#000080;font-weight:bold">use</span> <span style="color:#f00">fill</span>=<span style="color:#00f">&#34;#FFFFFF&#34;</span> <span style="color:#f00">fill-rule</span>=<span style="color:#00f">&#34;evenodd&#34;</span> <span style="color:#f00">xlink:href</span>=<span style="color:#00f">&#34;#path-1&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">use</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">g</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;gallery-count&#34;</span>&gt;1 of 12&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;gallery-button gallery-prev&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">xmlns</span>=<span style="color:#00f">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 320 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z&#34;</span>/&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;gallery-button gallery-next&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">svg</span> <span style="color:#f00">xmlns</span>=<span style="color:#00f">&#34;http://www.w3.org/2000/svg&#34;</span> <span style="color:#f00">viewBox</span>=<span style="color:#00f">&#34;0 0 320 512&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">path</span> <span style="color:#f00">d</span>=<span style="color:#00f">&#34;M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z&#34;</span>/&gt;&lt;/<span style="color:#000080;font-weight:bold">svg</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package sans&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">h3</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;h2&#34;</span>&gt;Gallery title&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">figcaption</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque tristique ligula in tempor. Praesent hendrerit in felis sit amet gravida. Donec mattis mi sit. &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;credit&#34;</span>&gt;JOHN DOE&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">figcaption</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">figure</span>&gt;</code></pre></div>
+
+  </div>
+
+  
+<div class="paper digest list">
+  <div class="cards">
+    <div class="label">
+      <h5>CARDS</h5>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/author-card/">author-card</a>
+      </h4>
+      <p class="summary">Author information at the bottom of articles</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/big-news/">big-news</a>
+      </h4>
+      <p class="summary">Goes on the top of the homepage during large news events.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/correction/">correction</a>
+      </h4>
+      <p class="summary">A correction disclaimer for the top of a story.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/digest/">digest</a>
+      </h4>
+      <p class="summary">Headline stacks for section content.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/flag/">flag</a>
+      </h4>
+      <p class="summary">The top banner of the sites including the search panel and account popout</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/flex-columns/">flex-columns</a>
+      </h4>
+      <p class="summary">A flexbox version of the grid using the same rules.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/footer/">footer</a>
+      </h4>
+      <p class="summary">Standard footer for the bottom of all pages</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/form/">form (DSP)</a>
+      </h4>
+      <p class="summary">DSP form layout</p>
+    </div>
+    
+    
+    <div class="package active">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/gallery/">gallery</a>
+      </h4>
+      <p class="summary">Photo gallery to be used in all occasions.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/grid/">grid</a>
+      </h4>
+      <p class="summary">A very basic starter grid</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/header/">header</a>
+      </h4>
+      <p class="summary">An expanded package for article headers.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/immersive/">immersive</a>
+      </h4>
+      <p class="summary">Immersive card to match the layout option.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/in-depth/">in-depth</a>
+      </h4>
+      <p class="summary">In depth module for section pages</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/inline-cta/">inline-cta</a>
+      </h4>
+      <p class="summary">Inline call to action for story display.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/menu/">menu</a>
+      </h4>
+      <p class="summary">Side menu panel tied to the hamburger.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/modal/">modal</a>
+      </h4>
+      <p class="summary">Simple overlay containers to maintain consistency.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/read-next/">read-next</a>
+      </h4>
+      <p class="summary">The custom read next card under story bodies.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/related-stories/">related-stories</a>
+      </h4>
+      <p class="summary">Display for stories related in CUE.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/section-nav/">section-nav</a>
+      </h4>
+      <p class="summary">Top navigation for section fronts where applied in CUE</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/series-nav/">series-nav</a>
+      </h4>
+      <p class="summary">Series nav for article pages.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/sponsor/">sponsor</a>
+      </h4>
+      <p class="summary">Grant/Sponsorship card for article pages.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/promo/">swg-promo</a>
+      </h4>
+      <p class="summary">Promo card for story and section pages</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/timeline/">timeline</a>
+      </h4>
+      <p class="summary">Used in live updates and for static timelines.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/transparency/">transparency</a>
+      </h4>
+      <p class="summary">Provides story background information.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/upper-nav/">upper-nav</a>
+      </h4>
+      <p class="summary">Top tab navigation used in niche verticals.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/vendor-flag/">vendor-flag</a>
+      </h4>
+      <p class="summary">A basic flag that can be used on 3rd-party sites in an iframe.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/vendor-footer/">vendor-footer</a>
+      </h4>
+      <p class="summary">A basic footer that can be used on 3rd-party sites in an iframe.</p>
+    </div>
+    
+  </div>
+
+  <div class="decks">
+    <div class="label">
+      <h5>DECKS</h5>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/author-bio/">author bio</a>
+      </h4>
+      <p class="summary">A sample of the author bio page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/contests/">contests</a>
+      </h4>
+      <p class="summary">An alternative grid and card arrangement for contests.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/e-edition/">eEdition</a>
+      </h4>
+      <p class="summary">A portal page with recent eEditions.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/gallery/">gallery</a>
+      </h4>
+      <p class="summary">A CSS Grid version using the experimental rail code.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/homepage/">homepage</a>
+      </h4>
+      <p class="summary">A sample homepage.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/immersive/">immersive</a>
+      </h4>
+      <p class="summary">A sample story page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/impact2020/">Impact 2020</a>
+      </h4>
+      <p class="summary">Priority vertical product page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/purchase-flow/sign-up/">purchase flow</a>
+      </h4>
+      <p class="summary">A sample purchase flow sign up page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/search/">search</a>
+      </h4>
+      <p class="summary">Search results page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/section/">section</a>
+      </h4>
+      <p class="summary">A sample section page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/story/">story</a>
+      </h4>
+      <p class="summary">A sample story page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/topic/">topic</a>
+      </h4>
+      <p class="summary">The topic layout.</p>
+    </div>
+    
+  </div>
+
+  <div class="molecules">
+    <div class="label">
+      <h5>MOLECULES</h5>
+    </div>
+    <div class="package">
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/card/" class="">card</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/colors/" class="">color themes</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/expander/" class="">expander</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/expander-dsp/" class="">expander (DSP)</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/impact/" class="">impact</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/package/" class="">package</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/paper/" class="">paper</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/progress/" class="">progress bar (DSP)</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/social-media/" class="">social-media</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/title/" class="">title (DSP)</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/utilities/" class="">utilities</a>
+      </h5>
+      
+    </div>
+  </div>
+
+  <div class="atoms">
+    <div class="label">
+      <h5>ATOMS</h5>
+    </div>
+    <div class="package">
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/button/" class="">button</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/byline/" class="">byline</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/figcaption/" class="">figcaption</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/figure/" class="">figure</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/h1/" class="">h1</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/h2/" class="">h2</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/h3/" class="">h3</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/h4/" class="">h4</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/h5/" class="">h5</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/h6/" class="">h6</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/inputs/" class="">inputs</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/label/" class="">label</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/li/" class="">lists</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/more-link/" class="">more-link</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/p/" class="">p</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/section/" class="">section</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/time/" class="">time</a>
+      </h5>
+      
+    </div>
+  </div>
+
+  <script src="../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>
+  </body>
+</html>

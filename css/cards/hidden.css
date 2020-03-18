@@ -1,0 +1,9 @@
+/**
+ * This isn't really a card, but to ensure that it works in 
+ * as many cases as possible it's placed as the last thing
+ * in the system.
+ */
+
+.hidden, [hidden] {
+  display: none;
+}

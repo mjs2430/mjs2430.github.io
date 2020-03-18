@@ -1,0 +1,213 @@
+/**
+ * Typography
+ */
+
+:root {
+  /* Generals for use in cards */
+  --serif: "Noto Serif", serif;
+  --sans: "Noto Sans", sans-serif;
+
+  /* Header family, weight, and text-transform */
+  --hf: "Noto Serif", serif;
+  --hw: 400;
+  --ht: none;
+
+  /* Link decoration and color */
+  --lc: #222;
+  --ld: none;
+
+  /* Story width */
+  --story-width: 728px;
+
+  /**
+   * Button color and background color
+   * --bc: #222;
+   * --bbc: transparent;
+   */
+
+  /**
+   * General text color for atoms with default colors
+   * different from normal text.
+   * --tc: defaults set at the atom level
+   */
+}
+
+html {
+  font-family: var(--sans);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  color: #222;
+  background-color: #f4f4f4;
+}
+
+body.freeze {
+  overflow: hidden;
+}
+
+/**
+ * Text elements
+ */
+
+a {
+  color: var(--lc);
+  text-decoration: var(--ld);
+}
+
+a:hover {
+  color: var(--lhc, var(--lc));
+  text-decoration: var(--lhd, --var(ld));
+}
+
+.h1, h1,
+.h2, h2, 
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+  font-family: var(--hf);
+  font-weight: var(--hw);
+  text-transform: var(--ht);
+  line-height: 1.2em;
+}
+
+h1, .h1 {
+  font-size: 1.875rem;
+  line-height: 1.1em;
+  --hw: 700;
+}
+
+h2, .h2 {
+  font-size: x-large;
+}
+
+h3, .h3 {
+  font-size: larger;
+}
+
+h4, .h4 {
+  font-size: medium;
+}
+
+h5, .h5 {
+  font-size: 0.875rem;
+  --hf: var(--sans);
+  --hw: 700;
+}
+
+h6, .h6 {
+  font-size: 0.75rem;
+  --hf: var(--sans);
+}
+
+p {
+  font: large/1.5em var(--serif);
+}
+
+li {
+  font: large/1.5em var(--serif);
+  margin: 10px 0 10px calc(1em + 15px);
+}
+
+ul li {
+  list-style-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiLz48L3N2Zz4=");
+}
+
+time {
+  max-width: unset;
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--tc, #707070);
+  font-size: 0.75rem;
+}
+
+/**
+ * Custom elements
+ */
+
+.kicker {
+  display: inline-block;
+  padding: 5px 8px;
+  font-weight: 400;
+  color: var(--tc, #222);
+  border: 1px solid var(--tc, #222);
+  border-radius: 2px;
+  text-transform: uppercase;
+  --lhc: var(--tc, #222);
+  --ld: none;
+  --lhd: none;
+}
+
+.byline {
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--tc, #707070);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+}
+
+.byline a {
+  font-weight: 700;
+  color: inherit;
+}
+
+.credit {
+  display: inline-block;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.label {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.label > * {
+  margin: 0;
+  padding: 5px 10px;
+  color: var(--bc, white);
+  background-color: var(--bbc, #373737);
+  --ld: none;
+  --lhd: none;
+}
+
+.label.sticky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.more-link {
+  display: block;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-top: 15px;
+  --lc: var(--tc, #707070);
+  --lhc: var(--tc, #707070);
+  --ld: none;
+  --lhd: none;
+}
+
+.more-link:after {
+  content: "\2794";
+  padding-left: 4px;
+  display: inline-block;
+  transition: transform .6s ease;
+}
+
+.more-link:hover:after {
+  transform: translateX(4px);
+}
+
+.dateline {
+  display: block;
+  font-style: italic;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}

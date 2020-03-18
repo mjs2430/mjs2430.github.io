@@ -1,0 +1,33 @@
+/**
+ * Media
+ */
+
+figure {
+  margin: 0;
+  flex: none;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+}
+
+figcaption, .caption {
+  font-size: 0.875rem;
+  color: var(--tc, #707070);
+  padding-top: 10px; 
+}
+
+svg {
+  display: inline-block;
+}
+
+hr {
+  border: .5px solid var(--tc, #707070);
+  align-self: stretch;
+}
+
+iframe {
+  display: block;
+  border: none;
+}

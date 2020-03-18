@@ -1,0 +1,26 @@
+/**
+ * Expander 
+ */
+
+.expander {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.expander:after {
+  content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBkPSJNMjg4LjY2MiAzNTJIMzEuMzM4Yy0xNy44MTggMC0yNi43NDEtMjEuNTQzLTE0LjE0Mi0zNC4xNDJsMTI4LjY2Mi0xMjguNjYyYzcuODEtNy44MSAyMC40NzQtNy44MSAyOC4yODQgMGwxMjguNjYyIDEyOC42NjJjMTIuNiAxMi41OTkgMy42NzYgMzQuMTQyLTE0LjE0MiAzNC4xNDJ6Ii8+PC9zdmc+Cg==');
+  width: 14px;
+  line-height: 0;
+  margin-left: 5px;
+  transition: transform .5s ease;
+  transform: rotateX(180deg);
+}
+
+.expander:not(.open) ~ * {
+  display: none;
+}
+
+.expander.open:after {
+  transform: rotateX(0);
+}

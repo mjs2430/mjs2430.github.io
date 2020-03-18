@@ -1,0 +1,88 @@
+/**
+ * Nav
+ */
+
+.banner {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 13;
+}
+
+.banner .logo {
+  height: 60px;
+}
+
+.banner nav {
+  display: flex;
+}
+
+.banner a {
+  font-size: small;
+  font-weight: bold;
+  padding: 13px 15px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.banner a:hover {
+  text-decoration: none;
+}
+
+.banner a span {
+  padding: 2px 0;
+}
+
+.banner a.active span {
+  border-bottom: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+
+/**
+ * Generics
+ */
+
+.grid-label {
+  padding: 15px;
+}
+
+code {
+  background-color: #ddd;
+  padding: 2px 5px;
+}
+
+pre {
+  padding: 15px 0;
+}
+
+pre code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background-color: transparent;
+  padding: 0;
+}
+
+
+/**
+ * Footer
+ */
+
+footer {
+  background-color: #373737;
+  min-height: 20px;
+}
+
+/**
+ * Labs page
+ */
+
+.grid.labs .package .summary {
+  flex: 1;
+}

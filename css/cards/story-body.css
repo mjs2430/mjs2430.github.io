@@ -1,0 +1,166 @@
+/**
+ * Story body
+ */
+
+.story-body {
+  --hf: var(--sans);
+  --hw: 700;
+  --ht: uppercase;
+  --lc: #5169B8;
+  --lhc: #31409F;
+  --ld: underline;
+  --lhd: underline;
+  padding-bottom: 15px;
+}
+
+.story-body > * {
+  max-width: var(--story-width);
+  padding: 0 15px;
+  margin: 15px auto;
+}
+
+.story-body > :first-child {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.story-body > .header {
+  margin-top: 0;
+}
+
+/**
+ * Embeds
+ */
+
+.story-body .embed-infographic {
+  margin: 30px auto;
+  clear: both;
+}
+
+.embed-infographic > * {
+  display: block;
+  max-width: 100%;
+}
+
+.story-body > .story-module {
+  margin: 30px auto;
+}
+
+/**
+ * Media options
+ */
+
+.story-body > figure {
+  margin: 30px auto;
+  padding: 0;
+}
+
+.story-body .wide {
+  max-width: 970px;
+}
+
+.story-body .full-bleed {
+  max-width: 100%;
+  padding: 0;
+}
+
+.story-body figure .package {
+  padding: 10px 0 0;
+}
+
+@media(max-width: 768px) {
+  .story-body > figure {
+    max-width: 100%;
+  }
+
+  .story-body figcaption,
+  .story-body figure .package {
+    padding: 10px 15px 0;
+  }
+}
+
+@media(max-width: 990px) {
+  .story-body .wide figcaption,
+  .story-body figure.wide .package {
+    padding: 10px 15px 0;
+  }
+}
+
+.story-body .full-bleed figcaption,
+.story-body figure.full-bleed .package {
+  padding: 10px 15px 0;
+}
+
+/**
+ * Asides
+ */
+
+.story-body aside > * {
+  margin: 30px auto;
+}
+
+@media(min-width: 930px) {
+  .story-body aside > * {
+    float: right;
+    margin: 0 -150px 30px 30px;
+  }
+
+  .story-body aside.left > * {
+    float: left;
+    margin: 0 30px 30px -150px;
+  }
+}
+
+.story-body blockquote {
+  max-width: 300px;
+  font: x-large/1.2em var(--sans);
+}
+
+.story-body > .zone {
+  margin: 30px auto;
+}
+
+/**
+ * Mugshots
+ */
+
+.story-body figure.mugshot {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.story-body figure.mugshot > * {
+  float: right;
+  width: 125px;
+  margin: 0 0 15px 15px;
+}
+
+.story-body figure.mugshot figcaption {
+  padding: 5px 0 0;
+}
+
+/**
+ * Tables
+ */
+
+.story-body table {
+  max-width: 758px;
+}
+
+/**
+ * Immersive card 
+ */
+
+.story-body .immersive {
+  max-width: 100%;
+  padding-top: 0;
+}
+
+/**
+ * Zergnet widget only applies to stories
+ */
+
+.zergnet {
+  max-width: 728px;
+  padding: 0 15px;
+}

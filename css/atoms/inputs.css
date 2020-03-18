@@ -1,0 +1,208 @@
+form {
+    position: relative;
+    font: 400 14px var(--sans);
+    width: 100%;
+    text-align: left!important;
+}
+
+form > * { 
+    margin-bottom: 30px;
+    width: 100%; 
+}
+  
+form > *:last-child { 
+    margin-bottom: 0px; 
+} 
+                 
+label { 
+    font: 700 14px var(--sans);
+    line-height: 1.5; 
+    color: #222; 
+    display: block; 
+    margin-bottom: 0; 
+}   
+  
+
+form button {
+    box-sizing: content-box;
+} 
+
+form .expander {
+    justify-content: flex-start;
+}
+ 
+form .select .expander.open ~ .options  { 
+    border-left: 1px solid #989898;
+    border-right: 1px solid #989898;
+    border-bottom: 1px solid #989898;
+}
+
+form .options a:hover {
+    background-color: #f4f4f4;
+}
+input,
+form .select{ 
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;  
+    border: 1px solid #989898;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 1em; 
+    color: #222;
+}
+
+/* On mouse-over, add a black border color */
+input:hover, input:hover ~ span {
+  border: 1px solid #222;
+  transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+#focused-input {
+    box-shadow: 0 0 4px 2px hsla(0, 0%, 59.6%, .75);
+    outline: none;
+    border: 1px solid #989898; 
+}
+
+.required {
+    color: #d63031;
+    border: 1px solid #d63031; 
+}
+
+input.required:focus {
+    box-shadow:0 0 4px 2px rgba(214,48,49,.75);
+    border: 1px solid #d63031; 
+}
+
+input.required:valid {
+    border: 1px solid #989898; 
+    color: #222;
+}
+
+input.required:valid:focus {
+     box-shadow: 0 0 4px 2px hsla(0, 0%, 59.6%, .75);
+}
+
+form:valid > button[type="submit"] {
+    background-color: #31409f; 
+}
+
+small[for=error-input] {  
+    color: #d63031;  
+}
+
+#password-label:after { 
+    content: "\f070"; 
+    font: 400 14px Font Awesome\ 5 Free;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    line-height: 1.7;
+    width: 20px;
+}
+
+#password-label.active:after{
+    content: "\f06e"
+} 
+
+/* Checkbox container */
+.checkbox-container {
+  display: block;
+  width: calc(100% - 25px);
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;  
+  cursor: pointer;
+  user-select: none;
+  font: 400 14px var(--sans);
+}   
+ 
+/* Hide the browser's default checkbox */
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* When the checkbox is checked, add a black background */
+form input:checked ~ span {
+  background: #222;
+  transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}  
+
+/* Create the checkmark/indicator (hidden when not checked) */
+form .checkmark:after,
+form .radio:after { 
+  content: "";
+  position: absolute;
+  display: none;
+  transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+ 
+/* Show the checkmark when checked */
+form input:checked ~ .checkmark:after,
+form input:checked ~ .radio:after {
+  display: block; 
+  transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+} 
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: none; 
+  border: 1px solid #707070;
+  transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+/* Style the checkmark/indicator */
+.checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 4px; 
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+ 
+/* Create a custom radio button */
+.radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: none;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio:after {
+  content: ""; 
+  position: absolute;
+  display: none;
+  transition:  all .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  top: 4px;
+  left: 4px;  
+  width: 6px;  
+  height: 6px; 
+  border-radius: 50%;
+  background: white;
+}
+

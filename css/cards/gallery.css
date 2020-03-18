@@ -1,0 +1,78 @@
+/**
+ * Gallery card
+ */
+
+.gallery .h2 {
+  font-weight: 400;
+}
+
+.gallery-panel {
+  position: relative;
+  background-color: #ddd;
+  padding-top: 56.25%;
+}
+
+.gallery-current {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.gallery-marker {
+  display: flex;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.gallery-marker svg {
+  width: 42px;
+  height: 42px;
+  transform: none;
+}
+
+.gallery-count {
+  color: white;
+  margin-left: 10px;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+  font-size: large;
+}
+
+.gallery-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.gallery-button svg {
+  fill: white;
+  background-color: #373737;
+  height: 15px;
+  width: 15px;
+  padding: 10px;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+  justify-content: flex-end;
+}
+
+.gallery .package figcaption {
+  padding: 0;
+}

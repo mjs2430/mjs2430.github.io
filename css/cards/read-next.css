@@ -1,0 +1,43 @@
+/**
+ * Read Next
+ */
+
+.read-next .package {
+	width: 100%;
+	max-width: 710px;
+	margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.read-next .header {
+  align-self: stretch;
+	align-items: flex-start;
+	text-align: left;
+	padding: 0;
+}
+
+.read-next .header > :first-child {
+	margin-top: 0;
+}
+
+.read-next .social-media {
+	justify-content: flex-start;
+}
+
+.read-next .more-link {
+	padding: 0;
+}
+
+.read-next .byline {
+  margin: 0;
+}
+
+.read-next .package > p {
+  font: medium/1.5em var(--sans);
+}
+
+@media (max-width: 989px) {
+  .read-next .header .bio {
+    display: block;
+  }
+}

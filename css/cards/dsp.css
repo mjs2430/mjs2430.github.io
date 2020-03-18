@@ -1,0 +1,125 @@
+/** 
+DSP Overrides
+**/
+
+.dsp {
+    padding: 15px 0;
+}
+
+.dsp h1,
+.dsp h2,
+.dsp h3 {
+    margin: 0;
+}
+
+
+.dsp .more-link.inline {
+    display: inline;
+    color: #31409f;
+    text-transform: none;
+    padding: 0;
+}
+
+.dsp.example {
+    padding: 15px 0;
+}
+
+.dsp .package {   
+    padding: 30px 15px;
+}
+
+.dsp .package.small {
+    padding: 15px;
+    align-items: center;
+}
+
+.dsp .paper,
+.dsp .card {
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .13)
+}
+
+.dsp .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 15px 30px;
+}
+
+.dsp form .grid {
+    grid-template-columns: repeat( auto-fit, minmax(40px, 1fr) );
+    grid-gap: 15px;
+}
+
+.dsp small { 
+    font: 400 small var(--sans);
+    color: #707070;
+    margin: 0 0 0 0;  
+    display: block;
+}
+
+.dsp form small {
+   font: 400 11px var(--sans); 
+   margin: 2px 0 0 0;  
+}
+
+.dsp .expander:after {
+  width: 10px;
+  filter: opacity(56%);
+}
+
+.dsp small.expander {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.dsp small.stretch {
+  grid-column: span 2;
+  padding-top: 15px;
+}
+
+.dsp section {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dsp .horizontal.package.small {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 95px;
+    grid-gap: 0px;
+    order: 1;
+    align-items: flex-start;
+}
+
+.dsp .flex-columns > * {
+    margin: 15px 0;
+}
+
+/***** Media queries ****/
+
+@media (min-width: 640px) {
+
+.dsp section {
+    max-width: 800px;
+}
+    
+.dsp .grid {
+   grid-template-columns: 1fr 1fr;     
+}
+    
+
+.dsp .horizontal.package.small  {
+    align-self: flex-start;
+    grid-template-columns: 1fr;
+    order: 2;
+}
+    
+.dsp .horizontal small.expander {
+    display: none;
+}
+    
+.dsp .stretch {
+     display: block;
+}
+
+
+}    

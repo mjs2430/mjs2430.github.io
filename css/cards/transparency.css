@@ -1,0 +1,24 @@
+/**
+ * Transparency
+ */
+
+.transparency {
+	max-width: 100%;
+	padding: 15px;
+	background-color: #f4f4f4;
+}
+
+.transparency > * {
+  margin: 15px auto;
+	max-width: var(--story-width);
+}
+
+.transparency .expander {
+	justify-content: space-between;
+}
+
+.question {
+	--hf: var(--serif);
+	--hw: 400;
+	--ht: none;
+}

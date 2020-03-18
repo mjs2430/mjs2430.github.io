@@ -1,0 +1,60 @@
+/**
+ * Immersive media card
+ * Note: this could be made smaller with custom properties later
+ */
+
+.immersive {
+  margin-top: 0;
+}
+
+.immersive .media {
+	display: flex;
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+}
+
+.immersive .content {
+  background: rgba(0,0,0,.5);
+	flex: 1;
+	display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+	padding-bottom: 30px;
+  --bbc: transparent;
+}
+
+.immersive .content > * {
+  max-width: 920px;
+  margin: 15px auto;
+	padding: 0 15px;
+}
+
+.immersive .content button {
+  border: none;
+  padding: 0;
+	height: 60px;
+	width: 60px;
+  --bbc: transparent;
+}
+
+.immersive .title {
+	font: 700 2.5rem/1.2em var(--serif);
+	text-transform: none;
+  --lhd: underline;
+}
+
+.immersive-summary {
+  font-size: larger;
+}
+
+.immersive figcaption {
+  padding: 10px 15px 0;
+}
+
+@media (min-width: 760px) {
+	.immersive .title {
+		font-size: 64px;
+	}
+}

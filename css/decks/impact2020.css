@@ -1,0 +1,82 @@
+.impact2020 .kicker {
+  color: white;
+  background-color: #373737;
+  font-weight: 700;
+  border-radius: unset;
+  font-family: var(--sans);
+}
+
+.impact2020 .kicker:hover {
+  color: white;
+}
+
+.impact2020 .impact .kicker {
+  color: #222;
+  background-color: white;
+}
+
+.impact2020 .immersive .kicker {
+  padding: 10px 30px 7px 30px;
+}
+
+.impact2020 .immersive .title {
+  font-family: var(--sans);
+}
+
+.impact2020 .immersive time {
+  font-size: small;
+}
+
+.impact2020 .package .kicker {
+  position: relative;
+  right: 15px;
+  padding: 5px 15px;
+}
+
+/**
+ * No Art option
+ */
+
+.impact2020 .card.fill .package,
+.impact2020 .no-img,
+.impact2020 .opinion {
+  padding-top: 30px;
+  min-height: 315px;
+}
+
+.impact2020 .no-img,
+.impact2020 .opinion {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.1), black 75%),url(../../img/arrows-white.svg);
+  background-position: top, top
+}
+
+.impact2020 .card.fill h3,
+.impact2020 .package.no-img h3,
+.impact2020 .package.opinion h3 {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  font-size: x-large;
+}
+
+.impact2020 .no-img time {
+  flex: none;
+}
+
+/**
+ * Opinion option
+ */
+
+.impact2020 .opinion {
+  background-image: linear-gradient(rgba(255,255,255,0.1), white 75%),url(../../img/arrows-dark.svg);
+}
+
+/**
+ * Inline Immersive option
+ */
+
+.impact2020 .inline-immersive .title {
+  font-size: 48px;
+}

@@ -1,0 +1,26 @@
+/**
+ * Zones
+ */
+
+.zone {
+  clear: both;
+}
+
+.zone.grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media(min-width: 728px) {
+  .zone.grid.combo {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 349px);
+  }
+}
+
+.zone[data-zone="zone1"] {
+  padding: 30px 15px;
+}
+
+.zone .related-stories {
+  margin: 0 auto;
+}

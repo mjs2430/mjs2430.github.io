@@ -1,0 +1,49 @@
+/**
+ * Big News
+ * Note: we need something for labels "outside the grid" but
+ * need to "line up with the grid".
+ */
+
+.big-news {
+  margin-top: 0;
+}
+
+.big-news > * {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.big-news .latest {
+  padding: 15px 15px 0;
+}
+
+.big-news .grid {
+  padding: 15px;
+  grid-template-columns: 1fr;
+}
+
+.big-news .h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.big-news h3,
+.big-news .h3 {
+  font-size: large;
+}
+
+@media(max-width: 1170px) {
+  .big-news figcaption {
+    padding: 10px 15px;
+  }
+}
+
+.big-news .featured .package {
+  padding: 15px 0;
+}
+
+@media (min-width: 680px) {
+  .big-news .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

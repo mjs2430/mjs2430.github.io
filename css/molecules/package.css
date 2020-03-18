@@ -1,0 +1,47 @@
+/**
+ * Package 
+ */
+
+.package {
+  position: relative;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: flex-start;
+  color: var(--tc);
+	--hf: var(--serif);
+	--hw: 400;
+	--ht: none;
+  --ld: none;
+  --lhd: underline;
+  --lhc: var(--tc); 
+}
+
+.package.flush {
+  padding: 0;
+}
+
+.package > * {
+  margin: 10px 0 0 0;
+  max-width: 100%;
+}
+
+.package > :first-child {
+  margin-top: 0;
+}
+
+.package > time {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.package.no-img h3,
+.package.no-img .h3 {
+  font-size: x-large;
+}
+
+.package.marketing > :not(:first-child) {
+  margin-top: 20px;
+}

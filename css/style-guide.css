@@ -1,0 +1,150 @@
+/*
+ * Style guide native defaults
+ */
+
+table {
+  width: 100%;
+  text-align: left;
+  border-spacing: 0;
+  box-sizing: content-box;
+}
+
+td {
+  padding: 5px 0;
+}
+
+th {
+  padding-bottom: 8px;
+}
+
+td:first-child {
+  font-weight: bold;
+  width: 150px;
+}
+
+.story-body > hr {
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+/*
+ * Style guide main rules.
+ */
+
+.example {
+  max-width: 1140px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  --lc: #222;
+}
+
+.updated {
+  display: block;
+  font-size: small;
+  color: #377f6a;
+}
+
+.list {
+  position: relative;
+  background-color: #f4f4f4;
+  z-index: 1;
+}
+
+.list .cards {
+  background-color: #FDFDF6;
+}
+
+.list .decks {
+  background-color: #D2EFF2;
+}
+
+.list .subscriptions {
+  background-color: #A5C3E9;
+}
+
+.list .atoms {
+  border-top: 1px solid #ddd;
+}
+
+.list .package.active {
+  background-color: #377f6a;
+  color: white;
+  --lc: white;
+  --lhc: white;
+}
+
+.list a.active {
+  color: #377f6a;
+}
+
+.list .new:after {
+  content: url(../icons/certificate.svg);
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  left: 5px;
+  top: 2px
+}
+
+.list .dep {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.details {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+  .panels {
+    position: relative;
+    height: calc(100vh - 94px);
+    display: flex;
+  }
+
+  .panels > * {
+    flex: 1;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .list {
+    max-width: 400px;
+    order: 1;
+  }
+
+  .details {
+    order: 2;
+  }
+}
+
+.page-header {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.note {
+  background-color: #e9ead8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px;
+  --hf: var(--sans);
+  --hw: 700;
+}
+
+.note.dep {
+  background-color: #6bb1b9;
+  color: white;
+}
+
+/**
+ * Phone view
+ */
+
+.phone {
+  width: 375px;
+  margin: 0 auto;
+}
