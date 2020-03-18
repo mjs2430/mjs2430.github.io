@@ -6,23 +6,36 @@ DSP Overrides
     padding: 15px 0;
 }
 
+.dsp .review-order {
+    display: flex;
+    justify-content: center;
+}
+
+.dsp .review-order > * {
+    width: 100%;
+}
+
+.dsp .review-order .package {
+   align-items: center;
+}
+
 .dsp h1,
 .dsp h2,
 .dsp h3 {
     margin: 0;
 }
 
+.dsp button {
+    width: 100%;
+}
 
-.dsp .more-link.inline {
-    display: inline;
-    color: #31409f;
-    text-transform: none;
+.dsp .more-link {
     padding: 0;
 }
 
 .dsp.example {
     padding: 15px 0;
-}
+} 
 
 .dsp .package {   
     padding: 30px 15px;
@@ -90,6 +103,24 @@ DSP Overrides
     align-items: flex-start;
 }
 
+
+.dsp small.secure {
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.dsp i {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.dsp .flex {
+    justify-content: space-between;
+    padding: 0 0 10px;
+    margin: 0 15px;
+    border-bottom: 1px solid #989898;
+}
+
 .dsp .flex-columns > * {
     margin: 15px 0;
 }
@@ -101,6 +132,12 @@ DSP Overrides
 .dsp section {
     max-width: 800px;
 }
+    
+
+.dsp .review-order > * {
+    max-width: 400px;
+}
+    
     
 .dsp .grid {
    grid-template-columns: 1fr 1fr;     
@@ -121,5 +158,14 @@ DSP Overrides
      display: block;
 }
 
+ .dsp .flex-columns {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0;
+}
+    
+.dsp .flex-columns > * {
+    margin: 7.5px 0;
+}
 
 }    

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>vendor-flag</title>
+    <title>expander (DSP)</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -85,60 +85,42 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">vendor-flag
+    <h2 class="page-header">expander (DSP)
     </h2>
-    <p>The vendor flag is a basic version of the flag with the ability to add a custom title or logo for that vendor. In most cases, the vendor loads these elements in using a <code>&lt;iframe&gt;</code> tag on their pages. Because of this, only minimal functionality is possible and the height must be static. Iframe heights should be set to <code>55px</code> to fully-render the element.</p>
-<p>This card will never be used with the rest of the design system. In order to isolate it and decrease load time, we have created a separate build for it. The file is called <code>vendor-cards.css</code> and includes the vendor flag and vendor footer cards. It is self-contained and includes all of the styles required except fonts files. The text version uses McClatchy Sans at 600 weight, which will need to be loaded separately.</p>
-<link rel="stylesheet" href="../../css/cards/vendor-cards.css">
-<h4 id="market-logo-only-example">Market logo only example</h4>
-<div class="example">
-<div class="flag">
-  <a class="market-logo" href="#">
-    <img src="https://www.newsobserver.com/wps/build/images/newsobserver/logo.svg">
-  </a>
+    <p>The expander is a simple molecule to toggle the visibility of it&rsquo;s siblings. The element itself acts as the toggle by swapping the open class. This can be done a number of ways, but to keep things simple for the demo we used the <code>onclick</code> attribute directly.</p>
+<p>The generic rules make for a very flexible setup, where we can force each child to display in all cases inline or with additional CSS in the future.</p>
+<p>This is a version of the expander used on the front-end of our sites, but specific for the purchase flow.</p>
+<h5 id="desktop-example">Desktop Example</h5>
+<section class="dsp" style="padding-left:0;padding-bottom: 20px;">
+        <div class="card horizontal package small" style="max-width: 400px;">
+                <div>
+                    <span class="summary bold">Unlimited Digital Access</span>
+                    <small>$10.99 for 1 month, $15.99/month after.</small>
+                </div>
+                <small class="expander" onclick="this.classList.toggle('open')">Show details</small>
+                <small class="stretch">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
+        </div>
+</section>
+<h5 id="mobile-example">Mobile Example</h5>
+<div class="dsp" style="padding-bottom: 20px">
+        <div class="card horizontal package small" style="grid-gap:0;align-self: flex-start;
+    grid-template-columns: 1fr 95px;max-width: 400px;">
+                <div>
+                    <span class="summary bold">Unlimited Digital Access</span>
+                    <small>$10.99 for 1 month, $15.99/month after.</small>
+                </div>
+                <small class="expander" onclick="this.classList.toggle('open')" style="display: flex;">Show details</small>
+                <small style="padding-top:15px;grid-column: span 2;">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
+        </div>
 </div>
-
-</div>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flag&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;market-logo&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.newsobserver.com/wps/build/images/newsobserver/logo.svg&#34;</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
-<h4 id="text-example">Text example</h4>
-<div class="example">
-<div class="flag">
-  <h3 class="vendor-name">obituaries</h3>
-  <a class="market-logo" href="#">
-    <img src="https://www.newsobserver.com/wps/build/images/newsobserver/logo.svg">
-  </a>
-</div>
-
-</div>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flag&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">h3</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;vendor-name&#34;</span>&gt;obituaries&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;market-logo&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.newsobserver.com/wps/build/images/newsobserver/logo.svg&#34;</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
-<h4 id="logo-example">Logo example</h4>
-<div class="example">
-<div class="flag">
-  <div class="vendor-logo">
-    <img src="../../img/moonlighting-logo-black.png">
-  </div>
-  <a class="market-logo" href="#">
-    <img src="https://www.newsobserver.com/wps/build/images/newsobserver/logo.svg">
-  </a>
-</div>
-
-</div>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flag&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;vendor-logo&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;/img/moonlighting-logo-black.png&#34;</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;market-logo&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.newsobserver.com/wps/build/images/newsobserver/logo.svg&#34;</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card horizontal package small&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Unlimited Digital Access&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;$10.99 for 1 month, $15.99/month after.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">small</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expander&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;Show details&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">small</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;stretch&#34;</span>&gt;Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
   </div>
@@ -359,7 +341,7 @@
     </div>
     
     
-    <div class="package active">
+    <div class="package">
       <h4 class="sans bold">
         <a class="" href="https://mjs2430.github.io/saratoga/vendor-flag/">vendor-flag</a>
       </h4>
@@ -502,7 +484,7 @@
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/purchase-info-dsp/" class="">expander (DSP)</a>
+        <a href="https://mjs2430.github.io/saratoga/purchase-info-dsp/" class="active">expander (DSP)</a>
       </h5>
       
       

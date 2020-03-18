@@ -205,6 +205,23 @@ time {
   transform: translateX(4px);
 }
 
+.more-link.primary {
+  --lc: #31409f;
+  --lhc: #5169B8;
+}
+
+.more-link.dark {
+    --lc: #222222;
+}
+
+.more-link.inline {
+    display: inline;
+    --lc: #31409f;
+    --lhc: #5169B8;
+    text-transform: none;
+    padding: 0;
+}
+
 .dateline {
   display: block;
   font-style: italic;

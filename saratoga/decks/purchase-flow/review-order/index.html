@@ -115,73 +115,59 @@ gpt-ad {
 </section>
 
 <section>
-  <div class="grid">
      <div class="package small">
       <h2 class="sans bold">Review your order</h2>
      </div>
-  </div>
 </section>
 
-<section>
-  <div class="grid">
-        <div class="paper" style="order: 2;">
-            <div class="package horizontal">
-                <form> 
-                  <label class="checkbox-container">Use debit/credit card
-                    <input type="radio" name="radio" onclick="document.getElementById('cc-form').style.display = 'block'"><i class="far fa-credit-card"></i>
-                    <span class="radio"></span>
-                  </label>
-                </form>
-                <form id="cc-form" style="overflow: hidden;margin-top: 20px;">
-                    <div>
-                        <label for="name">Name on card</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div>
-                        <label for="card">Card Number</label>
-                        <input type="text" id="card" required>
-                    </div> 
-                    <div class="grid">
-                          <div>
-                            <label for="cvv">CVV/CVC</label>
-                            <small>3/4 digit code</small>
-                            <input type="text" id="cvv" required>
-                        </div>  
-                        <div>
-                            <label for="card">Exp. Month</label>
-                            <small>MM</small>
-                            <input type="text" id="card" required>
+    <section>
+           <div class="review-order">
+                <div class="paper">
+                   <div class="flex-columns">
+                        <small class="secure">secure transaction <i class="fas fa-lock"></i></small>
+                        <div class="package small">
+                          <button id="button" type="submit" class="button promo">Place order</button>                    
                         </div>
-                        <div>
-                            <label for="card">Exp. Year</label>
-                            <small>YYYY</small>
-                            <input type="text" id="card" required>
-                        </div>                    
+                    <div>
+                        <div class="flex">
+                            <span class="summary bold">Your Order</span>
+                            <span class="summary bold">Due Today: $10.99</span>
+                        </div>
+                        <div class="package horizontal small">
+                            <div>
+                                <span class="summary">Unlimited Digital Access</span>
+                                <small>$10.99 for 1 month, $15.99/month after.</small>
+                            </div>
+                            <small class="stretch">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
+                        </div>
                     </div>
-                <button id="button" type="submit" class="button disabled">continue</button>
-              </form>
-            </div>
-        </div>
-        <div class="card horizontal package small">
-            <div>
-                <span class="summary bold">Unlimited Digital Access</span>
-                <small>$10.99 for 1 month, $15.99/month after.</small>
-            </div>
-            <small class="expander" onclick="this.classList.toggle('open')">Show details</small>
-            <small class="stretch">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
-        </div>
-        <div style="order: 3;">
-            <div class="paper">
-                <div class="package">
-                   <button class="button social paypal">Continue with PayPal</button>
-                   <button class="button social apple">Continue with Apple Pay</button>
+                    <div>
+                        <div class="flex">
+                            <span class="summary bold">Account Info</span>
+                        </div>
+                        <div class="package horizontal small">
+                            <div>
+                                <span class="summary">John Wick</span><br>
+                                <span class="summary">j.wick@email.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <span class="summary bold">Payment Method</span>
+                        </div>
+                        <div class="package horizontal small">
+                            <div>
+                                <span class="summary">John Wick</span><br>
+                                <span class="summary">****0000 | Exp. 12/23 <i class="fab fa-cc-visa" style="color: #1A1F71;"></i></span>
+                                <a href="#" class="more-link primary">Edit Payment Method</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p class="summary">I'm a print subscriber. <a href="#" class="more-link inline">Activate digital access</a></p>
         </div>
-
-  </div>
-</section>
+    </section>
 
 </main>
 
