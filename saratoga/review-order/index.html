@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>review order (DSP)</title>
+    <title>review-order (DSP)</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="../../css/molecules/expander.css">
     <link rel="stylesheet" href="../../css/molecules/utilities.css">
     <link rel="stylesheet" href="../../css/molecules/progress.css">
+    <link rel="stylesheet" href="../../css/molecules/page-title.css">
+    
 
     
     <link rel="stylesheet" href="../../css/cards/grid.css">
@@ -57,6 +59,8 @@
     <link rel="stylesheet" href="../../css/cards/sponsor.css">
     <link rel="stylesheet" href="../../css/cards/gallery.css">
     <link rel="stylesheet" href="../../css/cards/dsp.css">
+    <link rel="stylesheet" href="../../css/cards/review-order.css">
+    <link rel="stylesheet" href="../../css/cards/paywall.css">
     <link rel="stylesheet" href="../../css/cards/hidden.css">
 
     
@@ -85,9 +89,9 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">review order (DSP)
+    <h2 class="page-header">review-order (DSP)
     </h2>
-    <p>The review order card uses the paper molecule, the package molecule.</p>
+    <p>The review-order card uses the paper molecule to create lift, the flex-columns card to vertically space each item inside the paper, and the package molecule.</p>
 <h4 id="example">Example</h4>
 <div class="dsp" style="margin-bottom: 30px;">
     <section>
@@ -103,7 +107,7 @@
                             <span class="summary bold">Your Order</span>
                             <span class="summary bold">Due Today: $10.99</span>
                         </div>
-                        <div class="package horizontal small">
+                        <div class="package small">
                             <div>
                                 <span class="summary">Unlimited Digital Access</span>
                                 <small>$10.99 for 1 month, $15.99/month after.</small>
@@ -115,7 +119,7 @@
                         <div class="flex">
                             <span class="summary bold">Account Info</span>
                         </div>
-                        <div class="package horizontal small">
+                        <div class="package small">
                             <div>
                                 <span class="summary">John Wick</span><br>
                                 <span class="summary">j.wick@email.com</span>
@@ -126,7 +130,7 @@
                         <div class="flex">
                             <span class="summary bold">Payment Method</span>
                         </div>
-                        <div class="package horizontal small">
+                        <div class="package small">
                             <div>
                                 <span class="summary">John Wick</span><br>
                                 <span class="summary">****0000 | Exp. 12/23 <i class="fab fa-cc-visa" style="color: #1A1F71;"></i></span>
@@ -140,52 +144,52 @@
     </section>
 </div>
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">           &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;review-order&#34;</span>&gt;
-                &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;paper&#34;</span>&gt;
-                   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex-columns&#34;</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">small</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;secure&#34;</span>&gt;secure transaction &lt;<span style="color:#000080;font-weight:bold">i</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;fas fa-lock&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">i</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
-                          &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;button&#34;</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;submit&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button promo&#34;</span>&gt;Place order&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;                    
-                        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex&#34;</span>&gt;
-                            &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Your Order&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-                            &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Due Today: $10.99&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-                        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package horizontal small&#34;</span>&gt;
-                            &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-                                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Unlimited Digital Access&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-                                &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;$10.99 for 1 month, $15.99/month after.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
-                            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                            &lt;<span style="color:#000080;font-weight:bold">small</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;stretch&#34;</span>&gt;Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
-                        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex&#34;</span>&gt;
-                            &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Account Info&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-                        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package horizontal small&#34;</span>&gt;
-                            &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-                                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;John Wick&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-                                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;j.wick@email.com&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-                            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex&#34;</span>&gt;
-                            &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Payment Method&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-                        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package horizontal small&#34;</span>&gt;
-                            &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-                                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;John Wick&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-                                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;****0000 | Exp. 12/23 &lt;<span style="color:#000080;font-weight:bold">i</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;fab fa-cc-visa&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;color: #1A1F71;&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">i</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-                                &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link primary&#34;</span>&gt;Edit Payment Method&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-                            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;review-order&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;paper&#34;</span>&gt;
+       &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex-columns&#34;</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">small</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;secure&#34;</span>&gt;secure transaction &lt;<span style="color:#000080;font-weight:bold">i</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;fas fa-lock&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">i</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+              &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;button&#34;</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;submit&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button promo&#34;</span>&gt;Place order&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;                    
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex&#34;</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Your Order&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Due Today: $10.99&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Unlimited Digital Access&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;$10.99 for 1 month, $15.99/month after.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+                &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">small</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;stretch&#34;</span>&gt;Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex&#34;</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Account Info&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;John Wick&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;j.wick@email.com&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
                 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
             &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex&#34;</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Payment Method&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;John Wick&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;****0000 | Exp. 12/23 &lt;<span style="color:#000080;font-weight:bold">i</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;fab fa-cc-visa&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;color: #1A1F71;&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">i</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link primary&#34;</span>&gt;Edit Payment Method&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+                &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
   </div>
 
@@ -327,6 +331,14 @@
     
     <div class="package">
       <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/paywall/">paywall (DSP)</a>
+      </h4>
+      <p class="summary">DSP paywall offer card</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
         <a class="" href="https://mjs2430.github.io/saratoga/read-next/">read-next</a>
       </h4>
       <p class="summary">The custom read next card under story bodies.</p>
@@ -343,9 +355,9 @@
     
     <div class="package active">
       <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/saratoga/review-order/">review order (DSP)</a>
+        <a class="" href="https://mjs2430.github.io/saratoga/review-order/">review-order (DSP)</a>
       </h4>
-      <p class="summary">DSP review order card</p>
+      <p class="summary">DSP review-order card</p>
     </div>
     
     
@@ -486,6 +498,14 @@
     
     <div class="package">
       <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/paywall/">paywall</a>
+      </h4>
+      <p class="summary">A sample paywall overlay page.</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
         <a class="" href="https://mjs2430.github.io/saratoga/decks/purchase-flow/sign-up/">purchase flow</a>
       </h4>
       <p class="summary">A sample purchase flow sign up page.</p>
@@ -563,6 +583,11 @@
       
       
       <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/page-title/" class="">page title (DSP)</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
         <a href="https://mjs2430.github.io/saratoga/paper/" class="">paper</a>
       </h5>
       
@@ -579,11 +604,6 @@
       
       <h5 class="sans bold ">
         <a href="https://mjs2430.github.io/saratoga/social-media/" class="">social-media</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/title/" class="">title (DSP)</a>
       </h5>
       
       

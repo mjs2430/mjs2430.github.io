@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>inputs</title>
+    <title>paywall (DSP)</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -89,148 +89,123 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">inputs
+    <h2 class="page-header">paywall (DSP)
     </h2>
-    <p>Inputs are designed to be placed in a center-aligned form that is 100% of the parent width (max-width of 340px on desktop) using browser defaults and to have different states based on user interaction.</p>
-<h4 id="text-inputs-example">Text Inputs Example</h4>
+    <p>The paywall-card uses the paper molecule to create lift, the flex-columns card to vertically space each item inside the paper, and the package molecule.</p>
+<h4 id="example">Example</h4>
 <div class="dsp" style="margin-bottom: 30px;">
-    <form style="max-width: 400px;">
-        <div>
-          <label for="default-input">Default</label>
-          <input type="text" id="default-input">
+  <div class="paywall">
+    <section>
+        <div class="primary-offer card horizontal package">
+           <div>
+                <h2 class="h1">Unlimited Digital Access</h2>
+                <p class="summary caps bold">$1.99 for one month</p>
+                <small class="caps">$10.99/month after. Cancel anytime.</small>
+            </div>
+            <div>
+             <a class="button white">start today</a>
+            </div>
         </div>
-        <div>
-          <label for="focused-input">Focused</label>
-          <input type="text" id="focused-input">
+    </section>
+    <section class="details">
+        <p class="expander caps summary bold" onclick="this.classList.toggle('open')">show details and options</p>
+        <div class="grid">
+            <div class="card" style="grid-column: span 2;">
+               <div class="package">
+                    <div class="grid">
+                       <div  style="grid-column: span 2;">
+                            <p class="summary bold">Read, view and watch it all</p>
+                            <p class="summary">Get unlimited access to all of our content and unmatched reporting on everything happening in the Miami area with our website and apps.</p>
+                       </div>
+                       <div>
+                            <p class="summary bold">Exclusive extras</p>
+                            <p class="summary">Get access to the eEdition and our stories on Facebook and Google News.</p>
+                       </div>
+                       <div>
+                            <p class="summary bold">Subscriber only content</p>
+                            <p class="summary">Get access to our subscriber-only stories and videos from the Miami Herald.</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                   <div class="package small">
+                        <p class="summary bold">Subscribe with Google</p>
+                        <p class="summary">Get the same deal as above, but let Google manage your subscription and billing.</p>
+                        <a class="button ghost">Subscribe with Google</a>
+                        <small>By subscribing, you are agreeing to the Miami Herald’s Terms of Service and Privacy Policy.</small>
+                   </div> 
+            </div>
+            <div class="card" style="align-self: flex-start;">
+                   <div class="package small">
+                        <p class="summary bold">Looking for more subscription options?</p>
+                        <a class="more-link primary">Check out all of our offers</a>
+                   </div>
+            </div>
         </div>
-        <div>
-          <label for="hint-input">Hint</label>
-          <small>This is a hint</small>     
-          <input type="text" id="hint-input">
-        </div>
-        <div>
-          <label for="error-input">Error</label>
-          <small for="error-input">This is an error message</small>     
-          <input type="text" id="error-input" class="is-invalid">
-        </div>
-        <div>
-          <label for="password-input" onclick="changeType()" id="password-label">Password</label>
-          <small>Must be at least 7 characters long</small>    
-          <input type="password" id="password-input">
-        </div>
-      <button id="button" type="submit" class="button promo">submit</button>   
-    </form>  
- </div>  
-<h4 id="checkboxes-and-radios-example">Checkboxes and Radios Example</h4>
-<div style="margin-bottom:30px;">
-     <form>
-      <label class="checkbox-container">Custom Checkbox
-          <input type="checkbox">
-          <span class="checkmark"></span>
-      </label>
-      <label class="checkbox-container">Custom Radio
-        <input type="radio" checked="checked" name="radio">
-        <span class="radio"></span>
-      </label>
-      <label class="checkbox-container">Custom Radio
-        <input type="radio" name="radio">
-        <span class="radio"></span>
-      </label>
-    </form> 
-</div>
-<h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">form</span>&gt;
-     
-      &lt;<span style="color:#000080;font-weight:bold">label</span> <span style="color:#f00">for</span>=<span style="color:#00f">&#34;input&#34;</span>&gt;Default&lt;/<span style="color:#000080;font-weight:bold">label</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;This is a hint&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;           
-      &lt;<span style="color:#000080;font-weight:bold">input</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;text&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;input&#34;</span>&gt;
-      
-      &lt;<span style="color:#000080;font-weight:bold">label</span> <span style="color:#f00">for</span>=<span style="color:#00f">&#34;password-input&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;changeType()&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;password-label&#34;</span>&gt;Password&lt;/<span style="color:#000080;font-weight:bold">label</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;Must be at least 7 characters long&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;    
-      &lt;<span style="color:#000080;font-weight:bold">input</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;password&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;password-input&#34;</span>&gt;
-      
-      &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;submit&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button promo&#34;</span>&gt;submit&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;  
-      
-      &lt;<span style="color:#000080;font-weight:bold">label</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;checkbox-container&#34;</span>&gt;Custom Radio
-        &lt;<span style="color:#000080;font-weight:bold">input</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;radio&#34;</span> <span style="color:#f00">name</span>=<span style="color:#00f">&#34;radio&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;radio&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-      &lt;/<span style="color:#000080;font-weight:bold">label</span>&gt;
-      
-    &lt;/<span style="color:#000080;font-weight:bold">form</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-</code></pre></div><h4 id="rules">RULES</h4>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Typeface</td>
-<td>Noto Sans</td>
-</tr>
-<tr>
-<td>Weight</td>
-<td>400</td>
-</tr>
-<tr>
-<td>Size</td>
-<td>1 em</td>
-</tr>
-<tr>
-<td>Border</td>
-<td>1 pixel solid #989898 with a 2-pixel radius</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="select">SELECT</h2>
-<p>Custom selects use a combination of the <a href="../expander">expander</a> molecule and link-based buttons instead of the native select element for forms. Because they are based on the expander, a toggle of the <code>open</code> class will show and remove the option list. Lastly, adding the class <code>selected</code> to any of options will make it bold. Different use cases will most likely require different javascript, but we have a <a href="../../js/select.js">starter script</a> for the purposes of this demo.</p>
-<h4 id="example">EXAMPLE</h4>
-<div class="grid" style="grid-template-columns: 300px 1fr;">
-<form>
-<div class="select">
-  <span class="button big expander" onclick="this.classList.toggle('open');">Order by</span>
-  <div class="options">
-    <a class="button big" href="#" data-name="Relevance">Relevance</a>
-    <a class="button big" href="#" data-name="Newest">Newest</a>
-    <a class="button big" href="#" data-name="Oldest">Oldest</a>
+    </section>
+    <section>
+       <br><br>
+        <a class="more-link" href="../">No thanks, back to the homepage</a>
+    </section>
   </div>
 </div>
-
-</form>
-</div>
-<script async src="../../js/select.js"></script>
-<h4 id="html-1">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;select&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big expander&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;);&#34;</span>&gt;Order by&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;options&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Relevance&#34;</span>&gt;Relevance&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Newest&#34;</span>&gt;Newest&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Oldest&#34;</span>&gt;Oldest&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;paywall&#34;</span>&gt;
+&lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;primary-offer card horizontal package&#34;</span>&gt;
+       &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">h2</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;h1&#34;</span>&gt;Unlimited Digital Access&lt;/<span style="color:#000080;font-weight:bold">h2</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary caps bold&#34;</span>&gt;$1.99 for one month&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">small</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;caps&#34;</span>&gt;$10.99/month after. Cancel anytime.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt; 
+        &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+         &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button white&#34;</span>&gt;start today&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
+&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;details&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expander caps summary bold&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;show details and options&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;grid-column: span 2;&#34;</span>&gt;
+           &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
+                   &lt;<span style="color:#000080;font-weight:bold">div</span>  <span style="color:#f00">style</span>=<span style="color:#00f">&#34;grid-column: span 2;&#34;</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Read, view and watch it all&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get unlimited access to all of our content and unmatched reporting on everything happening in the Miami area with our website and apps.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+                   &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Exclusive extras&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get access to the eEdition and our stories on Facebook and Google News.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+                   &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Subscriber only content&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get access to our subscriber-only stories and videos from the Miami Herald.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+                &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
+               &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Subscribe with Google&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get the same deal as above, but let Google manage your subscription and billing.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button ghost&#34;</span>&gt;Subscribe with Google&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;By subscribing, you are agreeing to the Miami Herald’s Terms of Service and Privacy Policy.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+               &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;align-self: flex-start;&#34;</span>&gt;
+               &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Looking for more subscription options?&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link primary&#34;</span>&gt;Check out all of our offers&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+               &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
+&lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+   &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;../&#34;</span>&gt;No thanks, back to the homepage&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
-<script>
-//toggle password hide/show
-  const el = document.querySelector('#password-label');
-  function changeType() {
-  let x = document.getElementById("password-input");
-  if (x.type === "password") {
-      x.type = "text";  
-  } else {
-    x.type = "password";
-  }
-el.classList.toggle('active');
-}
-//prevent form submit
-  document.getElementById("button").addEventListener("click", function(event){
-  event.preventDefault()
-});
-</script><blockquote>
-</blockquote>
 
   </div>
 
@@ -370,7 +345,7 @@ el.classList.toggle('active');
     </div>
     
     
-    <div class="package">
+    <div class="package active">
       <h4 class="sans bold">
         <a class="" href="https://mjs2430.github.io/saratoga/paywall/">paywall (DSP)</a>
       </h4>
@@ -713,7 +688,7 @@ el.classList.toggle('active');
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/inputs/" class="active">inputs</a>
+        <a href="https://mjs2430.github.io/saratoga/inputs/" class="">inputs</a>
       </h5>
       
       

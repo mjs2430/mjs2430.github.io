@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>inputs</title>
+    <title>page title (DSP)</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -89,148 +89,42 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">inputs
+    <h2 class="page-header">page title (DSP)
     </h2>
-    <p>Inputs are designed to be placed in a center-aligned form that is 100% of the parent width (max-width of 340px on desktop) using browser defaults and to have different states based on user interaction.</p>
-<h4 id="text-inputs-example">Text Inputs Example</h4>
-<div class="dsp" style="margin-bottom: 30px;">
-    <form style="max-width: 400px;">
-        <div>
-          <label for="default-input">Default</label>
-          <input type="text" id="default-input">
-        </div>
-        <div>
-          <label for="focused-input">Focused</label>
-          <input type="text" id="focused-input">
-        </div>
-        <div>
-          <label for="hint-input">Hint</label>
-          <small>This is a hint</small>     
-          <input type="text" id="hint-input">
-        </div>
-        <div>
-          <label for="error-input">Error</label>
-          <small for="error-input">This is an error message</small>     
-          <input type="text" id="error-input" class="is-invalid">
-        </div>
-        <div>
-          <label for="password-input" onclick="changeType()" id="password-label">Password</label>
-          <small>Must be at least 7 characters long</small>    
-          <input type="password" id="password-input">
-        </div>
-      <button id="button" type="submit" class="button promo">submit</button>   
-    </form>  
- </div>  
-<h4 id="checkboxes-and-radios-example">Checkboxes and Radios Example</h4>
-<div style="margin-bottom:30px;">
-     <form>
-      <label class="checkbox-container">Custom Checkbox
-          <input type="checkbox">
-          <span class="checkmark"></span>
-      </label>
-      <label class="checkbox-container">Custom Radio
-        <input type="radio" checked="checked" name="radio">
-        <span class="radio"></span>
-      </label>
-      <label class="checkbox-container">Custom Radio
-        <input type="radio" name="radio">
-        <span class="radio"></span>
-      </label>
-    </form> 
+    <p>The title displays center aligned on all breakpoints and pages, with the exception of the purchase flow, where it is only displayed over the left half of the grid on larger breakpoints. For the purchase flow, make sure add the class of &lsquo;purchase-flow&rsquo; to the &lsquo;title&rsquo; section, and remove the classes &lsquo;package small&rsquo; from the interior div. For the Review Order page, you don&rsquo;t need to use anything for the title but a section with the h1 class='sans bold h3&rsquo; in it.</p>
+<h4 id="example">Example</h4>
+<div class="dsp example">
+    <section class="title">
+            <h1 class="sans bold h3">Local news wherever you go</h1>
+            <p class="sans">Thanks for reading! You’ve read all your free articles this month. You must have an account to continue.<br>Subscribe or <a href="../../saratoga/decks/purchase-flow/sign-up" class="more-link inline">Sign up</a></p>
+    </section> 
+</div>
+<h4 id="purchase-flow-example">Purchase flow example</h4>
+<div class="dsp example">
+    <section class="title purchase-flow">
+      <div>
+          <h1 class="sans bold h3">Sign up</h1>
+          <p class="summary">Use your email address or a social account. 
+    Already have an account? <a href="../../saratoga/decks/purchase-flow/sign-in/" class="more-link inline">Sign in</a></p>
+      </div>
+    </section>
 </div>
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">form</span>&gt;
-     
-      &lt;<span style="color:#000080;font-weight:bold">label</span> <span style="color:#f00">for</span>=<span style="color:#00f">&#34;input&#34;</span>&gt;Default&lt;/<span style="color:#000080;font-weight:bold">label</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;This is a hint&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;           
-      &lt;<span style="color:#000080;font-weight:bold">input</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;text&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;input&#34;</span>&gt;
-      
-      &lt;<span style="color:#000080;font-weight:bold">label</span> <span style="color:#f00">for</span>=<span style="color:#00f">&#34;password-input&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;changeType()&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;password-label&#34;</span>&gt;Password&lt;/<span style="color:#000080;font-weight:bold">label</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;Must be at least 7 characters long&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;    
-      &lt;<span style="color:#000080;font-weight:bold">input</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;password&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;password-input&#34;</span>&gt;
-      
-      &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;submit&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button promo&#34;</span>&gt;submit&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;  
-      
-      &lt;<span style="color:#000080;font-weight:bold">label</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;checkbox-container&#34;</span>&gt;Custom Radio
-        &lt;<span style="color:#000080;font-weight:bold">input</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;radio&#34;</span> <span style="color:#f00">name</span>=<span style="color:#00f">&#34;radio&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;radio&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-      &lt;/<span style="color:#000080;font-weight:bold">label</span>&gt;
-      
-    &lt;/<span style="color:#000080;font-weight:bold">form</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+     &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">h2</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;sans bold&#34;</span>&gt;Sign up&lt;/<span style="color:#000080;font-weight:bold">h2</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Use your email address or a social account.&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
+Already have an account? &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link inline&#34;</span>&gt;Sign in&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+     &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;</code></pre></div>
+<h4 id="purchase-flow-html">Purchase Flow HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;title purchase-flow&#34;</span>&gt;
+&lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">h1</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;sans bold h3&#34;</span>&gt;Sign up&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Use your email address or a social account. 
+Already have an account? &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;/saratoga/decks/purchase-flow/sign-in/&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link inline&#34;</span>&gt;Sign in&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-</code></pre></div><h4 id="rules">RULES</h4>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Typeface</td>
-<td>Noto Sans</td>
-</tr>
-<tr>
-<td>Weight</td>
-<td>400</td>
-</tr>
-<tr>
-<td>Size</td>
-<td>1 em</td>
-</tr>
-<tr>
-<td>Border</td>
-<td>1 pixel solid #989898 with a 2-pixel radius</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="select">SELECT</h2>
-<p>Custom selects use a combination of the <a href="../expander">expander</a> molecule and link-based buttons instead of the native select element for forms. Because they are based on the expander, a toggle of the <code>open</code> class will show and remove the option list. Lastly, adding the class <code>selected</code> to any of options will make it bold. Different use cases will most likely require different javascript, but we have a <a href="../../js/select.js">starter script</a> for the purposes of this demo.</p>
-<h4 id="example">EXAMPLE</h4>
-<div class="grid" style="grid-template-columns: 300px 1fr;">
-<form>
-<div class="select">
-  <span class="button big expander" onclick="this.classList.toggle('open');">Order by</span>
-  <div class="options">
-    <a class="button big" href="#" data-name="Relevance">Relevance</a>
-    <a class="button big" href="#" data-name="Newest">Newest</a>
-    <a class="button big" href="#" data-name="Oldest">Oldest</a>
-  </div>
-</div>
-
-</form>
-</div>
-<script async src="../../js/select.js"></script>
-<h4 id="html-1">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;select&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big expander&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;);&#34;</span>&gt;Order by&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;options&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Relevance&#34;</span>&gt;Relevance&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Newest&#34;</span>&gt;Newest&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">data-name</span>=<span style="color:#00f">&#34;Oldest&#34;</span>&gt;Oldest&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
-<script>
-//toggle password hide/show
-  const el = document.querySelector('#password-label');
-  function changeType() {
-  let x = document.getElementById("password-input");
-  if (x.type === "password") {
-      x.type = "text";  
-  } else {
-    x.type = "password";
-  }
-el.classList.toggle('active');
-}
-//prevent form submit
-  document.getElementById("button").addEventListener("click", function(event){
-  event.preventDefault()
-});
-</script><blockquote>
-</blockquote>
+&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;</code></pre></div>
 
   </div>
 
@@ -624,7 +518,7 @@ el.classList.toggle('active');
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/page-title/" class="">page title (DSP)</a>
+        <a href="https://mjs2430.github.io/saratoga/page-title/" class="active">page title (DSP)</a>
       </h5>
       
       
@@ -713,7 +607,7 @@ el.classList.toggle('active');
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/inputs/" class="active">inputs</a>
+        <a href="https://mjs2430.github.io/saratoga/inputs/" class="">inputs</a>
       </h5>
       
       

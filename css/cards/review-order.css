@@ -1,0 +1,40 @@
+/**
+ * Review Order
+ */
+
+
+.dsp .review-order {
+    display: flex;
+    justify-content: center;
+}
+
+.dsp .review-order > * {
+    width: 100%;
+}
+
+.dsp .review-order .package {
+   align-items: flex-start;
+   text-align: left;
+}
+
+.dsp .review-order .flex {
+    justify-content: space-between;
+    padding: 0 0 10px;
+    margin: 0 15px;
+    border-bottom: 1px solid #989898;
+}
+
+@media (min-width: 768px) {
+    
+.dsp .review-order .flex-columns {
+     display: block;
+     flex-wrap: wrap;
+     margin: 0; 
+}
+    
+.dsp .review-order > * {
+    max-width: 450px;
+}
+    
+}
+

@@ -2,27 +2,17 @@
 DSP Overrides
 **/
 
-.dsp {
-    padding: 15px 0;
-}
-
-.dsp .review-order {
-    display: flex;
-    justify-content: center;
-}
-
-.dsp .review-order > * {
-    width: 100%;
-}
-
-.dsp .review-order .package {
-   align-items: center;
-}
-
 .dsp h1,
 .dsp h2,
 .dsp h3 {
     margin: 0;
+}
+
+.dsp .h3 {
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    text-transform: none;
 }
 
 .dsp button {
@@ -39,11 +29,11 @@ DSP Overrides
 
 .dsp .package {   
     padding: 30px 15px;
+    align-items: center;
 }
 
 .dsp .package.small {
     padding: 15px;
-    align-items: center;
 }
 
 .dsp .paper,
@@ -74,8 +64,9 @@ DSP Overrides
 }
 
 .dsp .expander:after {
+  content: "\f0d8"; 
+  font: 700 14px Font Awesome\ 5 Free;
   width: 10px;
-  filter: opacity(56%);
 }
 
 .dsp small.expander {
@@ -89,7 +80,6 @@ DSP Overrides
 }
 
 .dsp section {
-    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -114,12 +104,6 @@ DSP Overrides
     font-size: 12px;
 }
 
-.dsp .flex {
-    justify-content: space-between;
-    padding: 0 0 10px;
-    margin: 0 15px;
-    border-bottom: 1px solid #989898;
-}
 
 .dsp .flex-columns > * {
     margin: 15px 0;
@@ -127,22 +111,30 @@ DSP Overrides
 
 /***** Media queries ****/
 
-@media (min-width: 640px) {
 
+@media (min-width: 768px) {
+    
 .dsp section {
-    max-width: 800px;
+    max-width: 450px;
 }
     
+}
 
-.dsp .review-order > * {
-    max-width: 400px;
+
+@media (min-width: 900px) {
+        
+.dsp .h3 {
+    font-size: 24px;
+    line-height: 32px;
 }
-    
-    
+   
 .dsp .grid {
    grid-template-columns: 1fr 1fr;     
 }
     
+.dsp section {
+    max-width: 780px;
+}
 
 .dsp .horizontal.package.small  {
     align-self: flex-start;
@@ -158,11 +150,6 @@ DSP Overrides
      display: block;
 }
 
- .dsp .flex-columns {
-     display: flex;
-     flex-wrap: wrap;
-     margin: 0;
-}
     
 .dsp .flex-columns > * {
     margin: 7.5px 0;

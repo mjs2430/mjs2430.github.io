@@ -19,8 +19,13 @@
 
 .disabled {
   background-color: #989898;
-}  
+}
 
+.white {
+    background-color: #ffffff;
+    border-color: #ffffff;
+} 
+ 
 .impact *,
 .promo * { 
   border-color: white;
