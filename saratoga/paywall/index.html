@@ -30,7 +30,11 @@
     <link rel="stylesheet" href="../../css/molecules/utilities.css">
     <link rel="stylesheet" href="../../css/molecules/progress.css">
     <link rel="stylesheet" href="../../css/molecules/page-title.css">
-    
+    <link rel="stylesheet" href="../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../css/molecules/tertiary-offer.css">
+
 
     
     <link rel="stylesheet" href="../../css/cards/grid.css">
@@ -61,6 +65,7 @@
     <link rel="stylesheet" href="../../css/cards/dsp.css">
     <link rel="stylesheet" href="../../css/cards/review-order.css">
     <link rel="stylesheet" href="../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../css/cards/subscription-offers.css">
     <link rel="stylesheet" href="../../css/cards/hidden.css">
 
     
@@ -91,29 +96,29 @@
   <div class="paper story-body details">
     <h2 class="page-header">paywall (DSP)
     </h2>
-    <p>The paywall-card uses the paper molecule to create lift, the flex-columns card to vertically space each item inside the paper, and the package molecule.</p>
+    <p>The paywall uses a <code>.primary-offer</code> card, a <code>.grid</code> for the layout, and other molecules like <code>.expander</code> to hide and show content. Pair it with a <code>&lt;section class='title'&gt;</code> to create a <a href="../../saratoga/decks/paywall">full paywall page.</a></p>
 <h4 id="example">Example</h4>
-<div class="dsp" style="margin-bottom: 30px;">
+<div class="example">
+<div class="dsp" style="margin: 30px 0;">
   <div class="paywall">
     <section>
-        <div class="primary-offer card horizontal package">
+        <div class="primary-offer card">
            <div>
                 <h2 class="h1">Unlimited Digital Access</h2>
-                <p class="summary caps bold">$1.99 for one month</p>
-                <small class="caps">$10.99/month after. Cancel anytime.</small>
-            </div>
-            <div>
-             <a class="button white">start today</a>
+                <p class="h3 caps bold">$1.99 for one month</p>
+                <p class="summary caps">$10.99/month after. Cancel anytime.</p>
+                <a class="button white">start today</a>
             </div>
         </div>
     </section>
-    <section class="details">
+    <section>
         <p class="expander caps summary bold" onclick="this.classList.toggle('open')">show details and options</p>
         <div class="grid">
-            <div class="card" style="grid-column: span 2;">
+        <div class="offer-details">
+            <div class="card">
                <div class="package">
                     <div class="grid">
-                       <div  style="grid-column: span 2;">
+                       <div>
                             <p class="summary bold">Read, view and watch it all</p>
                             <p class="summary">Get unlimited access to all of our content and unmatched reporting on everything happening in the Miami area with our website and apps.</p>
                        </div>
@@ -128,10 +133,11 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+        </div>
+            <div class="card tertiary-offer">
                    <div class="package small">
-                        <p class="summary bold">Subscribe with Google</p>
-                        <p class="summary">Get the same deal as above, but let Google manage your subscription and billing.</p>
+                        <p class="h3 sans">Subscribe with Google</p>
+                        <p class="summary">Get the same Unlimited Digital Access deal as above, but let Google manage your subscription and billing.</p>
                         <a class="button ghost">Subscribe with Google</a>
                         <small>By subscribing, you are agreeing to the Miami Herald’s Terms of Service and Privacy Policy.</small>
                    </div> 
@@ -143,69 +149,70 @@
                    </div>
             </div>
         </div>
-    </section>
+      </section>
     <section>
        <br><br>
         <a class="more-link" href="../">No thanks, back to the homepage</a>
     </section>
   </div>
 </div>
+</div>
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;paywall&#34;</span>&gt;
-&lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;primary-offer card horizontal package&#34;</span>&gt;
-       &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">h2</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;h1&#34;</span>&gt;Unlimited Digital Access&lt;/<span style="color:#000080;font-weight:bold">h2</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary caps bold&#34;</span>&gt;$1.99 for one month&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">small</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;caps&#34;</span>&gt;$10.99/month after. Cancel anytime.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt; 
-        &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-         &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button white&#34;</span>&gt;start today&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
-&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;details&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expander caps summary bold&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;show details and options&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;grid-column: span 2;&#34;</span>&gt;
-           &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
-                &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
-                   &lt;<span style="color:#000080;font-weight:bold">div</span>  <span style="color:#f00">style</span>=<span style="color:#00f">&#34;grid-column: span 2;&#34;</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Read, view and watch it all&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get unlimited access to all of our content and unmatched reporting on everything happening in the Miami area with our website and apps.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                   &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Exclusive extras&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get access to the eEdition and our stories on Facebook and Google News.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                   &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Subscriber only content&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get access to our subscriber-only stories and videos from the Miami Herald.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-                &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;paywall&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;primary-offer card&#34;</span>&gt;
+           &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">h2</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;h1&#34;</span>&gt;Unlimited Digital Access&lt;/<span style="color:#000080;font-weight:bold">h2</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;h3 caps bold&#34;</span>&gt;$1.99 for one month&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary caps&#34;</span>&gt;$10.99/month after. Cancel anytime.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button white&#34;</span>&gt;start today&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
             &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
         &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
-               &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Subscribe with Google&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get the same deal as above, but let Google manage your subscription and billing.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">button</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button ghost&#34;</span>&gt;Subscribe with Google&lt;/<span style="color:#000080;font-weight:bold">button</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;By subscribing, you are agreeing to the Miami Herald’s Terms of Service and Privacy Policy.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
-               &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;expander caps summary bold&#34;</span> <span style="color:#f00">onclick</span>=<span style="color:#00f">&#34;this.classList.toggle(&#39;open&#39;)&#34;</span>&gt;show details and options&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;offer-details&#34;</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span>&gt;
+               &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package&#34;</span>&gt;
+                    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span>&gt;
+                       &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                            &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Read, view and watch it all&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                            &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get unlimited access to all of our content and unmatched reporting on everything happening in the Miami area with our website and apps.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                       &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+                       &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                            &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Exclusive extras&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                            &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get access to the eEdition and our stories on Facebook and Google News.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                       &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+                       &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
+                            &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Subscriber only content&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                            &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get access to our subscriber-only stories and videos from the Miami Herald.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                       &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+                    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+                &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt; 
         &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;align-self: flex-start;&#34;</span>&gt;
-               &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Looking for more subscription options?&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link primary&#34;</span>&gt;Check out all of our offers&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-               &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card tertiary-offer&#34;</span>&gt;
+                   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;h3 sans&#34;</span>&gt;Subscribe with Google&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Get the same Unlimited Digital Access deal as above, but let Google manage your subscription and billing.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button ghost&#34;</span>&gt;Subscribe with Google&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;By subscribing, you are agreeing to the Miami Herald’s Terms of Service and Privacy Policy.&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+                   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt; 
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;card&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;align-self: flex-start;&#34;</span>&gt;
+                   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary bold&#34;</span>&gt;Looking for more subscription options?&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
+                        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link primary&#34;</span>&gt;Check out all of our offers&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+                   &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+            &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
         &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
-&lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
-   &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;../&#34;</span>&gt;No thanks, back to the homepage&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+      &lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+       &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;../&#34;</span>&gt;No thanks, back to the homepage&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
   </div>
 
@@ -554,6 +561,14 @@
     
     <div class="package">
       <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/subscription-offers/">subscription offers page (DSP)</a>
+      </h4>
+      <p class="summary">DSP subscription offers page</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
         <a class="" href="https://mjs2430.github.io/saratoga/decks/topic/">topic</a>
       </h4>
       <p class="summary">The topic layout.</p>
@@ -584,12 +599,12 @@
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/purchase-info-dsp/" class="">expander (DSP)</a>
+        <a href="https://mjs2430.github.io/saratoga/impact/" class="">impact</a>
       </h5>
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/impact/" class="">impact</a>
+        <a href="https://mjs2430.github.io/saratoga/offer-details/" class="">offer details (DSP)</a>
       </h5>
       
       
@@ -609,17 +624,32 @@
       
       
       <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/primary-offer/" class="">primary offer (DSP)</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
         <a href="https://mjs2430.github.io/saratoga/progress/" class="">progress bar (DSP)</a>
       </h5>
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/expander-dsp/" class="">purchase info (DSP)</a>
+        <a href="https://mjs2430.github.io/saratoga/purchase-info-dsp/" class="">purchase info (DSP)</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/secondary-offer/" class="">secondary offer (DSP)</a>
       </h5>
       
       
       <h5 class="sans bold ">
         <a href="https://mjs2430.github.io/saratoga/social-media/" class="">social-media</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/tertiary-offer/" class="">tertiary offer (DSP)</a>
       </h5>
       
       

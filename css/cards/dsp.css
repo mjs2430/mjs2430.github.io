@@ -8,19 +8,37 @@ DSP Overrides
     margin: 0;
 }
 
+.dsp .h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    text-transform: none;  
+}
+
 .dsp .h3 {
-    font-size: 19px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: 10px;
     text-transform: none;
+}
+
+.dsp .h4 {
+    font: 700 19px var(--sans);
+    line-height: 28px;
 }
 
 .dsp button {
     width: 100%;
 }
 
+.dsp .button {
+    padding: 10px 30px;
+    align-self: center;
+}
+
 .dsp .more-link {
     padding: 0;
+    cursor: pointer;
 }
 
 .dsp.example {
@@ -122,18 +140,13 @@ DSP Overrides
 
 
 @media (min-width: 900px) {
-        
-.dsp .h3 {
-    font-size: 24px;
-    line-height: 32px;
-}
-   
+
 .dsp .grid {
    grid-template-columns: 1fr 1fr;     
 }
     
 .dsp section {
-    max-width: 780px;
+    max-width: 900px;
 }
 
 .dsp .horizontal.package.small  {

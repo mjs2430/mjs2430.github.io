@@ -1,0 +1,17 @@
+/*****
+** Primary offer molecule
+****/
+
+.dsp .secondary-offer {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255,255,255,.7), rgba(255,255,255,.95) 50%,rgba(255,255,255,.7) 100%), url(    https://media.mcclatchy.com/creatives/subscription-offer-page-images/sports/football.jpg);background-size: cover;background-position: center;
+}
+
+.dsp .secondary-offer p{
+    margin: 0;
+}
+
+ 
+.dsp .secondary-offer .button {
+     margin: 20px 0 0px;
+}

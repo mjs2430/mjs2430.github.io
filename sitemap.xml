@@ -88,10 +88,6 @@
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/saratoga/purchase-info-dsp/</loc>
-  </url>
-  
-  <url>
     <loc>https://mjs2430.github.io/saratoga/figcaption/</loc>
   </url>
   
@@ -216,6 +212,10 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/saratoga/offer-details/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/p/</loc>
   </url>
   
@@ -240,6 +240,10 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/saratoga/primary-offer/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/progress/</loc>
   </url>
   
@@ -260,7 +264,7 @@
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/saratoga/expander-dsp/</loc>
+    <loc>https://mjs2430.github.io/saratoga/purchase-info-dsp/</loc>
   </url>
   
   <url>
@@ -277,6 +281,10 @@
   
   <url>
     <loc>https://mjs2430.github.io/saratoga/decks/search/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/saratoga/secondary-offer/</loc>
   </url>
   
   <url>
@@ -308,7 +316,15 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/saratoga/decks/subscription-offers/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/promo/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/saratoga/tertiary-offer/</loc>
   </url>
   
   <url>

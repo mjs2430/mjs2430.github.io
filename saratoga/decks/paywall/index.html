@@ -30,7 +30,11 @@
     <link rel="stylesheet" href="../../../css/molecules/utilities.css">
     <link rel="stylesheet" href="../../../css/molecules/progress.css">
     <link rel="stylesheet" href="../../../css/molecules/page-title.css">
-    
+    <link rel="stylesheet" href="../../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/tertiary-offer.css">
+
 
     
     <link rel="stylesheet" href="../../../css/cards/grid.css">
@@ -61,6 +65,7 @@
     <link rel="stylesheet" href="../../../css/cards/dsp.css">
     <link rel="stylesheet" href="../../../css/cards/review-order.css">
     <link rel="stylesheet" href="../../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../../css/cards/subscription-offers.css">
     <link rel="stylesheet" href="../../../css/cards/hidden.css">
 
     
@@ -156,70 +161,68 @@ gpt-ad {
       <p>Instead of meeting at the prosecutor’s Miami headquarters, the two men — both with professional roots in the prestigious Washington law firm of Kirkland & Ellis — convened at the Marriott in West Palm Beach, about 70 miles away. For Lefkowitz, 44, a U.S. special envoy to North Korea and corporate lawyer, the meeting was critical.</p>
     </article>    
 
-    <main class="dsp">
-      <div class="paywall-overlay">
+<main class="dsp">
+  <div class="paywall-overlay">
         <section class="title">
                 <h1 class="sans bold h3">Local news wherever you go</h1>
-                <p class="sans">Thanks for reading! You’ve read all your free articles this month. You must have an account to continue.<br>Subscribe or <a href="../../../saratoga/decks/purchase-flow/sign-up" class="more-link inline">Sign up</a></p>
+                <p class="sans">Thanks for reading! You’ve read all your free articles this month. You must have an account to continue. Subscribe or <a href="../../../saratoga/decks/purchase-flow/sign-up" class="more-link inline">Sign up</a></p>
         </section> 
 
-        <section>
-          <div class="paywall">
-            <section>
-                <div class="primary-offer card horizontal package">
-                   <div>
-                        <h2 class="h1">Unlimited Digital Access</h2>
-                        <p class="summary caps bold">$1.99 for one month</p>
-                        <small class="caps">$10.99/month after. Cancel anytime.</small>
-                    </div>
-                    <div>
-                     <a class="button white" href="../../../saratoga/decks/purchase-flow/sign-up/">start today</a>
-                    </div>
-                </div>
-            </section>
-            <section class="details">
-                <p class="expander caps summary bold" onclick="this.classList.toggle('open')">show details and options</p>
-                <div class="grid">
-                    <div class="card" style="grid-column: span 2;">
-                       <div class="package">
-                            <div class="grid">
-                               <div  style="grid-column: span 2;">
-                                    <p class="summary bold">Read, view and watch it all</p>
-                                    <p class="summary">Get unlimited access to all of our content and unmatched reporting on everything happening in the Miami area with our website and apps.</p>
-                               </div>
-                               <div>
-                                    <p class="summary bold">Exclusive extras</p>
-                                    <p class="summary">Get access to the eEdition and our stories on Facebook and Google News.</p>
-                               </div>
-                               <div>
-                                    <p class="summary bold">Subscriber only content</p>
-                                    <p class="summary">Get access to our subscriber-only stories and videos from the Miami Herald.</p>
-                               </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                           <div class="package small">
-                                <p class="summary bold">Subscribe with Google</p>
-                                <p class="summary">Get the same deal as above, but let Google manage your subscription and billing.</p>
-                                <a class="button ghost">Subscribe with Google</a>
-                                <small>By subscribing, you are agreeing to the Miami Herald’s Terms of Service and Privacy Policy.</small>
-                           </div>
-                    </div>
-                    <div class="card" style="align-self: flex-start;">
-                           <div class="package small">
-                                <p class="summary bold">Looking for more subscription options?</p>
-                                <a class="more-link primary">Check out all of our offers</a>
-                           </div>
+  <div class="paywall">
+    <section>
+        <div class="primary-offer card">
+           <div>
+                <h2 class="h1">Unlimited Digital Access</h2>
+                <p class="h3 caps bold">$1.99 for one month</p>
+                <p class="summary caps">$10.99/month after. Cancel anytime.</p>
+                <a class="button white">start today</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <p class="expander caps summary bold" onclick="this.classList.toggle('open')">show details and options</p>
+        <div class="grid">
+        <div class="offer-details">
+            <div class="card">
+               <div class="package">
+                    <div class="grid">
+                       <div>
+                            <p class="summary bold">Read, view and watch it all</p>
+                            <p class="summary">Get unlimited access to all of our content and unmatched reporting on everything happening in the Miami area with our website and apps.</p>
+                       </div>
+                       <div>
+                            <p class="summary bold">Exclusive extras</p>
+                            <p class="summary">Get access to the eEdition and our stories on Facebook and Google News.</p>
+                       </div>
+                       <div>
+                            <p class="summary bold">Subscriber only content</p>
+                            <p class="summary">Get access to our subscriber-only stories and videos from the Miami Herald.</p>
+                       </div>
                     </div>
                 </div>
-            </section>
-            <section>
-               <br><br>
-                <a class="more-link" href="../../">No thanks, back to the homepage</a>
-            </section>
-            </div> 
-        </section> 
+            </div>
+        </div>
+            <div class="card tertiary-offer">
+                   <div class="package small">
+                        <p class="h3 sans">Subscribe with Google</p>
+                        <p class="summary">Get the same deal as above, but let Google manage your subscription and billing.</p>
+                        <a class="button ghost">Subscribe with Google</a>
+                        <small>By subscribing, you are agreeing to the Miami Herald’s Terms of Service and Privacy Policy.</small>
+                   </div> 
+            </div>
+            <div class="card" style="align-self: flex-start;">
+                   <div class="package small">
+                        <p class="summary bold">Looking for more subscription options?</p>
+                        <a class="more-link primary">Check out all of our offers</a>
+                   </div>
+            </div>
+        </div>
+      </section>
+    <section>
+       <br><br>
+        <a class="more-link" href="../">No thanks, back to the homepage</a>
+    </section>
+  </div>
       </div>
     </main>
 </content>

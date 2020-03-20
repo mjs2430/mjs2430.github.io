@@ -30,7 +30,11 @@
     <link rel="stylesheet" href="../../css/molecules/utilities.css">
     <link rel="stylesheet" href="../../css/molecules/progress.css">
     <link rel="stylesheet" href="../../css/molecules/page-title.css">
-    
+    <link rel="stylesheet" href="../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../css/molecules/tertiary-offer.css">
+
 
     
     <link rel="stylesheet" href="../../css/cards/grid.css">
@@ -61,6 +65,7 @@
     <link rel="stylesheet" href="../../css/cards/dsp.css">
     <link rel="stylesheet" href="../../css/cards/review-order.css">
     <link rel="stylesheet" href="../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../css/cards/subscription-offers.css">
     <link rel="stylesheet" href="../../css/cards/hidden.css">
 
     
@@ -91,7 +96,7 @@
   <div class="paper story-body details">
     <h2 class="page-header">page title (DSP)
     </h2>
-    <p>The title displays center aligned on all breakpoints and pages, with the exception of the purchase flow, where it is only displayed over the left half of the grid on larger breakpoints. For the purchase flow, make sure add the class of &lsquo;purchase-flow&rsquo; to the &lsquo;title&rsquo; section, and remove the classes &lsquo;package small&rsquo; from the interior div. For the Review Order page, you don&rsquo;t need to use anything for the title but a section with the h1 class='sans bold h3&rsquo; in it.</p>
+    <p>The title displays center aligned on all breakpoints and pages, with the exception of the purchase flow, where it is only displayed over the left half of the grid on larger breakpoints. For the purchase flow, make sure add the class of <code>purchase-flow</code> to the <code>title</code> section, and remove the classes <code>package small</code> from the interior div. For the Review Order page, you don&rsquo;t need to use anything for the title but a section with <code>&lt;h1 class='sans bold h3'&gt;</code> in it.</p>
 <h4 id="example">Example</h4>
 <div class="dsp example">
     <section class="title">
@@ -110,7 +115,7 @@
     </section>
 </div>
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;title&#34;</span>&gt;
      &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">h2</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;sans bold&#34;</span>&gt;Sign up&lt;/<span style="color:#000080;font-weight:bold">h2</span>&gt;
       &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;Use your email address or a social account.&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
@@ -473,6 +478,14 @@ Already have an account? &lt;<span style="color:#000080;font-weight:bold">a</spa
     
     <div class="package">
       <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/saratoga/decks/subscription-offers/">subscription offers page (DSP)</a>
+      </h4>
+      <p class="summary">DSP subscription offers page</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
         <a class="" href="https://mjs2430.github.io/saratoga/decks/topic/">topic</a>
       </h4>
       <p class="summary">The topic layout.</p>
@@ -503,12 +516,12 @@ Already have an account? &lt;<span style="color:#000080;font-weight:bold">a</spa
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/purchase-info-dsp/" class="">expander (DSP)</a>
+        <a href="https://mjs2430.github.io/saratoga/impact/" class="">impact</a>
       </h5>
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/impact/" class="">impact</a>
+        <a href="https://mjs2430.github.io/saratoga/offer-details/" class="">offer details (DSP)</a>
       </h5>
       
       
@@ -528,17 +541,32 @@ Already have an account? &lt;<span style="color:#000080;font-weight:bold">a</spa
       
       
       <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/primary-offer/" class="">primary offer (DSP)</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
         <a href="https://mjs2430.github.io/saratoga/progress/" class="">progress bar (DSP)</a>
       </h5>
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/expander-dsp/" class="">purchase info (DSP)</a>
+        <a href="https://mjs2430.github.io/saratoga/purchase-info-dsp/" class="">purchase info (DSP)</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/secondary-offer/" class="">secondary offer (DSP)</a>
       </h5>
       
       
       <h5 class="sans bold ">
         <a href="https://mjs2430.github.io/saratoga/social-media/" class="">social-media</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/tertiary-offer/" class="">tertiary offer (DSP)</a>
       </h5>
       
       

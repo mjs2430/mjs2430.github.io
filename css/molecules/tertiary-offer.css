@@ -1,0 +1,36 @@
+/**
+ * SwG card
+ **/
+
+.dsp .tertiary-offer {
+    align-self: flex-start;
+}
+
+.dsp .tertiary-offer .package{
+    align-items: center;
+    text-align: center;
+}
+
+.dsp .tertiary-offer small {
+    margin-top: 5px;
+    color: #707070;
+    font-size: 11px;
+    max-width: 300px;
+}
+
+.dsp .tertiary-offer .button {
+    margin-top: 20px;
+    align-self: center;
+}
+
+.dsp .tertiary-offer .h4 {
+    margin-top: 30px;
+}
+
+.dsp .tertiary-offer .h3 {
+    margin-bottom: 0px;
+}
+
+.dsp .tertiary-offer p {
+    max-width: 600px;
+}

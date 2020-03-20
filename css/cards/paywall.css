@@ -17,129 +17,33 @@
                 0px -5px 60px 80px rgba(255,255,255,1);
 }
 
-.dsp .paywall-stop {
-    transition: all 1s; 
-    top: 20%;
-}
 
-.dsp .paywall .h1 {
-    --hf: var(--serif);
-    --ht: none;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.dsp .paywall p {
-    margin: 0;
-}
-
-.dsp .paywall .expander { 
-    margin: 15px 0;
-}
-
-.dsp .paywall .package {
-    padding: 30px 15px;
-    text-align: center;
-}
- 
 .dsp .paywall .package.small {
     padding: 15px;
 }
 
-.dsp .paywall .primary-offer {
-    background-color: #31409f;
-}
-
-.dsp .paywall .primary-offer > * {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-} 
-
-.dsp .paywall .primary-offer p{
-    color: #fff;
-}
-
-.dsp .paywall small {
-    margin-top: 5px;
-    color: #707070;
-    font-size: 11px;
-}
-
-.dsp .paywall .primary-offer small {
-    color: #c2c2c2;
-    margin-top: 2px;
-}
-
-.dsp .paywall .button {
-    width: auto;
-    margin-top: 20px;
-    align-self: center;
-}
-
-.dsp .paywall .details {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.dsp .paywall .details .grid {
-    width: 100%;
-}
-
-.dsp .paywall .details .grid > * {
-    grid-column: span 2;
-}
-
 .dsp .paywall .expander {
     color: #31409f;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
 }
 
 .dsp .paywall .expander:after {
     color: #31409f;
 }
 
-
-@media (min-width: 660px) { 
-.dsp .paywall .card.horizontal {
-    display: grid;
-    grid-template-columns:1fr;
-    grid-gap: 0px;
-}
-}
-
 @media (min-width: 900px) {  
-.dsp .paywall .card.horizontal {
-    grid-template-columns: 2fr 1fr;
-}
-
-.dsp .paywall .primary-offer > * {
-    align-items: flex-start;
-}
-    
-.dsp .paywall .button {
-    align-self: flex-start;
-}
-    
-.dsp .paywall .primary-offer .button {
-     align-self: flex-end;
-     margin-top: 15px;
-}
-    
-.dsp .paywall .package {
-    padding: 30px;
-    align-items: flex-start;
-    text-align: left;
+  
+.dsp .paywall .grid {
+     grid-gap: 30px;
  }
     
-.dsp .paywall .grid {
-        grid-gap: 30px;
+    .dsp .paywall section {
+        max-width: 900px;
     }
     
-.dsp .paywall .details .grid > * {
-    grid-column: span 1;
-}
+    
     
 } 
 

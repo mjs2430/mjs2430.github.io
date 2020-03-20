@@ -15,16 +15,22 @@
     
 .promo {
   background-color: #31409F;
-}
+} 
 
 .disabled {
   background-color: #989898;
 }
 
 .white {
-    background-color: #ffffff;
-    border-color: #ffffff;
+    background-color: #fff;
+    border-color: #fff;
+    color: #222; 
 } 
+
+.promo-light {
+    background-color: #5169B8;
+    color: #fff;
+}
  
 .impact *,
 .promo * { 
