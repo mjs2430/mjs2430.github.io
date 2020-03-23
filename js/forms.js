@@ -15,6 +15,8 @@ $('[type="submit"]').on('click', function () {
     // this adds 'required' class to all the required inputs under the same <form> as the submit button
    if ($("#submit").css('background-color') === 'rgb(49, 64, 159)') {
       toggleModal('main-modal');
+          $("#sign-up-form").preventDefault() 
+
    }    
     $(this)
         .closest('form')
