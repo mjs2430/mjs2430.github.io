@@ -13,11 +13,13 @@ el.classList.toggle('active');
 //submit validation
 $('[type="submit"]').on('click', function () {
     // this adds 'required' class to all the required inputs under the same <form> as the submit button
+   if ($("#submit").css('background-color') === 'rgb(49, 64, 159)') {
+      toggleModal('main-modal');
+   }    
     $(this)
         .closest('form')
         .find('[required]')
-        .addClass('required');
-  //event.preventDefault()
+        .addClass('required');   
 });
 
 //show/hide cc form 

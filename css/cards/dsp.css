@@ -36,6 +36,24 @@ DSP Overrides
     align-self: center;
 }
 
+.dsp a {
+    --lc: #5169B8;
+}
+
+.dsp .s-modal a {
+    --lc: #fff;
+}
+
+.dsp ul {
+    padding: 0;
+    text-align: left;
+}
+.dsp ul li {
+    font: 400 14px var(--sans); 
+    line-height: 21px;
+    margin: 5px 0;
+}
+
 .dsp .more-link {
     padding: 0;
     cursor: pointer;
@@ -48,6 +66,7 @@ DSP Overrides
 .dsp .package {   
     padding: 30px 15px;
     align-items: center;
+    text-align: center;
 }
 
 .dsp .package.small {
@@ -127,6 +146,7 @@ DSP Overrides
     margin: 15px 0;
 }
 
+
 /***** Media queries ****/
 
 
@@ -153,6 +173,7 @@ DSP Overrides
     align-self: flex-start;
     grid-template-columns: 1fr;
     order: 2;
+    text-align: center;
 }
     
 .dsp .horizontal small.expander {

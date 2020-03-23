@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>purchase flow new payment</title>
+    <title>purchase flow confirmation</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -113,80 +113,45 @@ gpt-ad {
     </div>
     <main class="dsp" style="padding-bottom: 50px;">
 
-<section>
-    <div class="package">
-       <div class="progress">
-        <span>1. Account</span>
-        <span class="active">2. Payment</span>
-        <span>3. Review</span>
-       </div>
-    </div>
-</section>
-
-<section class="title purchase-flow">
+<section class="title">
   <div>
-      <h1 class="sans bold h3">Choose a payment method</h1>
-      <p class="summary">Use a debit/credit card or a digital payment method.</p>
-      <small class="secure">secure transaction<i class="fas fa-lock"></i></small>
+      <h1 class="sans bold h3">Thank you for supporting local news!</h1>
+      <a href="../../../../saratoga/" class="more-link primary">Go back to reading your article</a>
   </div>
 </section>
 
 <section>
   <div class="grid">
-        <div class="paper" style="order: 2;">
-            <div class="package">
-                <form> 
-                  <label class="checkbox-container">Use debit/credit card
-                    <input type="radio" id="cc-radio" name="radio" onclick="document.getElementById('cc-form').style.display = 'block'"><i class="far fa-credit-card"></i>
-                    <span class="radio"></span>
-                  </label>
-                </form>
-                <form id="cc-form" style="margin-top: 20px;" action="../../../../saratoga/decks/purchase-flow/review-order/">
-                    <div>
-                        <label for="name">Name on card</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div>
-                        <label for="card">Card Number</label>
-                        <input type="text" id="card" required>
-                    </div> 
-                    <div class="grid">
-                          <div> 
-                            <label for="cvv">CVV/CVC</label>
-                            <small>3/4 digit code</small>
-                            <input type="text" id="cvv" required>
-                        </div>  
-                        <div>
-                            <label for="card">Exp. Month</label>
-                            <small>MM</small>
-                            <input type="text" id="card" required>
-                        </div>
-                        <div>
-                            <label for="card">Exp. Year</label>
-                            <small>YYYY</small>
-                            <input type="text" id="card" required>
-                        </div>                    
-                    </div>
-                <button id="submit" type="submit" class="button disabled">continue</button>
-              </form>
+        <div class="paper">
+            <div class="package small">
+                <p class="summary bold">Check your inbox</p>
+                <p class="summary">Your subscription is now active. A confirmation email has been sent to <a class="summary bold" href="#">j.wick@email.com.</a><br><br>Be sure to check your spam folder as well.</p> 
             </div>
         </div>
-        <div class="card horizontal package small">
-            <div>
-                <span class="summary bold">Unlimited Digital Access</span>
-                <small>$10.99 for 1 month, $15.99/month after.</small>
+        <div class="paper">
+            <div class="package small"> 
+                <p class="summary bold">Your subscription</p>
+                <p class="summary">Unlimited Digital Access</p>
+                <small>$10.99 for 1 month, $15.99/month after.</small>        
+                <p class="summary">You have access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</p>
             </div>
-            <small class="expander" onclick="this.classList.toggle('open')">Show details</small>
-            <small class="stretch">Get access to everything on Miamiherald.com, our apps, the eEdition, and our stories platforms like Facebook Instant Articles and Google News.</small>
         </div>
-        <div style="order: 3;">
-            <div class="paper">
-                <div class="package">
-                   <button class="button social paypal">Continue with PayPal</button>
-                   <button class="button social apple">Continue with Apple Pay</button>
-                </div>
+        <div class="paper">
+            <div class="package small"> 
+                <p class="summary bold">Download our app</p>
+                <p class="summary">Get customized push notifications, curated newsfeeds and easy access to essential reporting everywhere you go.</p>
+                <div>
+                    <img style="width: 120px;display:inline;margin-right: 10px;" src="https://media.mcclatchy.com/email-assets/global/app-store-badge.png">
+                    <img style="width: 120px;display:inline;" src="https://media.mcclatchy.com/email-assets/global/google-play-badge.png">   
+                </div>          
             </div>
-            <p class="summary">I'm a print subscriber. <a href="#" class="more-link inline">Activate digital access</a></p>
+        </div>
+        <div class="paper">
+            <div class="package small"> 
+                <p class="summary bold">View your profile</p>
+                <p class="summary">Check out your profile if you want to update your password, change your payment method, contact support and more.</p>
+                <a class="more-link primary">View your profile now</a>
+            </div>
         </div>
 
   </div>
@@ -194,14 +159,13 @@ gpt-ad {
 
 </main>
 
-
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-  
+    
 <script async src="../../../../js/forms.js"></script>
-  
+
     
     <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>
   </body>
