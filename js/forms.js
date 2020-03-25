@@ -10,19 +10,24 @@
 el.classList.toggle('active');
 }
     
-//submit validation
-$('[type="submit"]').on('click', function () {
-    // this adds 'required' class to all the required inputs under the same <form> as the submit button
-   if ($("#submit").css('background-color') === 'rgb(49, 64, 159)') {
-      toggleModal('main-modal');
-          $("#sign-up-form").preventDefault() 
 
-   }    
-    $(this)
-        .closest('form')
-        .find('[required]')
-        .addClass('required');   
-});
+//submit validation
+window.location = '?#';
+const button = document.getElementById("submit");
+
+button.addEventListener("click", function() {
+const form = document.getElementById('sign-up-form');
+const formIsValid = form.checkValidity();
+const invalid = form.querySelectorAll(":invalid"); 
+  if (formIsValid) {  
+      toggleModal('main-modal');
+  } else {
+    for (let i in invalid) {
+     invalid[i].classList.add("required");
+    }
+  } 
+}); 
+
 
 //show/hide cc form 
 const radio = document.getElementById("cc-radio");
