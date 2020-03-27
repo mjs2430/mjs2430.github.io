@@ -11,7 +11,7 @@ el.classList.toggle('active');
 }
     
 
-//submit validation
+//submit form validation
 window.location = '?#';
 const button = document.getElementById("submit");
 

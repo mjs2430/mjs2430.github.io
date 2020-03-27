@@ -142,14 +142,26 @@ gpt-ad {
                   </label>
                 </form>
                 <form id="cc-form" style="margin-top: 20px;" action="../../../../saratoga/decks/purchase-flow/review-order/">
-                    <div>
+                   <div class="grid">
+                     <div style="grid-column: span 2;">
                         <label for="name">Name on card</label>
                         <input type="text" id="name" required>
                     </div>
-                    <div>
-                        <label for="card">Card Number</label>
+                     <div>
+                        <label for="number">Phone number</label>
+                        <input type="text" id="number" required>
+                    </div>                                         
+                   </div>
+                   <div class="grid">
+                     <div style="grid-column: span 2;">
+                        <label for="card">Card number</label>
                         <input type="text" id="card" required>
-                    </div> 
+                    </div>
+                     <div>
+                        <label for="zip">Billing zip code</label>
+                        <input type="text" id="zip" required>
+                    </div>                                         
+                   </div>
                     <div class="grid">
                           <div> 
                             <label for="cvv">CVV/CVC</label>
