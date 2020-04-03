@@ -1,0 +1,48 @@
+.dsp .account-sub-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.dsp .account-sub-nav h1 {
+    margin: 10px 0;
+    text-transform: none;
+}
+
+.dsp .account-sub-nav small {
+   display: block;
+   font-weight: 700;
+   margin: 0; 
+   text-transform: uppercase
+}
+
+.dsp .account-sub-nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    text-decoration: none;
+    --lc: #707070;
+    --lhc: #5169B8;
+    line-height: 1;
+}
+
+.dsp .account-sub-nav a.active {
+    font: 700 14px var(--sans); 
+    color: #222222;
+}
+
+.dsp .account-sub-nav a:last-of-type {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .dsp .account-sub-nav {
+        align-items: center;
+        padding: 30px 0;
+    }
+}

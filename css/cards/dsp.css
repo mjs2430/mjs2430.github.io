@@ -37,7 +37,8 @@ DSP Overrides
 }
 
 .dsp a {
-    --lc: #5169B8;
+ --lc: #5169B8;
+ --lhc: #222;
 }
 
 .dsp .s-modal a {
@@ -55,8 +56,14 @@ DSP Overrides
 }
 
 .dsp .more-link {
+    --lc: #707070;
     padding: 0;
     cursor: pointer;
+}
+
+.dsp .more-link.primary {
+  --lc: #31409f;
+  --lhc: #5169B8;
 }
 
 .dsp.example {
