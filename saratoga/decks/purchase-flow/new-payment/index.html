@@ -143,12 +143,12 @@ gpt-ad {
                   </label>
                 </form>
                 <form id="cc-form" style="margin-top: 20px;" action="../../../../saratoga/decks/purchase-flow/review-order/">
-                   <div class="grid">
-                     <div style="grid-column: span 2;">
+                     <div>
                         <label for="name">Name on card</label>
                         <input type="text" id="name" required>
                     </div>
-                     <div style="grid-column: span 2;">
+                    <div class="grid">
+                     <div>
                         <label for="number">Phone number</label>
                         <input type="text" id="number" required>
                     </div>  
@@ -158,11 +158,21 @@ gpt-ad {
                     </div>                                        
                    </div>
                    <div class="grid">
-                     <div style="grid-column: span 2;">
+                     <div>
                         <label for="card">Card number</label>
                         <input type="text" id="card" required>
                     </div>
-                                        
+                    <div>
+                        <label>Card Type</label>
+                        <div class="select">
+                            <span class="expander" onclick="this.classList.toggle('open');" tabindex="0">Card</span>
+                            <div class="options">
+                                <a class="button big" href="#" data-name="Visa">Visa</a>
+                                <a class="button big" href="#" data-name="Mastercard">Mastercard</a>
+                                <a class="button big" href="#" data-name="American Express">American Express</a>
+                            </div>
+                        </div>
+                    </div>      
                    </div>
                     <div class="grid">
                           <div> 
@@ -209,6 +219,7 @@ gpt-ad {
 </main>
 
 <script async src="../../../../js/forms.js"></script>
+<script async src="../../../../js/select.js"></script>
   
     
     <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>

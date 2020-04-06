@@ -40,6 +40,7 @@ form .select .expander.open ~ .options  {
 form .options a:hover {
     background-color: #f4f4f4;
 }
+
 input,
 form .select{ 
     box-sizing: border-box;
@@ -51,6 +52,17 @@ form .select{
     box-shadow: none;
     font-size: 1em; 
     color: #222;
+}
+
+form .select .expander {
+    padding: 9px 10px;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+form .select .options a {
+    padding: 10px;
+    font-size: 14px;
 }
 
 /* On mouse-over, add a black border color */
