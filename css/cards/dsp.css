@@ -66,6 +66,11 @@ DSP Overrides
   --lhc: #5169B8;
 }
 
+.dsp .more-link.inline {
+  --lc: #31409f;
+  --lhc: #5169B8;
+}
+
 .dsp.example {
     padding: 15px 0;
 } 
