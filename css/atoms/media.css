@@ -2,12 +2,12 @@
  * Media
  */
 
-figure {
+figure, .figure {
   margin: 0;
   flex: none;
 }
 
-figure img {
+figure img, .figure img {
   display: block;
   width: 100%;
 }

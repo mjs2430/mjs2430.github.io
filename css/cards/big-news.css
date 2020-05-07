@@ -4,8 +4,9 @@
  * need to "line up with the grid".
  */
 
-.big-news {
+section.big-news {
   margin-top: 0;
+  padding-bottom: 15px;
 }
 
 .big-news > * {
@@ -39,7 +40,7 @@
 }
 
 .big-news .featured .package {
-  padding: 15px 0;
+  padding: 15px 0 0;
 }
 
 @media (min-width: 680px) {

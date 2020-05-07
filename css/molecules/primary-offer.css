@@ -21,6 +21,10 @@
     margin: 0;
 }
 
+.dsp .primary-offer .summary {
+    color: rgba(255,255,255,.8);
+}
+
 .dsp .primary-offer p.expander {
     display: block; 
     max-width: 500px;
@@ -53,5 +57,10 @@
 .dsp .primary-offer .h1 {
     font-size: 52px;
 }
+    
+.dsp .primary-offer .h4 {
+    font-size: 24px;
+    line-height: 32px;
+}   
     
 }

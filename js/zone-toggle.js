@@ -24,6 +24,7 @@ class ZoneToggle extends HTMLElement {
         right: 15px;
         text-align: right;
         opacity: 0;
+        pointer-events: none;
         transform: translateY(30px);
         transition: all .4s ease;
       }
@@ -63,6 +64,7 @@ class ZoneToggle extends HTMLElement {
       :host(.open) .package {
         transform: translateY(0);
         opacity: 1;
+        pointer-events: auto;
       }
     </style>
 

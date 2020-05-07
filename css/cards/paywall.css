@@ -39,11 +39,10 @@
      grid-gap: 30px;
  }
     
-    .dsp .paywall section {
-        max-width: 900px;
-    }
-    
-    
+.dsp .paywall section {
+    max-width: 900px;
+}    
+ 
     
 } 
 

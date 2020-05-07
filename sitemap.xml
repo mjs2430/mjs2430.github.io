@@ -3,6 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mjs2430.github.io/labs/fundraising-chart/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/labs/gray-box/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/labs/hammer-head/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/labs/lab-panel/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/labs/story-stack/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/labs/dynamic-modal/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/decks/contests/</loc>
     <lastmod>2019-07-24T10:01:22-05:00</lastmod>
   </url>
@@ -25,18 +49,6 @@
   <url>
     <loc>https://mjs2430.github.io/saratoga/colors/</loc>
     <lastmod>2019-05-13T10:03:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mjs2430.github.io/labs/dynamic-modal/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mjs2430.github.io/labs/fundraising-chart/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mjs2430.github.io/labs/lab-panel/</loc>
   </url>
   
   <url>
@@ -160,6 +172,10 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/qa/homes/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/decks/immersive/</loc>
   </url>
   
@@ -192,15 +208,15 @@
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/labs/</loc>
-  </url>
-  
-  <url>
     <loc>https://mjs2430.github.io/saratoga/li/</loc>
   </url>
   
   <url>
     <loc>https://mjs2430.github.io/markets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/saratoga/masthead/</loc>
   </url>
   
   <url>
@@ -277,6 +293,10 @@
   
   <url>
     <loc>https://mjs2430.github.io/saratoga/purchase-info-dsp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/qa/</loc>
   </url>
   
   <url>
@@ -369,6 +389,10 @@
   
   <url>
     <loc>https://mjs2430.github.io/saratoga/vendor-footer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/labs/</loc>
   </url>
   
 </urlset>

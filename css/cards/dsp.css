@@ -25,6 +25,7 @@ DSP Overrides
 .dsp .h4 {
     font: 700 19px var(--sans);
     line-height: 28px;
+    text-transform: none;
 }
 
 .dsp button {
@@ -174,7 +175,8 @@ DSP Overrides
 @media (min-width: 900px) {
 
 .dsp .grid {
-   grid-template-columns: 1fr 1fr;     
+   grid-template-columns: 1fr 1fr;  
+   grid-gap: 30px;
 }
     
 .dsp section {

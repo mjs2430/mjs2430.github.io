@@ -65,8 +65,8 @@ class HammerHead extends HTMLElement {
     for(let i = 0, len = this.children.length; i < len; i++) {
       let c = this.children[i];
       c.style.fontSize = '10px';
-      c.style.lineHeight = '1em';
       c.style.margin = "0px";
+      c.style.textTransform = "none";
       c.style.fontSize = `calc(10px * ${this.calculateRatio(c)} - 1px)`;
     }
   }

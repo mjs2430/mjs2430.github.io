@@ -38,7 +38,6 @@
 }
 
 .embed-infographic > * {
-  display: block;
   max-width: 100%;
 }
 
@@ -50,7 +49,8 @@
  * Media options
  */
 
-.story-body > figure {
+.story-body > figure,
+.story-body > .figure {
   margin: 30px auto;
   padding: 0;
 }
@@ -64,30 +64,35 @@
   padding: 0;
 }
 
-.story-body figure .package {
+.story-body figure .package,
+.story-body .figure .package {
   padding: 10px 0 0;
 }
 
 @media(max-width: 768px) {
-  .story-body > figure {
+  .story-body > figure,
+  .story-body > .figure {
     max-width: 100%;
   }
 
   .story-body figcaption,
-  .story-body figure .package {
+  .story-body figure .package,
+  .story-body .figure .package {
     padding: 10px 15px 0;
   }
 }
 
 @media(max-width: 990px) {
   .story-body .wide figcaption,
-  .story-body figure.wide .package {
+  .story-body figure.wide .package,
+  .story-body .figure.wide .package {
     padding: 10px 15px 0;
   }
 }
 
 .story-body .full-bleed figcaption,
-.story-body figure.full-bleed .package {
+.story-body figure.full-bleed .package,
+.story-body .figure.full-bleed .package {
   padding: 10px 15px 0;
 }
 
@@ -109,11 +114,6 @@
     float: left;
     margin: 0 30px 30px -150px;
   }
-}
-
-.story-body blockquote {
-  max-width: 300px;
-  font: x-large/1.2em var(--sans);
 }
 
 .story-body > .zone {

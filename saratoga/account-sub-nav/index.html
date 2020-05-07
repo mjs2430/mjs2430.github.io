@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>account sub nav (DSP)</title>
+    <title>account header (DSP)</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -95,39 +95,33 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">account sub nav (DSP)
+    <h2 class="page-header">account header (DSP)
     </h2>
-    <p>The account sub nav molecule is used on the <a href="../../saratoga/decks/my-account">my account page.</a> It is comprised of text atoms and the more-link atom and displayed in a flex-box.</p>
+    <p>The account header molecule is used on the <a href="../../saratoga/decks/my-account">my account page.</a> It is comprised of text atoms and the more-link atom and displayed in a flex-box. Pair it with the DSP Masthead to get all &ldquo;my account&rdquo; features, like a sign out link.</p>
 <h5 id="example">Example</h5>
 <div class="dsp">
-    <section>
-        <div class="account-sub-nav">
-            <div>
-                <small>unlimited digital access</small>
-                <h1 class="serif">John Wick</h1>
-                <a href="#" class="nav active">Profile</a>
-                <a href="#" class="nav">Subscription</a>
-            </div>
-            <div>
-                <a href="#" class="more-link">sign out</a>
-            </div>
+    <div class="account-header card">
+        <div class="package small">
+            <small>unlimited digital access</small>
+            <h1 class="serif">Hi, John Wick</h1>
         </div>
-    </section>
+        <div class="nav">
+            <a href="#" class="tab active">Profile</a>
+            <a href="#" class="tab">Subscription</a>
+        </div>
+    </div>
 </div>
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;account-sub-nav&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;unlimited digital access&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">h1</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;serif&#34;</span>&gt;John Wick&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;nav active&#34;</span>&gt;Profile&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;nav&#34;</span>&gt;Subscription&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">div</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span>&gt;sign out&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;account-header card&#34;</span>&gt;
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;unlimited digital access&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">h1</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;serif&#34;</span>&gt;Hi, John Wick&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">section</span>&gt;</code></pre></div>
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;nav&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;tab active&#34;</span>&gt;Profile&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;tab&#34;</span>&gt;Subscription&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
 
   </div>
 
@@ -507,7 +501,7 @@
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/saratoga/account-sub-nav/" class="active">account sub nav (DSP)</a>
+        <a href="https://mjs2430.github.io/saratoga/account-sub-nav/" class="active">account header (DSP)</a>
       </h5>
       
       
@@ -528,6 +522,11 @@
       
       <h5 class="sans bold ">
         <a href="https://mjs2430.github.io/saratoga/impact/" class="">impact</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/saratoga/masthead/" class="">masthead (DSP)</a>
       </h5>
       
       

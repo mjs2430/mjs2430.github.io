@@ -13,3 +13,7 @@
 .in-depth .h1 {
   font-size: 1.75rem;
 }
+
+.in-depth .image-link-macro {
+  position: initial;
+}

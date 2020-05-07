@@ -11,16 +11,27 @@ var Typologies = {
     { 
       "name": "zone3",
       "class": "grid combo",
-      "units": ["newsletter", "ad"]
+      "units": ["newsletter", "ad"],
+      "gpt": {
+        "atf": "n",
+        "pkg": "b"
+      }
     },
     {
       "name": "zone4",
       "class": "grid combo",
-      "units": ["subscription", "ad"]
+      "units": ["subscription", "ad"],
+      "gpt": {
+        "atf": "n",
+        "pkg": "c"
+      }
     },
     {
       "name": "zone5",
-      "units": ["banner"]
+      "units": ["banner"],
+      "gpt": {
+        "atf": "n"
+      }
     },
     {
       "name": "zone6",

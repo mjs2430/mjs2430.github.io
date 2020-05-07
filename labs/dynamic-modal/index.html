@@ -71,6 +71,8 @@
 
     
     <link rel="stylesheet" href="../../css/site.css">
+<script defer src="../../js/copy-highlight.js"></script>
+
   </head>
 
   <body class="">
@@ -94,17 +96,7 @@
 <article class="paper story-body" style="padding: 15px 0;">
   <h2 style="--ht: none;"><pre>&lt;dynamic-modal&gt;</pre></h2>
   <script async type="module" src="../../labs/dynamic-modal.js"></script>
-<p>There is a high probability of a modal collision if the dynamic modal is used outside of Adobe Target. This page is primarily here for reference.</p>
-
-
-
-<h5>Implementation notes for the trailblazers</h5>
-<p>Custom HTML components require a Javascript class be loaded in order to function. If you want to implement this component in an isolated environment, and ensure that any changes we make going forward do not get incorporated into your story, save a copy of this component and host it wherever you like. We will host the latest version of these files, which may include breaking changes as we iterate. If you would like to automatically get updates, and are comfortable with the risk, you can copy the location below into your embed.</p>
-
-<div>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">script</span> <span style="color:#f00">async</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;module&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://media.mcclatchy.com/labs/dynamic-modal.js&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">script</span>&gt;</code></pre></div>
-</div>
-
+<p>The dynamic modal custom element is currently used by the High Impact team in Adobe Target. Modal strategies shift frequently as vendors and marketing campaigns change. If you would like to use this modal on a story, please <a href="mailto:jpilgreen@mcclatchy.com">contact</a> the High Impact team.</p>
 <div>
   <dynamic-modal>
     <img slot="image" src="https://media.mcclatchy.com/target/assets/cc-decline-modal-laptop.png">
@@ -113,13 +105,6 @@
     <a class="button big" data-interaction="Update">UPDATE NOW</a>
   </dynamic-modal>
 </div>
-<h4 id="html-for-this-example">HTML for this example</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">dynamic-modal</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">slot</span>=<span style="color:#00f">&#34;image&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://media.mcclatchy.com/target/assets/cc-decline-modal-laptop.png&#34;</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">h1</span>&gt;Your account needs attention&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">p</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;summary&#34;</span>&gt;We&#39;re having trouble connecting to your billing information. Update your account to stay connected to unlimited article views on our website and mobile app, the eEdition and exclusive subscriber-only content.&lt;/<span style="color:#000080;font-weight:bold">p</span>&gt;
-  &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button big&#34;</span>&gt;UPDATE NOW&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">dynamic-modal</span>&gt;</code></pre></div>
 
 </article>
 

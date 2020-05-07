@@ -58,15 +58,15 @@ code {
   padding: 2px 5px;
 }
 
-pre {
-  padding: 15px 0;
-}
-
 pre code {
   white-space: pre-wrap;
   word-break: break-word;
   background-color: transparent;
   padding: 0;
+}
+
+.copied {
+  background-color: #0D932B;
 }
 
 

@@ -7,3 +7,8 @@
 .hidden, [hidden] {
   display: none;
 }
+
+.zone-el.hidden,
+.grid > .zone-el.hidden {
+  display: none;
+}

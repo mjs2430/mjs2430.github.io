@@ -77,7 +77,7 @@ class GPT extends HTMLElement {
   }
 
   get path() {
-    return this.dataset.path || "/7675/KCM.site_kansascity/News/Local";
+    return this.dataset.path || "/7675/KCM.site_kansascity/Sports";
   }
 
   get sizeMap() {
@@ -90,6 +90,10 @@ class GPT extends HTMLElement {
 
   get atf() {
     return this.dataset.atf || false;
+  }
+
+  get pkg() {
+    return this.dataset.pkg || false;
   }
 
   get uid() {
@@ -123,6 +127,10 @@ class GPT extends HTMLElement {
 
       if(this.atf) {
         slot.setTargeting("atf", this.atf);
+      }
+
+      if(this.pkg) {
+        slot.setTargeting("pkg", this.pkg);
       }
 
       slot.addService(googletag.pubads());

@@ -71,6 +71,8 @@
 
     
     <link rel="stylesheet" href="../../css/site.css">
+<script defer src="../../js/copy-highlight.js"></script>
+
   </head>
 
   <body class="">
@@ -94,18 +96,7 @@
 <article class="paper story-body" style="padding: 15px 0;">
   <h2 style="--ht: none;"><pre>&lt;fundraising-chart&gt;</pre></h2>
   <script src="../../labs/fundraising-chart.js"></script>
-<p>The fundraising chart is an attempt to simplify the process of repeatedly editing a chart in the content management system over time by hiding most of the structure and styling in the Shadow DOM.</p>
-
-
-
-<h5>Implementation notes for the trailblazers</h5>
-<p>Custom HTML components require a Javascript class be loaded in order to function. If you want to implement this component in an isolated environment, and ensure that any changes we make going forward do not get incorporated into your story, save a copy of this component and host it wherever you like. We will host the latest version of these files, which may include breaking changes as we iterate. If you would like to automatically get updates, and are comfortable with the risk, you can copy the location below into your embed.</p>
-
-<div>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">script</span> <span style="color:#f00">async</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://media.mcclatchy.com/labs/fundraising-chart.js&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">script</span>&gt;</code></pre></div>
-</div>
-
-<p><em>We are currently working on this component and it&rsquo;s likely to change frequently. We recommend downloading this file and hosting it yourself at this time.</em></p>
+<p>The fundraising chart custom element is an attempt to simplify the process of repeatedly editing a chart in CUE over time by hiding most of the structure and styling in the Shadow DOM. It was created for The Fresno Bee <a href="https://www.fresnobee.com/news/local/education/article235079937.html">Education Lab landing page</a>.</p>
 <h5 id="example">EXAMPLE</h5>
 <div class="story-module">
 <fundraising-chart collected="246000" goal="600000">
@@ -113,11 +104,14 @@
   <chart-phase value="600000">Phase 2 Goal</chart-phase>
 </fundraising-chart>
 </div>
-<h5 id="html-for-the-above-example">HTML for the above example</h5>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">fundraising-chart</span> <span style="color:#f00">collected</span>=<span style="color:#00f">&#34;246000&#34;</span> <span style="color:#f00">goal</span>=<span style="color:#00f">&#34;600000&#34;</span>&gt;
+<div class="story-module">
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">script</span> <span style="color:#f00">async</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://media.mcclatchy.com/labs/fundraising-chart.js&#34;</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">script</span>&gt;
+&lt;<span style="color:#000080;font-weight:bold">fundraising-chart</span> <span style="color:#f00">collected</span>=<span style="color:#00f">&#34;246000&#34;</span> <span style="color:#f00">goal</span>=<span style="color:#00f">&#34;600000&#34;</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">chart-phase</span> <span style="color:#f00">value</span>=<span style="color:#00f">&#34;300000&#34;</span>&gt;Phase 1 goal&lt;/<span style="color:#000080;font-weight:bold">chart-phase</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">chart-phase</span> <span style="color:#f00">value</span>=<span style="color:#00f">&#34;600000&#34;</span>&gt;Phase 2 Goal&lt;/<span style="color:#000080;font-weight:bold">chart-phase</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">fundraising-chart</span>&gt;</code></pre></div>
+<copy-highlight class="button promo">copy starter code</copy-highlight>
+</div>
 
 </article>
 
