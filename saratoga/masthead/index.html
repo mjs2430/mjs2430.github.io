@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../../css/molecules/secondary-offer.css">
     <link rel="stylesheet" href="../../css/molecules/tertiary-offer.css">
     <link rel="stylesheet" href="../../css/molecules/account-sub-nav.css">
+    <link rel="stylesheet" href="../../css/molecules/masthead.css">
 
 
     
@@ -99,29 +100,37 @@
     </h2>
     <p>The masthead displayed at the top of all DSP pages. Includes customer service links and a Sign Out link.</p>
 <h5 id="example">Example</h5>
-<div class="dsp">
-    <div class="account-header card">
-        <div class="package small">
-            <small>unlimited digital access</small>
-            <h1 class="serif">Hi, John Wick</h1>
+<div class="dsp" style="max-width: 100%">
+    <div class="flag full-bleed standard">
+      <div class="paper"> 
+        <div class="top flex">
+            <a href="https://www.miamiherald.com" class="market-logo" aria-label="Miami Herald">
+                <img src="https://www.miamiherald.com/wps/build/images/miamiherald/logo.svg" alt="Miami Herald Logo">
+            </a>  
+            <div class="flex links">
+                <a href="#" class="button">800-555-5555</a>
+                <a href="#" class="button">Contact Us</a>
+                <a href="#" class="more-link">Sign Out</a>
+            </div>
         </div>
-        <div class="nav">
-            <a href="#" class="tab active">Profile</a>
-            <a href="#" class="tab">Subscription</a>
-        </div>
-    </div>
+      </div>
+    </div>  
 </div>
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;account-header card&#34;</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;package small&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">small</span>&gt;unlimited digital access&lt;/<span style="color:#000080;font-weight:bold">small</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">h1</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;serif&#34;</span>&gt;Hi, John Wick&lt;/<span style="color:#000080;font-weight:bold">h1</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flag full-bleed standard&#34;</span>&gt;
+  &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;paper&#34;</span>&gt; 
+    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;top flex&#34;</span>&gt;
+        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;https://www.miamiherald.com&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;market-logo&#34;</span> <span style="color:#f00">aria-label</span>=<span style="color:#00f">&#34;Miami Herald&#34;</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://www.miamiherald.com/wps/build/images/miamiherald/logo.svg&#34;</span> <span style="color:#f00">alt</span>=<span style="color:#00f">&#34;Miami Herald Logo&#34;</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;  
+        &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;flex links&#34;</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button&#34;</span>&gt;800-555-5555&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button&#34;</span>&gt;Contact Us&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+            &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;more-link&#34;</span>&gt;Sign Out&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+        &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
     &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;nav&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;tab active&#34;</span>&gt;Profile&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;tab&#34;</span>&gt;Subscription&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-    &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;</code></pre></div>
+  &lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">div</span>&gt;   </code></pre></div>
 
   </div>
 

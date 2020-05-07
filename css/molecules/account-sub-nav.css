@@ -1,5 +1,6 @@
 .dsp .account-header {
-    margin-bottom: 15px;
+    width: 100%;
+    border-top: 1px solid #EBEBEB;
 }
 
 .dsp .account-header h1 {
@@ -42,10 +43,6 @@
 @media (min-width: 768px) {
     .dsp .tab.active {
         border-radius: 2px 2px 0 0;
-    }
-    
-    .dsp .account-header {
-        margin-bottom: 30px;
     }
     
 }
