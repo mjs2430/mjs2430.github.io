@@ -4,17 +4,22 @@
  * need to "line up with the grid".
  */
 
-section.big-news {
-  margin-top: 0;
-  padding-bottom: 15px;
-}
+/* section.big-news { */
+/*   margin-top: 0; */
+/*   padding-bottom: 15px; */
+/* } */
 
-.big-news > * {
-  max-width: 1140px;
-  margin: 0 auto;
+/* .big-news > * { */
+/*   max-width: 1140px; */
+/*   margin: 0 auto; */
+/* } */
+
+section.big-news {
+  padding: 0;
 }
 
 .big-news .latest {
+  margin: 0;
   padding: 15px 15px 0;
 }
 
@@ -33,11 +38,15 @@ section.big-news {
   font-size: large;
 }
 
-@media(max-width: 1170px) {
-  .big-news figcaption {
-    padding: 10px 15px;
-  }
+.big-news figcaption {
+  padding: 10px 15px 0;
 }
+
+/* @media(max-width: 1170px) { */
+/*   .big-news figcaption { */
+/*     padding: 10px 15px; */
+/*   } */
+/* } */
 
 .big-news .featured .package {
   padding: 15px 0 0;

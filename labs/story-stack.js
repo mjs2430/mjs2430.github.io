@@ -117,6 +117,20 @@ class StoryStack extends HTMLElement {
         summary.remove();
       }
 
+      let time = p.querySelector("time");
+      if(time.classList.contains("update-date") && time.dataset.originaldate) {
+        let d = new Date(time.dataset.originaldate * 1000);
+        let f = Intl.DateTimeFormat("default", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric"
+        });
+
+        time.innerText = `UPDATED ${f.format(d)}`;
+      }
+
       // add it
       this.appendChild(p)
     }

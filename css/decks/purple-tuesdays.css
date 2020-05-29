@@ -13,8 +13,17 @@
   font-weight: 400;
 }
 
-.mi-sticky-player-info {
+.lead-item .mi-sticky-player .mi-sticky-player-info {
+  padding: 15px;
   --ht: none;
+}
+
+.mi-sticky-player-info > * {
+  margin: 10px 0 0;
+}
+
+.mi-sticky-player-info > :first-child {
+  margin-top: 0;
 }
 
 .inline-cta > div[class*=recaptcha] {

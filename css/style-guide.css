@@ -50,15 +50,15 @@ td:first-child {
   z-index: 1;
 }
 
-.list .cards {
+.list .cards, .list .organisms {
   background-color: #FDFDF6;
 }
 
-.list .decks {
+.list .decks, .list .molecules {
   background-color: #D2EFF2;
 }
 
-.list .subscriptions {
+.list .templates {
   background-color: #A5C3E9;
 }
 

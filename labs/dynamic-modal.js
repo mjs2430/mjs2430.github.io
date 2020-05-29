@@ -3,7 +3,7 @@
  * Setup to allow serving through Adobe Target
  */
 
-import { trackInteraction } from "./modules/tracking.js";
+import { trackInteraction } from "./tracking.js";
 import MarketLogo from "./market-logo.js"
 
 class DynamicModal extends HTMLElement {

@@ -70,6 +70,10 @@
     <link rel="stylesheet" href="../../css/cards/subscription-offers.css">
     <link rel="stylesheet" href="../../css/cards/hidden.css">
 
+   
+   <link rel="stylesheet" href="../../css/email/email.css">
+   
+   
     
     <link rel="stylesheet" href="../../css/site.css">
 <link rel="stylesheet" href="../../css/style-guide.css">
@@ -101,7 +105,7 @@
     <p>The big news card is a series of independent areas designed to give newsrooms control of the volume depending on what they have. Each zone is managed separately and nothing is required. Because the card needs to be so flexible, yet stable, it&rsquo;s set up with the CSS Grid instead of Flexbox. By also including the number of children for each grid item in a <code>data-children=X</code> attribute, we can use the Grid to iterate the design more easily as we see how newsrooms use it.</p>
 <h4 id="example">EXAMPLE</h4>
 <div class="example" style="padding: 15px 0;">
-<section class="big-news paper full-bleed">
+<section class="big-news paper">
   <a href="#" class="label"><h5 class="impact">HURRICANE FLORENCE</h5></a>
   <h5 class="latest">LATEST NEWS</h5>
   <div class="grid" data-children="3">
@@ -158,7 +162,7 @@
 
 </div>
 <h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;big-news paper full-bleed&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">section</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;big-news paper&#34;</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;label&#34;</span>&gt;&lt;<span style="color:#000080;font-weight:bold">h5</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;impact&#34;</span>&gt;HURRICANE FLORENCE&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">h5</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;latest&#34;</span>&gt;LATEST NEWS&lt;/<span style="color:#000080;font-weight:bold">h5</span>&gt;
   &lt;<span style="color:#000080;font-weight:bold">div</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;grid&#34;</span> <span style="color:#f00">data-children</span>=<span style="color:#00f">&#34;3&#34;</span>&gt;

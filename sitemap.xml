@@ -68,6 +68,10 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/email/molecules/big-news/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/big-news/</loc>
   </url>
   
@@ -92,11 +96,19 @@
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/email/</loc>
+    <loc>https://mjs2430.github.io/email/atoms/sample2/</loc>
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/email/sample/</loc>
+    <loc>https://mjs2430.github.io/email/organisms/sample3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/templates/sample/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/templates/template-sample/</loc>
   </url>
   
   <url>
@@ -312,6 +324,10 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/email/molecules/sample4/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/decks/search/</loc>
   </url>
   
@@ -357,6 +373,10 @@
   
   <url>
     <loc>https://mjs2430.github.io/saratoga/tertiary-offer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/</loc>
   </url>
   
   <url>
