@@ -76,11 +76,23 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/email/atoms/buttons/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/byline/</loc>
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/email/atoms/campaign-shortcodes/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/card/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/atoms/colors/</loc>
   </url>
   
   <url>
@@ -92,11 +104,7 @@
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/email/atoms/sample2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mjs2430.github.io/email/organisms/sample3/</loc>
+    <loc>https://mjs2430.github.io/email/layouts/sample3/</loc>
   </url>
   
   <url>
@@ -348,6 +356,10 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/email/atoms/spacing/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/sponsor/</loc>
   </url>
   
@@ -385,6 +397,10 @@
   
   <url>
     <loc>https://mjs2430.github.io/saratoga/transparency/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/atoms/typography/</loc>
   </url>
   
   <url>

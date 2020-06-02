@@ -114,126 +114,131 @@
 &lt;<span style="color:#000080;font-weight:bold">head</span>&gt;
 	&lt;<span style="color:#000080;font-weight:bold">meta</span> <span style="color:#f00">http-equiv</span>=<span style="color:#00f">&#34;Content-Type&#34;</span> <span style="color:#f00">content</span>=<span style="color:#00f">&#34;text/html; charset=UTF-8&#34;</span> /&gt;
 	&lt;<span style="color:#000080;font-weight:bold">meta</span> <span style="color:#f00">name</span>=<span style="color:#00f">&#34;viewport&#34;</span> <span style="color:#f00">content</span>=<span style="color:#00f">&#34;width=device-width, initial-scale=1.0&#34;</span>/&gt;
-	&lt;<span style="color:#000080;font-weight:bold">title</span>&gt;&lt;/<span style="color:#000080;font-weight:bold">title</span>&gt;
 	&lt;<span style="color:#000080;font-weight:bold">style</span> <span style="color:#f00">type</span>=<span style="color:#00f">&#34;text/css&#34;</span>&gt;
-	<span style="color:#080;font-style:italic">/*DELETE ALL RESET, DEFAULT &amp; EMAIL STYLES AND ADD IN CLIENT-SPECIFIC STYLES AFTER INLINING--DO NOT DELETE FONTS OR MOBILE STYLES*/</span>
-        
-	<span style="color:#080;font-style:italic">/*----------RESET----------*/</span>
-    #body-cell,#body-table,<span style="color:#000080;font-weight:bold">body</span>{<span style="color:#000080;font-weight:bold">height</span>:<span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span><span style="color:#008080">!important</span>;<span style="color:#000080;font-weight:bold">margin</span>:<span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">padding</span>:<span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">width</span>:<span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span><span style="color:#008080">!important</span>}<span style="color:#000080;font-weight:bold">table</span>{<span style="color:#000080;font-weight:bold">border-collapse</span>:<span style="color:#000080;font-weight:bold">collapse</span>}<span style="color:#000080;font-weight:bold">img</span>{<span style="color:#000080;font-weight:bold">display</span>:<span style="color:#000080;font-weight:bold">block</span>;<span style="color:#000080;font-weight:bold">border</span>:<span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">outline</span>:<span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>:<span style="color:#000080;font-weight:bold">none</span>;<span style="color:#000080;font-weight:bold">height</span>:<span style="color:#000080;font-weight:bold">auto</span>;<span style="color:#000080;font-weight:bold">width</span>:<span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;}<span style="color:#000080;font-weight:bold">a</span> <span style="color:#000080;font-weight:bold">img</span>{<span style="color:#000080;font-weight:bold">border</span>:<span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">outline</span>:<span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>:<span style="color:#000080;font-weight:bold">none</span>}.img-inline{<span style="color:#000080;font-weight:bold">display</span>:<span style="color:#000080;font-weight:bold">inline</span>}<span style="color:#000080;font-weight:bold">h1</span>,<span style="color:#000080;font-weight:bold">h2</span>,<span style="color:#000080;font-weight:bold">h3</span>,<span style="color:#000080;font-weight:bold">h4</span>,<span style="color:#000080;font-weight:bold">h5</span>,<span style="color:#000080;font-weight:bold">h6</span>{<span style="color:#000080;font-weight:bold">margin</span>:<span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">padding</span>:<span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">color</span>:<span style="color:#00f">#222</span>;<span style="color:#000080;font-weight:bold">line-height</span>:<span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>}
+	<span style="color:#080;font-style:italic">/*---DELETE ALL RESET, DESIGN SYSTEM &amp; CUSTOM STYLES AFTER INLINING. IT KEEPS THINGS ORGANIZED.---*/</span>
+	<span style="color:#080;font-style:italic">/*---DO NOT DELETE FONTS, MOBILE STYLES OR CLIENT-SPECIFIC CSS SHORTCODE---*/</span>
+
+	&lt;%@ <span style="color:#000080;font-weight:bold">include</span> <span style="color:#000080;font-weight:bold">view</span>=<span style="color:#00f">&#39;client_specific_css&#39;</span> %&gt;
 
 	<span style="color:#080;font-style:italic">/*----------FONTS----------*/</span>
-    @<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>;<span style="color:#000080;font-weight:bold">font-style</span>:normal;<span style="color:#000080;font-weight:bold">font-weight</span>:400;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-sans-web-regular</span>.woff)}@<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-sans-web-demi</span>.woff);<span style="color:#000080;font-weight:bold">font-weight</span>:600;<span style="color:#000080;font-weight:bold">font-style</span>:normal}@<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>;<span style="color:#000080;font-weight:bold">font-style</span>:normal;<span style="color:#000080;font-weight:bold">font-weight</span>:400;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-serif-web-regular</span>.woff)}@<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-serif-web-demi</span>.woff);<span style="color:#000080;font-weight:bold">font-weight</span>:600;<span style="color:#000080;font-weight:bold">font-style</span>:normal}@<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Sans Cond Web&#39;</span>;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-sans-cond-web-demi</span>.woff);<span style="color:#000080;font-weight:bold">font-weight</span>:600;<span style="color:#000080;font-weight:bold">font-style</span>:normal}
-        
-	<span style="color:#080;font-style:italic">/*----------DEFAULT STYLES----------*/</span>
+	<span style="color:#080;font-style:italic">/*McClatchy Sans*/</span>
+	@<span style="color:#000080;font-weight:bold">font-face</span> {
+	    <span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>;
+	    <span style="color:#000080;font-weight:bold">font-style</span>: <span style="color:#000080;font-weight:bold">normal</span>;
+	    <span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#000080;font-weight:bold">400</span>;
+	    <span style="color:#000080;font-weight:bold">src</span>: <span style="color:#000080;font-weight:bold">url</span>(<span style="color:#00f">&#39;https://media.mcclatchy.com/email-assets/global/fonts/mcclatchy-sans-web-regular.woff&#39;</span>);
+	}
+	@<span style="color:#000080;font-weight:bold">font-face</span> {
+	    <span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>;
+	    <span style="color:#000080;font-weight:bold">src</span>: <span style="color:#000080;font-weight:bold">url</span>(<span style="color:#00f">&#39;https://media.mcclatchy.com/email-assets/global/fonts/mcclatchy-sans-web-demi.woff&#39;</span>);
+	    <span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#000080;font-weight:bold">600</span>;
+	    <span style="color:#000080;font-weight:bold">font-style</span>: <span style="color:#000080;font-weight:bold">normal</span>;
+	}
+
+	<span style="color:#080;font-style:italic">/*McClatchy Serif*/</span>
+	@<span style="color:#000080;font-weight:bold">font-face</span> {
+	    <span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>;
+	    <span style="color:#000080;font-weight:bold">font-style</span>: <span style="color:#000080;font-weight:bold">normal</span>;
+	    <span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#000080;font-weight:bold">400</span>;
+	    <span style="color:#000080;font-weight:bold">src</span>: <span style="color:#000080;font-weight:bold">url</span>(<span style="color:#00f">&#39;https://media.mcclatchy.com/email-assets/global/fonts/mcclatchy-serif-web-regular.woff&#39;</span>);
+	}
+	@<span style="color:#000080;font-weight:bold">font-face</span> {
+	    <span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>;
+	    <span style="color:#000080;font-weight:bold">src</span>: <span style="color:#000080;font-weight:bold">url</span>(<span style="color:#00f">&#39;https://media.mcclatchy.com/email-assets/global/fonts/mcclatchy-serif-web-demi.woff&#39;</span>);
+	    <span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#000080;font-weight:bold">600</span>;
+	    <span style="color:#000080;font-weight:bold">font-style</span>: <span style="color:#000080;font-weight:bold">normal</span>;
+	}
+
+	<span style="color:#080;font-style:italic">/*----------RESET----------*/</span>
+	<span style="color:#000080;font-weight:bold">body</span>, #body-table, #body-cell {<span style="color:#000080;font-weight:bold">height</span>:<span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#008080">!important</span>; <span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span>; <span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span>; <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#008080">!important</span>;}
+	<span style="color:#000080;font-weight:bold">table</span> {<span style="color:#000080;font-weight:bold">border-collapse</span>: <span style="color:#000080;font-weight:bold">collapse</span>;}
+	<span style="color:#000080;font-weight:bold">img</span> {<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>; <span style="color:#000080;font-weight:bold">border</span>: <span style="color:#00f">0</span>; <span style="color:#000080;font-weight:bold">outline</span>: <span style="color:#000080;font-weight:bold">none</span>; <span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>; <span style="color:#000080;font-weight:bold">height</span>: <span style="color:#000080;font-weight:bold">auto</span>;}
+	<span style="color:#000080;font-weight:bold">a</span> <span style="color:#000080;font-weight:bold">img</span> {<span style="color:#000080;font-weight:bold">border</span>: <span style="color:#00f">0</span>; <span style="color:#000080;font-weight:bold">outline</span>: <span style="color:#000080;font-weight:bold">none</span>; <span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;}
+	.img-inline {<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">inline</span>;}
+	<span style="color:#000080;font-weight:bold">h1</span>, <span style="color:#000080;font-weight:bold">h2</span>, <span style="color:#000080;font-weight:bold">h3</span>, <span style="color:#000080;font-weight:bold">h4</span>, <span style="color:#000080;font-weight:bold">h5</span>, <span style="color:#000080;font-weight:bold">h6</span> {<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">0</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;}
+
+	<span style="color:#080;font-style:italic">/*----------DESIGN SYSTEM STYLES----------*/</span>
+	<span style="color:#080;font-style:italic">/*overall background color*/</span>
 	<span style="color:#000080;font-weight:bold">body</span>, #body-cell {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#f4f4f4</span>;}
-	#header {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-	.container {<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-	.row-white {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#fff</span>;}
-	.row-blue {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#31409f</span>;}
-	.row-dark {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#222</span>;}
-	.row-gray {<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-    <span style="color:#000080;font-weight:bold">a</span> {<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#31409f</span>;}
-	<span style="color:#000080;font-weight:bold">h1</span> {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">36</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">48</span><span style="color:#000080;font-weight:bold">px</span>;}
-	.serif {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>, <span style="color:#00f">&#39;Times New Roman&#39;</span>, <span style="color:#000080;font-weight:bold">serif</span>;}
-	<span style="color:#000080;font-weight:bold">h2</span> {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">20</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">letter-spacing</span>: <span style="color:#00f">-0.5</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
-	<span style="color:#000080;font-weight:bold">h3</span> {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
-	<span style="color:#000080;font-weight:bold">h4</span> {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>,<span style="color:#00f">&#34;Times New Roman&#34;</span>, <span style="color:#000080;font-weight:bold">serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">18</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-	.link {<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#4d63ab</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;<span style="color:#000080;font-weight:bold">border-bottom</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">solid</span> <span style="color:#00f">#4d63ab</span>;}
+
+	<span style="color:#080;font-style:italic">/*preview-text*/</span>
+	.preview-text {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">none</span> <span style="color:#008080">!important</span>;<span style="color:#000080;font-weight:bold">overflow</span>: <span style="color:#000080;font-weight:bold">hidden</span>;<span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">0</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">max-height</span>: <span style="color:#00f">0</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">0</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">0</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">visibility</span>: <span style="color:#000080;font-weight:bold">hidden</span>;}
+
+	<span style="color:#080;font-style:italic">/*spacing*/</span>
+	.card {<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.pt24 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.ps24 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.pb24 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.pt16 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.ps16 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.pb16 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.pt8 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.ps8 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.pb8 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
+
+	<span style="color:#080;font-style:italic">/*columns*/</span>
+	.col {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">12</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">12</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.col-fixed {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">12</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">12</span><span style="color:#000080;font-weight:bold">px</span>;} <span style="color:#080;font-style:italic">/*a column that should not collapse*/</span>
+	.first {<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">0</span>;}
+	.row-end {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">0</span>;} <span style="color:#080;font-style:italic">/*a column at the end of a row where the next row will also have columns*/</span>
+	.last {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">0</span>;} <span style="color:#080;font-style:italic">/*the very last column in a group*/</span>
+
+	<span style="color:#080;font-style:italic">/*typography*/</span>
+	.p {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">400</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
+	.small {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">400</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">14</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">20</span><span style="color:#000080;font-weight:bold">px</span>;}
+	<span style="color:#000080;font-weight:bold">h1</span> {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">36</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">48</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;}
+	<span style="color:#000080;font-weight:bold">h2</span> {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">20</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;}
+	<span style="color:#000080;font-weight:bold">h3</span> {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">18</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;}
+	<span style="color:#000080;font-weight:bold">h4</span> {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>, Georgia, <span style="color:#000080;font-weight:bold">serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">18</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;}
+	.link-blue {<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#31409f</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;<span style="color:#000080;font-weight:bold">border-bottom</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">solid</span> <span style="color:#00f">#31409f</span>;}
 	.link-white {<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#fff</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;<span style="color:#000080;font-weight:bold">border-bottom</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">solid</span> <span style="color:#00f">#fff</span>;}
-	.button {<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">border-radius</span>: <span style="color:#00f">2</span><span style="color:#000080;font-weight:bold">px</span>;}
-	.button-dark {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#222</span>;}
-	.button-white {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#fff</span>;}
-	.button-blue {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#31409f</span>;}
-	.button-link {<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#fff</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">letter-spacing</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;}
-	.button-white-link {<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">letter-spacing</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;}
-	.button-white-link-alt {<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#31409f</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">letter-spacing</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;}
 
+	<span style="color:#080;font-style:italic">/*buttons*/</span>
+	.button {<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">border-radius</span>: <span style="color:#00f">2</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#222</span>;}
+	.button-link {<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span>;<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, Tahoma, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#fff</span>;<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">letter-spacing</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">text-transform</span>: <span style="color:#000080;font-weight:bold">uppercase</span>;<span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;}
 
-	<span style="color:#080;font-style:italic">/*----------EMAIL STYLES----------*/</span>
-    .headshot {
-        <span style="color:#000080;font-weight:bold">border-radius</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span>;
-        <span style="color:#000080;font-weight:bold">object-fit</span>: <span style="color:#000080;font-weight:bold">cover</span>;
-        <span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">120</span><span style="color:#000080;font-weight:bold">px</span>;
-        <span style="color:#000080;font-weight:bold">height</span>: <span style="color:#00f">120</span><span style="color:#000080;font-weight:bold">px</span>;
-        <span style="color:#000080;font-weight:bold">border</span>: <span style="color:#00f">1</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#000080;font-weight:bold">solid</span> <span style="color:#00f">#222</span>;
-    }
-	.pub-icon {
-		<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-	.title {
-		<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-	.default-text {
-		<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, <span style="color:#00f">&#39;Helvetica Neue&#39;</span>, Helvetica, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;
-		<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;
-		<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;
-		<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">400</span>;
-		<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;
-	}
-	.section-icon {
-		<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-	.small {
-		<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>, <span style="color:#00f">&#39;Helvetica Neue&#39;</span>, Helvetica, Arial, <span style="color:#000080;font-weight:bold">sans-serif</span>;
-		<span style="color:#000080;font-weight:bold">font-size</span>: <span style="color:#00f">14</span><span style="color:#000080;font-weight:bold">px</span>;
-		<span style="color:#000080;font-weight:bold">line-height</span>: <span style="color:#00f">20</span><span style="color:#000080;font-weight:bold">px</span>;
-		<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">400</span>;
-		<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;
-	}
-	.col {
-		<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">12</span><span style="color:#000080;font-weight:bold">px</span>;
-		<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">12</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-	.col-photo {
-		<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-	.headline-link {
-		<span style="color:#000080;font-weight:bold">text-decoration</span>: <span style="color:#000080;font-weight:bold">none</span>;
-	}
-	.badge {
-		<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;
-		<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-	.icon-small {
-		<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;
-	}
-	.first {
-		<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">0</span>;
-	}
-	.last {
-		<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">0</span>;
-	}
+	<span style="color:#080;font-style:italic">/*background color modifiers for cards and buttons*/</span>
+	.bg-dark {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#222</span>;}
+	.bg-white {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#fff</span>;}
+	.bg-blue {<span style="color:#000080;font-weight:bold">background-color</span>: <span style="color:#00f">#31409f</span>;}
+
+	<span style="color:#080;font-style:italic">/*text modifiers--be sure to keep these last*/</span>
 	.bold {<span style="color:#000080;font-weight:bold">font-weight</span>: <span style="color:#00f">600</span>;}
+	.serif {<span style="color:#000080;font-weight:bold">font-family</span>: <span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>, Georgia, <span style="color:#000080;font-weight:bold">serif</span>;}
+	.dark {<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#222</span>;}
 	.white {<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#fff</span>;}
 	.blue {<span style="color:#000080;font-weight:bold">color</span>: <span style="color:#00f">#31409f</span>;}
 
+	<span style="color:#080;font-style:italic">/*----------CUSTOM STYLES----------*/</span>
+
+
 	<span style="color:#080;font-style:italic">/*----------MOBILE STYLES----------*/</span>
-	@<span style="color:#000080;font-weight:bold">media</span> <span style="color:#000080;font-weight:bold">only</span> <span style="color:#000080;font-weight:bold">screen</span> <span style="color:#000080;font-weight:bold">and</span> (<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#000080;font-weight:bold">480px</span>) <span style="color:#080;font-style:italic">/*you can change this value*/</span> {
+	@<span style="color:#000080;font-weight:bold">media</span> <span style="color:#000080;font-weight:bold">only</span> <span style="color:#000080;font-weight:bold">screen</span> <span style="color:#000080;font-weight:bold">and</span> (<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#000080;font-weight:bold">480px</span>) {
 		#email-table {
 			<span style="color:#000080;font-weight:bold">height</span>: <span style="color:#000080;font-weight:bold">auto</span> <span style="color:#008080">!important</span>;
-			<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">480</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#008080">!important</span>; <span style="color:#080;font-style:italic">/*you can change this value*/</span>
+			<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">480</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#008080">!important</span>;
 			<span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#008080">!important</span>;
-		}
-		<span style="color:#000080;font-weight:bold">img</span> {
-			<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#008080">!important</span>;
 		}
 		.collapse {
 			<span style="color:#000080;font-weight:bold">display</span>: <span style="color:#000080;font-weight:bold">block</span> <span style="color:#008080">!important</span>;
 			<span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#008080">!important</span>;
 		}
-		.small {
+		<span style="color:#000080;font-weight:bold">img</span> {
+			<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#008080">!important</span>;
+		}
+		.center-mobile {
 			<span style="color:#000080;font-weight:bold">text-align</span>: <span style="color:#000080;font-weight:bold">center</span> <span style="color:#008080">!important</span>;
 		}
+		.center-mobile <span style="color:#000080;font-weight:bold">img</span> {
+			<span style="color:#000080;font-weight:bold">margin</span>: <span style="color:#00f">0</span> <span style="color:#000080;font-weight:bold">auto</span> <span style="color:#008080">!important</span>;
+		}
 		.col {
-			<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">0</span> <span style="color:#008080">!important</span>;
 			<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">0</span> <span style="color:#008080">!important</span>;
+			<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">0</span> <span style="color:#008080">!important</span>;
 			<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span> <span style="color:#008080">!important</span>;
 		}
-		.last {
+		.col.last {
 			<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">0</span> <span style="color:#008080">!important</span>;
-		}
-		.col-photo {
-			<span style="color:#000080;font-weight:bold">width</span>: <span style="color:#00f">100</span><span style="color:#000080;font-weight:bold">%</span> <span style="color:#008080">!important</span>;
 		}
 	}
 	@<span style="color:#000080;font-weight:bold">media</span> <span style="color:#000080;font-weight:bold">only</span> <span style="color:#000080;font-weight:bold">screen</span> <span style="color:#000080;font-weight:bold">and</span> (<span style="color:#000080;font-weight:bold">max-width</span>: <span style="color:#000080;font-weight:bold">320px</span>) {}
@@ -244,16 +249,16 @@
 	&lt;<span style="color:#000080;font-weight:bold">center</span>&gt;
 		<span style="color:#080;font-style:italic">&lt;!-- BODY TABLE // --&gt;</span>
 		&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">height</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;body-table&#34;</span>&gt;
-		
-		<span style="color:#080;font-style:italic">&lt;!-- Preheader --&gt;</span>
-        &lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;font-size: 1px;color: #f4f4f4;line-height: 1px;display: none;&#34;</span>&gt;Join us live, June 4 from 12.30 to 1:30 p.m. EDT. &amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
-
 			&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
 				&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;body-cell&#34;</span>&gt;
+
+					&lt;<span style="color:#000080;font-weight:bold">span</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;preview-text&#34;</span>&gt;<span style="color:#080;font-style:italic">&lt;!-- PREVIEW TEXT GOES HERE --&gt;</span> &amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&lt;/<span style="color:#000080;font-weight:bold">span</span>&gt;
+
 					<span style="color:#080;font-style:italic">&lt;!--PREVENT OUTLOOK FROM DEFAULTING TO TIMES NEW ROMAN BECAUSE OF CUSTOM FONTS--&gt;</span>
 					<span style="color:#080;font-style:italic">&lt;!--[if mso]&gt;
 </span><span style="color:#080;font-style:italic">					&lt;style type=&#34;text/css&#34;&gt;
-</span><span style="color:#080;font-style:italic">					body, table, td, a, span {font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif !important;}
+</span><span style="color:#080;font-style:italic">					body, table, td, h1, h2, h3, .p, a, .button-link {font-family: Tahoma, Arial, sans-serif !important;}
+</span><span style="color:#080;font-style:italic">					h4, .serif {font-family: Georgia, serif !important;}
 </span><span style="color:#080;font-style:italic">					&lt;/style&gt;
 </span><span style="color:#080;font-style:italic">					&lt;![endif]--&gt;</span>
 
@@ -267,115 +272,60 @@
 					&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
 					<span style="color:#080;font-style:italic">&lt;!-- // HEADER TABLE --&gt;</span>
 
-					<span style="color:#080;font-style:italic">&lt;!-- EMAIL TABLE // --&gt;</span>
+					<span style="color:#080;font-style:italic">&lt;!-- MAIN TABLE // --&gt;</span>
 					&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;600&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;email-table&#34;</span>&gt;
 						&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;background: #000;padding:0 0 0 0;&#34;</span>&gt;
-                                    &lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
-                                        &lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-                                            &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;row-blue container default-text white&#34;</span>&gt;
-                                                &lt;<span style="color:#000080;font-weight:bold">h2</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;white&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;padding-bottom: 0;text-align: center;&#34;</span>&gt;McClatchy Virtual Event Series&lt;/<span style="color:#000080;font-weight:bold">h2</span>&gt;
-                                            &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-                                        &lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt; 
-                                    &lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
-                                    &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://media.mcclatchy.com/email-assets/2020/19-bending-the-curve-email-hero.png&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;80%&#34;</span> <span style="color:#f00">alt</span>=<span style="color:#00f">&#34;bending the curve logo&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;width: 80%;&#34;</span>&gt; 
+							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;&#34;</span>&gt;
+								INSERT MODULE HERE
 							&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
 						&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
-&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;container row-white default-text&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">h2</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;padding-bottom: 16px;&#34;</span>&gt;A livestreamed three-part series&lt;/<span style="color:#000080;font-weight:bold">h2</span>&gt;
+						&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;&#34;</span>&gt;
+								INSERT MODULE HERE
+							&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+						&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+						&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;&#34;</span>&gt;
+								INSERT MODULE HERE
+							&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+						&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+						&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;&#34;</span>&gt;
+								INSERT MODULE HERE
+							&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+						&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+						&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;&#34;</span>&gt;
+								INSERT MODULE HERE
+							&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+						&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
 
-        Join <span style="color:#a61717;background-color:#e3d2d2">&lt;</span>%= recipient.siteBrand.lowerThePropertyName %&gt; and the 30 local newsrooms that together make McClatchy for a livestreamed discussion, &lt;<span style="color:#000080;font-weight:bold">strong</span>&gt;Path to the Vaccine&lt;/<span style="color:#000080;font-weight:bold">strong</span>&gt;, where we’ll explore the current journey to a coronavirus vaccine with medical research underway and vaccine trials already launched.
-                        
-       &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt; 
-&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+						<span style="color:#080;font-style:italic">&lt;!-- TERMS BLOCK (IF SUBSCRIPTION EMAIL) // --&gt;</span>
+						&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;terms&#34;</span>&gt;
+								<span style="color:#a61717;background-color:#e3d2d2">&lt;</span>%@ include view=&#39;tos_digital_2019_10&#39; %&gt;
+							&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+						&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+						<span style="color:#080;font-style:italic">&lt;!-- // TERMS BLOCK --&gt;</span>
 
-&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-   &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;container row-gray default-text&#34;</span>&gt;
-                &lt;<span style="color:#000080;font-weight:bold">h3</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;padding-bottom: 24px;&#34;</span>&gt;Confirmed speakers include:&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
-                            
-             &lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
-                &lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;136&#34;</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;headshot&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://media.mcclatchy.com/email-assets/2020/21-natalie-dean-headshot.png&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;120&#34;</span> <span style="color:#f00">height</span>=<span style="color:#00f">&#34;120&#34;</span> <span style="color:#f00">alt</span>=<span style="color:#00f">&#34;natalie dean headshot&#34;</span> /&gt;
-                    &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;middle&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;default-text&#34;</span>&gt;
-                       &lt;<span style="color:#000080;font-weight:bold">b</span>&gt;Natalie Dean, Ph.D&lt;/<span style="color:#000080;font-weight:bold">b</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-Assistant Professor in the Department of Biostatistics &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-University of Florida
-
-                    &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-                &lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
-            &lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;   
-              &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;      
-            &lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
-                &lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;136&#34;</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;headshot&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://media.mcclatchy.com/email-assets/2020/21-jonathan-quick-headshot.png&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;120&#34;</span> <span style="color:#f00">height</span>=<span style="color:#00f">&#34;120&#34;</span> <span style="color:#f00">alt</span>=<span style="color:#00f">&#34;jonathan quick headshot&#34;</span> /&gt;
-                    &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;middle&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;default-text&#34;</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">b</span>&gt;Jonathan D. Quick, MD, MPH&lt;/<span style="color:#000080;font-weight:bold">b</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span> /&gt;
-                      Infectious disease expert &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-Author of The End of Epidemics: The Looming Threat to Humanity and How to Stop It
-
-                    &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-                &lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
-            &lt;/<span style="color:#000080;font-weight:bold">table</span>&gt; 
-     
-            &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-            &lt;<span style="color:#000080;font-weight:bold">h3</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;padding-bottom: 24px;&#34;</span>&gt;Moderator:&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
-
-            &lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
-                &lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;136&#34;</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">img</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;headshot&#34;</span> <span style="color:#f00">src</span>=<span style="color:#00f">&#34;https://media.mcclatchy.com/email-assets/2020/21-audrey-dutton-headshot.png&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;120&#34;</span> <span style="color:#f00">height</span>=<span style="color:#00f">&#34;120&#34;</span> <span style="color:#f00">alt</span>=<span style="color:#00f">&#34;audrey dutton headshot&#34;</span> /&gt;
-                    &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-                    &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;middle&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;default-text&#34;</span>&gt;
-                        &lt;<span style="color:#000080;font-weight:bold">b</span>&gt;Audrey Dutton&lt;/<span style="color:#000080;font-weight:bold">b</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span> /&gt;
-                       Investigative Reporter &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-Idaho Statesman
-
-                    &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-                &lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
-            &lt;/<span style="color:#000080;font-weight:bold">table</span>&gt; 
-    &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
- &lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt; 
-&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-    &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;container row-white default-text&#34;</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">h3</span>&gt;Event details&lt;/<span style="color:#000080;font-weight:bold">h3</span>&gt;
-        Path to the Vaccine will be live streamed from &lt;<span style="color:#000080;font-weight:bold">strong</span>&gt;12:30 - 1:30 p.m. EDT on Thursday, June 4&lt;/<span style="color:#000080;font-weight:bold">strong</span>&gt;. &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-        COVID-19: Bending the Curve is presented by PhRMA
-                           
-        &lt;<span style="color:#000080;font-weight:bold">br</span>&gt;&lt;<span style="color:#000080;font-weight:bold">br</span>&gt;
-        &lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span>&gt;
-           &lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-              &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button button-blue&#34;</span>&gt;
-                 &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;NEEDEVENTBRITEURL&#34;</span> <span style="color:#f00">target</span>=<span style="color:#00f">&#34;_blank&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button-link&#34;</span>&gt;register now&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-              &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-           &lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
-        &lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
-    &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
-
- 
-
-						
 						<span style="color:#080;font-style:italic">&lt;!-- FOOTER BLOCK // --&gt;</span>
 						&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;footer&#34;</span> <span style="color:#f00">style</span>=<span style="color:#00f">&#34;padding-top: 24px;&#34;</span>&gt;
-								<span style="color:#a61717;background-color:#e3d2d2">&lt;</span>%@ include view=&#39;mccDynamicFooterFlexibleWidth&#39; %&gt;
+							&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span> <span style="color:#f00">id</span>=<span style="color:#00f">&#34;footer&#34;</span>&gt;
+								<span style="color:#a61717;background-color:#e3d2d2">&lt;</span>%@ include view=&#39;mccDynamicFooterLeftAligned&#39; %&gt;
 							&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
 						&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
 						<span style="color:#080;font-style:italic">&lt;!-- // FOOTER BLOCK --&gt;</span>
 					&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
-					<span style="color:#080;font-style:italic">&lt;!-- // EMAIL TABLE --&gt;</span>
+					<span style="color:#080;font-style:italic">&lt;!-- // MAIN TABLE --&gt;</span>
 				&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
 			&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
 		&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
 		<span style="color:#080;font-style:italic">&lt;!-- // BODY TABLE --&gt;</span>
+		<span style="color:#080;font-style:italic">&lt;!-- Font Awesome Free by @fontawesome - https://fontawesome.com --&gt;</span>
 	&lt;/<span style="color:#000080;font-weight:bold">center</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">body</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">html</span>&gt;
+
  
 
 </code></pre></div><h4 id="css">CSS</h4>
@@ -659,7 +609,27 @@ customElements.define("bending-the-curve", BendingTheCurveTemplate);
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/sample2/" class="">email sample atom </a>
+        <a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/campaign-shortcodes/" class="">campaign shortcodes</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/typography/" class="">typography</a>
       </h5>
       
     </div>
@@ -680,17 +650,17 @@ customElements.define("bending-the-curve", BendingTheCurveTemplate);
     
   </div>
 
-  <div class="organisms">
+  <div class="layouts">
     <div class="label">
-      <h5>ORGANISMS</h5>
+      <h5>LAYOUTS</h5>
     </div>
     
     
     <div class="package">
       <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/organisms/sample3/">email sample organism</a>
+        <a class="" href="https://mjs2430.github.io/email/layouts/sample3/">email sample layout</a>
       </h4>
-      <p class="summary">an organism example</p>
+      <p class="summary">a layout example</p>
     </div>
     
   </div>

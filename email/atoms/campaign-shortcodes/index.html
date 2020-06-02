@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>campaign shortcodes</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../../../css/atoms/typography.css">
+    <link rel="stylesheet" href="../../../css/atoms/media.css">
+    <link rel="stylesheet" href="../../../css/atoms/section.css">
+    <link rel="stylesheet" href="../../../css/atoms/button.css">
+    <link rel="stylesheet" href="../../../css/atoms/inputs.css">
+
+    
+    <link rel="stylesheet" href="../../../css/molecules/paper.css">
+    <link rel="stylesheet" href="../../../css/molecules/package.css">
+    <link rel="stylesheet" href="../../../css/molecules/impact.css">
+    <link rel="stylesheet" href="../../../css/molecules/social-media.css">
+    <link rel="stylesheet" href="../../../css/molecules/expander.css">
+    <link rel="stylesheet" href="../../../css/molecules/utilities.css">
+    <link rel="stylesheet" href="../../../css/molecules/progress.css">
+    <link rel="stylesheet" href="../../../css/molecules/page-title.css">
+    <link rel="stylesheet" href="../../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/tertiary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/account-sub-nav.css">
+    <link rel="stylesheet" href="../../../css/molecules/masthead.css">
+
+
+    
+    <link rel="stylesheet" href="../../../css/cards/grid.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-row.css">
+    <link rel="stylesheet" href="../../../css/cards/ad-widget.css">
+    <link rel="stylesheet" href="../../../css/cards/digest.css">
+    <link rel="stylesheet" href="../../../css/cards/immersive.css">
+    <link rel="stylesheet" href="../../../css/cards/story-body.css">
+    <link rel="stylesheet" href="../../../css/cards/header.css">
+    <link rel="stylesheet" href="../../../css/cards/series-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/correction.css">
+    <link rel="stylesheet" href="../../../css/cards/related-stories.css">
+    <link rel="stylesheet" href="../../../css/cards/author-card.css">
+    <link rel="stylesheet" href="../../../css/cards/author-bio.css">
+    <link rel="stylesheet" href="../../../css/cards/timeline.css">
+    <link rel="stylesheet" href="../../../css/cards/transparency.css">
+    <link rel="stylesheet" href="../../../css/cards/big-news.css">
+    <link rel="stylesheet" href="../../../css/cards/in-depth.css">
+    <link rel="stylesheet" href="../../../css/cards/swg-promo.css">
+    <link rel="stylesheet" href="../../../css/cards/read-next.css">
+    <link rel="stylesheet" href="../../../css/cards/section-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/modals.css">
+    <link rel="stylesheet" href="../../../css/cards/inline-cta.css">
+    <link rel="stylesheet" href="../../../css/cards/upper-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/sponsor.css">
+    <link rel="stylesheet" href="../../../css/cards/gallery.css">
+    <link rel="stylesheet" href="../../../css/cards/dsp.css">
+    <link rel="stylesheet" href="../../../css/cards/review-order.css">
+    <link rel="stylesheet" href="../../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../../css/cards/subscription-offers.css">
+    <link rel="stylesheet" href="../../../css/cards/hidden.css">
+
+   
+    
+    <link rel="stylesheet" href="../../../css/site.css">
+<link rel="stylesheet" href="../../../css/style-guide.css">
+
+  </head>
+
+  <body class="">
+    <div class="banner paper">
+      <a href="../../../" style="padding: 0;"><img class="logo" src="../../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mjs2430.github.io/saratoga/" class="">
+          <span>style guide</span>
+        </a>
+        <a href="https://mjs2430.github.io/markets/" class="">
+          <span>markets</span>
+        </a>
+        <a href="https://mjs2430.github.io/ads/" class="">
+          <span>ads</span>
+        </a>
+        <a href="https://mjs2430.github.io/email/" class="active">
+          <span>email</span>
+        </a>
+        <a href="https://mjs2430.github.io/labs/" class="">
+          <span>labs</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">campaign shortcodes
+    </h2>
+    <p>Campaign Shortcodes are placed in our emails to pull in full modules, user information, dynamic data, logos, and more.
+<br><br></p>
+<h3 id="header">HEADER</h3>
+<p><code>&lt;%@ include view='mccDynamicHeader' %&gt;</code> <br>
+<br></p>
+<h3 id="footers">FOOTERS</h3>
+<p><code>&lt;%@ include view='mccDynamicFooterLeftAligned' %&gt;</code> <br>
+<code>&lt;%@ include view='mccDynamicFooterFlexibleWidth' %&gt;</code> <br>
+<code>&lt;%@ include view='mccFooterNoSocial' %&gt;</code> <br>
+<br></p>
+<h3 id="terms-of-service">TERMS OF SERVICE</h3>
+<p><code>&lt;%@ include view='tos_combo_2019_10' %&gt;</code> <br>
+<code>&lt;%@ include view='tos_digital_2019_10' %&gt;</code> <br>
+<br></p>
+<h3 id="customer-service">CUSTOMER SERVICE</h3>
+<p><code>&lt;%= recipient.siteBrand.customerServiceEmail %&gt;</code> <br>
+<code>&lt;%= recipient.siteBrand.customerServicePh1 %&gt;</code> <br>
+<code>https://&lt;%= recipient.siteBrand.customerServicePage %&gt;</code> <br>
+<br></p>
+<h3 id="pub-links">PUB LINKS</h3>
+<p><code>https://&lt;%= recipient.siteBrand.publicationUrl %&gt;</code> <br>
+<code>https://&lt;%= recipient.siteBrand.eeditionVanity %&gt;</code> <br>
+<code>https://&lt;%= recipient.siteBrand.subActivation %&gt;</code> <br>
+<code>https://&lt;%= recipient.siteBrand.termsServiceLink %&gt;</code> <br>
+<br></p>
+<h3 id="property-name">PROPERTY NAME</h3>
+<p><code>&lt;%= recipient.siteBrand.paperName %&gt;</code>  (Official Property Name; has &ldquo;The&rdquo; if part of official name) <br>
+<code>&lt;%= recipient.siteBrand.lowerThePropertyName %&gt;</code> (has &ldquo;the&rdquo; or &ldquo;The&rdquo; for use in a sentence)<br>
+<code>&lt;%= recipient.siteBrand.upperThePropertyName %&gt;</code> (has &ldquo;The&rdquo; for use at the beginning of a sentence) <br>
+<code>&lt;%= recipient.siteBrand.propertyName %&gt;</code> (no &ldquo;the&rdquo; or &ldquo;The&rdquo; for use as a compound adjective)<br>
+<br></p>
+<h3 id="social">SOCIAL</h3>
+<p><code>http://www.facebook.com/&lt;%= recipient.siteBrand.connectFacebookUrl %&gt;</code> <br>
+<code>http://www.twitter.com/&lt;%= recipient.siteBrand.connectTwitterUrl %&gt;</code> <br>
+<code>https://www.instagram.com/&lt;%= recipient.siteBrand.connectInstagramUrl %&gt;</code> <br>
+<br></p>
+<h3 id="app">APP</h3>
+<p><code>https://&lt;%= recipient.siteBrand.googlePlayApp %&gt;</code> <br>
+<code>https://&lt;%= recipient.siteBrand.iosApp %&gt;</code> <br>
+<br></p>
+<h3 id="personalization">PERSONALIZATION</h3>
+<p><code>&lt;%= recipient.firstName %&gt;</code> <br>
+<code>&lt;%= recipient.lastName %&gt;</code> <br>
+<code>&lt;%= recipient.account %&gt;</code> <br>
+<code>&lt;%= recipient.PaidContact.tempStopDate %&gt;</code> <br>
+<br></p>
+<h3 id="images">IMAGES</h3>
+<p><code>&lt;%= recipient.siteBrand.overrideLogo %&gt;</code> <br>
+<br></p>
+<h3 id="account">ACCOUNT</h3>
+<p><code>https://&lt;%= recipient.siteBrand.accountPage %&gt;</code> <br>
+<code>https://&lt;%= recipient.siteBrand.prefPageLink %&gt;</code> <br>
+<br></p>
+<h3 id="nie">NIE</h3>
+<p><code>https://&lt;%= recipient.siteBrand.nieDonationURL %&gt;</code> <br></p>
+
+  </div>
+
+  
+<div class="paper digest list">
+  <div class="atoms">
+    <div class="label">
+      <h5>ATOMS</h5>
+    </div>
+    <div class="package">
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/campaign-shortcodes/" class="active">campaign shortcodes</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/typography/" class="">typography</a>
+      </h5>
+      
+    </div>
+  </div>
+
+  <div class="molecules">
+    <div class="label">
+      <h5>MOLECULES</h5>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/email/molecules/sample4/">sample 4</a>
+      </h4>
+      <p class="summary">Goes on the top of the homepage during large news events.</p>
+    </div>
+    
+  </div>
+
+  <div class="layouts">
+    <div class="label">
+      <h5>LAYOUTS</h5>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/email/layouts/sample3/">email sample layout</a>
+      </h4>
+      <p class="summary">a layout example</p>
+    </div>
+    
+  </div>
+
+  <div class="templates">
+    <div class="label">
+      <h5>TEMPLATES</h5>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/email/templates/template-sample/">email sample template</a>
+      </h4>
+      <p class="summary">a template example</p>
+    </div>
+    
+  </div>
+
+  <script src="../../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>
+  </body>
+</html>
