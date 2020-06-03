@@ -104,14 +104,6 @@
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/email/layouts/sample3/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mjs2430.github.io/email/templates/template-sample/</loc>
-  </url>
-  
-  <url>
     <loc>https://mjs2430.github.io/saratoga/expander/</loc>
   </url>
   
@@ -364,6 +356,10 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/email/templates/standard-template/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/decks/story/</loc>
   </url>
   
@@ -397,6 +393,10 @@
   
   <url>
     <loc>https://mjs2430.github.io/saratoga/transparency/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/layouts/two-column-module/</loc>
   </url>
   
   <url>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>spacing</title>
+    <title>two column module</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -100,22 +100,90 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">spacing
+    <h2 class="page-header">two column module
     </h2>
-    <p>The <code>.card</code> class adds 24px spacing on all sides and is the primary class applied to the main <code>&lt;td&gt;</code> for every row. To put padding before, after or beside individual elements within a card or if a custom template requires special spacing, there are 3 sets of classes to use. Padding can be added to the just the top, bottom or sides and can be 8, 16 or 24 px. Note: Outlook Desktop Windows ignores padding applied to images, so if an image needs spacing, apply the padding class to the element that the image needs spacing from instead of the image itself.</p>
-<h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/*spacing*/</span>
-.card {<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pt24 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-.ps24 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pb24 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pt16 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
-.ps16 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pb16 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pt8 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
-.ps8 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pb8 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
-</code></pre></div>
+    <p>This is the most-used base template, with a maximum table width of 600px. The default padding is 24px, which leaves a 552px-wide area for content. On screens with a width of 480px and smaller that support media queries, the template will scale to a width of 100%, with a maximum width of 480px. All of the default CSS is included in this template in addition to the basic HTML structure.</p>
+<h4 id="example-of-two-equal-width-columns-264px-each">EXAMPLE of TWO EQUAL-WIDTH COLUMNS (264px each)</h4>
+<div class="example" style="margin:16px auto 40px;">
+    <two-column-module></two-column-module>
+</div>
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#080;font-style:italic">&lt;!-- TWO EQUAL COLLAPSING COLUMNS --&gt;</span>
+&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+   &lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse first&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;264&#34;</span>&gt;
+         image and/or copy goes here
+      &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+      &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse last&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;264&#34;</span>&gt;
+         image and/or copy goes here
+      &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+   &lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+
+</code></pre></div><script>
+class TwoColumnModule extends HTMLElement {
+  /**
+   * Element Shadow Template
+   * Went with ShadowDOM on this one for a graceful failure of nothing
+   * and because very little if any is customizable.
+   */
+  get template() {
+    let t = document.createElement("template");
+    t.innerHTML = `
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <style>
+       @import url( '/css/email/eds.css' )
+     </style>
+</head>
+<body>
+	<center>
+		<!-- BODY TABLE // -->
+		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="body-table">
+			<tr>
+				<td align="center" valign="top" id="body-cell">
+					<!-- MAIN TABLE // -->
+					<table border="0" cellpadding="0" cellspacing="0" width="600" id="email-table">
+						<tr>
+							<td align="left" valign="top" width="100%" class="card bg-white p">
+                            <!-- TWO EQUAL COLLAPSING COLUMNS -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                               <tr>
+                                  <td align="left" valign="top" class="col collapse first" width="264">
+                                     <img src="https://images.unsplash.com/photo-1546527868-ccb7ee7dfa6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" width="264" style="width: 100%;">
+                                  </td>
+                                  <td align="left" valign="top" class="col collapse last" width="264">
+                                     <h4>Lil' Pup</h4>
+                                     image and/or copy goes here
+                                  </td>
+                               </tr>
+                            </table>                                
+							</td>
+						</tr>
+					</table>
+					<!-- // MAIN TABLE -->
+				</td>
+			</tr>
+		</table>
+		<!-- // BODY TABLE -->
+		<!-- Font Awesome Free by @fontawesome - https://fontawesome.com -->
+	</center>
+</body>
+    `;
+    return t;   
+  }
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    let clone = this.template.content.cloneNode(true);
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(clone);
+  }
+} // end Class
+customElements.define("two-column-module", TwoColumnModule);
+</script>
   </div>
 
   
@@ -143,7 +211,7 @@
       
       
       <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/spacing/" class="active">spacing</a>
+        <a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
       </h5>
       
       
@@ -175,7 +243,7 @@
     </div>
     
     
-    <div class="package">
+    <div class="package active">
       <h4 class="sans bold">
         <a class="" href="https://mjs2430.github.io/email/layouts/two-column-module/">two column module</a>
       </h4>

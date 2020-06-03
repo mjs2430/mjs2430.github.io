@@ -1,0 +1,257 @@
+.eds {
+    width: 100%;
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #f4f4f4;
+    --lc: #222;
+}  
+
+.banner {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 13;
+}
+
+.paper, .card {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .13);
+}
+
+.banner a {
+    font-size: small;
+    font-weight: bold;
+    padding: 13px 15px;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+}
+
+.banner a.active span {
+    border-bottom: 2px solid #333;
+}
+
+.banner a span {
+    padding: 2px 0;
+}
+
+.label {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans';
+} 
+
+.label > * {
+    margin: 0;
+    padding: 5px 10px;
+    color: var(--bc, white);
+    background-color: var(--bbc, #373737);
+    --ld: none;
+    --lhd: none;
+}
+
+.package {
+    position: relative;
+    padding: var(--padding, 15px);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: flex-start;
+    color: var(--tc);
+    --hf: var(--serif);
+    --hw: 400;
+    --ht: none;
+    --ld: none;
+    --lhd: underline;
+    --lhc: var(--tc);
+}
+
+.sans.bold a {
+    font-family: 'Noto Sans';
+    font-weight: 600;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.summary {
+    font-family: 'Noto Sans';
+    font-size: small;
+}
+
+.story-body {
+    padding: 40px;
+}
+
+.story-body {
+    --hf: var(--sans);
+    --hw: 700;
+    --lc: #5169B8;
+    --lhc: #31409F;
+    --ld: underline;
+    --lhd: underline;
+    padding-bottom: 15px;
+}
+
+/*
+ * Style guide native defaults
+ */
+
+table {
+  width: 100%;
+  text-align: left;
+  border-spacing: 0;
+  box-sizing: content-box;
+}
+
+td {
+  padding: 5px 0;
+}
+
+th {
+  padding-bottom: 8px;
+}
+
+
+.story-body > hr {
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .story-body {
+        padding: 40px 0;
+    }
+    
+    .eds {
+        padding: 0;
+    }
+}
+
+
+/*
+ * Style guide main rules.
+ */
+
+.example {
+  max-width: 1140px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  --lc: #222;
+}
+
+.updated {
+  display: block;
+  font-size: small;
+  color: #377f6a;
+}
+
+.list {
+  position: relative;
+  background-color: #f4f4f4;
+  z-index: 1;
+}
+
+.list .cards, .list .organisms {
+  background-color: #FDFDF6;
+}
+
+.list .decks, .list .molecules {
+  background-color: #D2EFF2;
+}
+
+.list .templates {
+  background-color: #A5C3E9;
+}
+
+.list .atoms {
+  border-top: 1px solid #ddd;
+}
+
+.list .package.active {
+  background-color: #377f6a;
+  color: white;
+  --lc: white;
+  --lhc: white;
+}
+
+.list a.active {
+  color: #377f6a;
+}
+
+.list .new:after {
+  content: url(../icons/certificate.svg);
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  left: 5px;
+  top: 2px
+}
+
+.list .dep {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.details {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+  .panels {
+    position: relative;
+    height: calc(100vh - 94px);
+    display: flex;
+  }
+
+  .panels > * {
+    flex: 1;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .list {
+    max-width: 400px;
+    order: 1;
+  }
+
+  .details {
+    order: 2;
+  }
+}
+
+.page-header {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.note {
+  background-color: #e9ead8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px;
+  --hf: var(--sans);
+  --hw: 700;
+}
+
+.note.dep {
+  background-color: #6bb1b9;
+  color: white;
+}
+
+/**
+ * Phone view
+ */
+
+.phone {
+  width: 375px;
+  margin: 0 auto;
+}
