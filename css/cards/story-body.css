@@ -124,19 +124,19 @@
  * Mugshots
  */
 
-.story-body figure.mugshot {
+.story-body .mugshot {
   padding: 0 15px;
-  margin: 0 auto;
 }
 
-.story-body figure.mugshot > * {
-  float: right;
-  width: 125px;
-  margin: 0 0 15px 15px;
+.story-body .mugshot .img-container {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  grid-gap: 15px;
 }
 
-.story-body figure.mugshot figcaption {
-  padding: 5px 0 0;
+.story-body .mugshot figcaption {
+  padding: 0;
+  align-self: end;
 }
 
 /**

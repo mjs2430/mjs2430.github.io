@@ -1,15 +1,15 @@
 var Typologies = {
   "default": [
     { 
-      "name": "zone1",
+      "zone": "1",
       "units": ["leaderboard"]
     },
     { 
-      "name": "zone2",
+      "zone": "2",
       "units": ["connatix"]
     },
     { 
-      "name": "zone3",
+      "zone": "3",
       "class": "grid combo",
       "units": ["newsletter", "ad"],
       "gpt": {
@@ -18,7 +18,7 @@ var Typologies = {
       }
     },
     {
-      "name": "zone4",
+      "zone": "4",
       "class": "grid combo",
       "units": ["subscription", "ad"],
       "gpt": {
@@ -27,88 +27,84 @@ var Typologies = {
       }
     },
     {
-      "name": "zone5",
+      "zone": "5",
       "units": ["banner"],
       "gpt": {
         "atf": "n"
       }
     },
     {
-      "name": "zone6",
+      "zone": "dynamic",
+      "units": ["ad"]
+    },
+    {
+      "zone": "6",
       "units": ["zergnet"]
     }
   ],
   
   "configuration-a": [
-    { 
-      "name": "zone1",
-      "units": ["banner"]
-    },
     {
-      "name": "zone2",
+      "zone": "2",
       "class": "wide",
       "units": ["leaderboard"]
     },
     {
-      "name": "zone3",
+      "zone": "3",
       "class": "wide",
       "units": ["leaderboard"]
     },
     {
-      "name": "zone4",
+      "zone": "4",
       "units": ["connatix"]
     },
     {
-      "name": "zone5",
+      "zone": "5",
       "class": "grid",
       "units": ["related-stories", "banner"]
     },
     {
-      "name": "dynamic",
+      "zone": "dynamic",
       "units": ["ad"]
     },
     {
-      "name": "zone6",
+      "zone": "6",
       "units": ["zergnet"]
     }
   ],
 
   "configuration-b": [
     { 
-      "name": "zone1",
+      "zone": "1",
       "units": ["leaderboard"]
     },
     { 
-      "name": "zone3",
+      "zone": "3",
       "units": ["banner"]
     },
     {
-      "name": "zone4",
+      "zone": "4",
       "units": ["connatix"]
     },
     {
-      "name": "zone5",
+      "zone": "5",
       "class": "grid combo",
       "units": ["notifications", "ad"]
     },
     {
-      "name": "dynamic",
-      "units": ["ad"]
-    },
-    {
-      "name": "zone6",
+      "zone": "6",
       "units": ["zergnet"]
     }
   ],
 
   "configuration-c": [
     {
-      "name": "zone3",
+      "zone": "3",
       "class": "grid combo",
       "units": ["app"]
     },
     {
-      "name": "zone5",
+      "zone": "5",
       "class": "grid combo",
       "units": ["podcast"]
     }

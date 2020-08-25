@@ -3,6 +3,7 @@
  */
 
 .series-nav {
+  padding: 0;
 	--hf: var(--serif);
 	--hw: 400;
 	--ht: none;

@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../../css/cards/grid.css">
     <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
     <link rel="stylesheet" href="../../../css/cards/flex-row.css">
-    <link rel="stylesheet" href="../../../css/cards/ad-widget.css">
+    <link rel="stylesheet" href="../../../css/cards/ads.css">
     <link rel="stylesheet" href="../../../css/cards/digest.css">
     <link rel="stylesheet" href="../../../css/cards/immersive.css">
     <link rel="stylesheet" href="../../../css/cards/story-body.css">
@@ -84,19 +84,47 @@
 <link rel="stylesheet" href="../../../css/decks/purple-tuesdays.css">
 
 <script defer src="../../../js/navigation.js"></script>
-<script defer src="../../../js/gpt-ad.js"></script>
+<script defer src="../../../labs/fake-ad.js"></script>
 <script defer src="../../../js/zones.js"></script>
 <script defer src="../../../js/typologies.js"></script>
 <script defer src="../../../js/dynamics.js"></script>
 <script defer src="../../../js/zone-toggle.js"></script>
-<script defer src="../../../js/connatix-top-stories.js"></script>
-<script defer src="../../../js/zergnet-stories.js"></script>
 
 
 <style>
 gpt-ad {
   display: flex;
   justify-content: center;
+}
+
+[data-zone="1"] fake-ad {
+  padding: 15px 0;
+}
+
+[data-zone] {
+  position: relative;
+}
+
+[data-zone]:after {
+  content: attr(data-zone);
+  display: flex;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  background-color: rgba(244,244,244,0.6);
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  color: #222;
+  position: absolute;
+  left: calc(50% - 60px);
+  top: calc(50% - 60px);
+  z-index: 10;
+}
+
+[data-zone="dynamic"]:after {
+  font-size: large;
 }
 </style>
 
@@ -317,6 +345,7 @@ gpt-ad {
 </figure>
 
 
+  <div>
   <div class="series-nav package story-module">
   <h5>MORE FROM THIS SERIES</h5>
   <hr>
@@ -348,6 +377,7 @@ gpt-ad {
   <hr>
 </div>
 
+  </div>
 
   <span class="dateline">Jefferson City</span>
 
@@ -390,7 +420,9 @@ gpt-ad {
   <p>Eu dictas epicurei sensibus vel, eam id maiorum senserit constituto. Sed an melius audire lobortis, qui ad propriae vituperata. Quot splendide id sit, ne autem causae vocibus eos, minim graece laboramus pro te. Rebum facilisi has ei, modus tibique eloquentiam est ei, graeco nusquam eu pri. Rebum accommodare nam cu. Eu sed alia possit nonumes, mea mollis scribentur ex, no eos justo viris inimicus.</p>
   <p>Pri omnis repudiare an, ea eos veritus facilisi accusata, docendi iudicabit hendrerit vel ei. Ea vel dicta aeterno dolores, in ubique meliore delicata his. At oporteat evertitur usu. Qui ad vocent tritani, cu velit aperiam eam. Te sea mucius molestie definiebas, ne soluta doctus antiopam per.</p>
 
-  <figure class="photo-inline-square mugshot"> 
+  <p>Pro te simul partiendo salutatus, an enim labitur scribentur duo, harum suscipit in mel. Numquam referrentur et cum, cum mundi dicunt ad. Pri ne enim partem suscipiantur, posse dolores sit id, at qui dicam facilisi maluisset. Cum no viderer numquam, cu sensibus dissentiunt mea. Duo dicunt apeirian ei. Melius nominavi id eam. Ad cum modus maluisset, ipsum everti integre duo ut.</p>
+
+  <!-- <figure class="photo-inline-square mugshot"> 
   <div class="img-container picture ">
     <picture>
       
@@ -403,12 +435,15 @@ gpt-ad {
       
       <img class=" lazy responsive-image" data-original="https://www.charlotteobserver.com/latest-news/uhvju4/picture235264057/alternates/FREE_1140/Algia_clark.jpg" alt="Algia_clark.jpg" title="Algia_clark.jpg" src="https://www.charlotteobserver.com/latest-news/uhvju4/picture235264057/alternates/FREE_1140/Algia_clark.jpg" style="display: block;">
     </picture>
-      <figcaption> Algia Clark <span class="credit">Mecklenburg County Sheriff'</span></figcaption>
+    <figcaption> 
+      
+        Andreal Redmond was charged with accessory after the fact in Elliott Cheatham’s death. CCBI
+      
+    </figcaption>
   </div>
 </figure>
+ -->
 
-
-  <p>Pro te simul partiendo salutatus, an enim labitur scribentur duo, harum suscipit in mel. Numquam referrentur et cum, cum mundi dicunt ad. Pri ne enim partem suscipiantur, posse dolores sit id, at qui dicam facilisi maluisset. Cum no viderer numquam, cu sensibus dissentiunt mea. Duo dicunt apeirian ei. Melius nominavi id eam. Ad cum modus maluisset, ipsum everti integre duo ut.</p>
   <p>Pro ad veritus convenire, cu duo autem aliquip admodum. Te duis dicunt percipitur vis, in est laoreet petentium expetendis. No nec falli rationibus, eu vis suscipit splendide. Ius et illum consetetur scriptorem. Ea vix impetus pericula omittantur, cu laoreet denique sed. Eos ex assentior complectitur, cu legimus voluptua intellegat per.</p>
 
   <!-- 
@@ -423,7 +458,7 @@ gpt-ad {
   <p>Quando persius luptatum sea ei, an mei putent philosophia. Mea eirmod dissentiet te. Putant euismod usu ad. Omittam appareat scaevola in vix, an eos posse ipsum tibique, salutatus quaerendum sed ex. Ei vel novum laudem, viderer mnesarchum moderatius te vel. Eum an consul accommodare, no mollis scripserit adversarium vim, choro vivendo verterem cum ea.</p>
   <p>His ex partem detracto, has antiopam intellegat delicatissimi te. Ut sea nullam delenit dolorum, in mazim ancillae quo. Mea reque elitr expetenda ei. Ex posse dolore ignota cum, ne facilis maiestatis est.</p>
 
-  <figure class="gallery card">
+  <!-- <figure class="gallery card">
   <div class="gallery-panel">
     <img class="gallery-current" src="../../../img/chiefs.jpg" alt="Lorem ipsum dolor sit amet" loading="lazy">
     <div class="gallery-marker">
@@ -438,7 +473,7 @@ gpt-ad {
     <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque tristique ligula in tempor. Praesent hendrerit in felis sit amet gravida. Donec mattis mi sit. <span class="credit">JOHN DOE</span></figcaption>
   </div>
 </figure>
-
+ -->
 
   <p>Nonumes forensibus his ut, ne iisque menandri mel. Vel ad mundi doming, nibh senserit accommodare an nam. Te cibo adhuc blandit usu. Sit cu voluptatum omittantur conclusionemque, nam reque mundi tation ut. Pri ne dico fierent invenire, sea eu appareat singulis. Ut pri dicant expetenda.</p>
   <p>Soluta fabellas eu sed, novum suavitate in eum, et tollit accusata ius. Ne mei melius argumentum repudiandae. Id alienum dolores mel. Eu sed vide alterum feugait. His voluptua complectitur et, pro viris mucius melius ne. Ex per stet esse labore.</p>
@@ -447,7 +482,7 @@ gpt-ad {
 
   <p>At sit nostro impetus. Vim ad solum regione, tale solum ponderum ut eam. Admodum volutpat scribentur vim id, quidam quaestio eu eam. Ei accumsan intellegebat eos, mollis regione ne per. Vide ullamcorper in has, ne nam liber vivendo appellantur, eos dictas nostrud debitis ut. Nec putant pericula et, eu tota debitis corrumpit vel.</p>
 
-  <blockquote>“At sit nostro impetus. Vim ad solum regione, tale solum ponderum ut eam. Admodum volutpat scribentur vim id, quidam quaestio eu eam.” <span class="attr">First Last</span></blockquote>
+  <!-- <blockquote>“At sit nostro impetus. Vim ad solum regione, tale solum ponderum ut eam. Admodum volutpat scribentur vim id, quidam quaestio eu eam.” <span class="attr">First Last</span></blockquote> -->
 
   <p>Deleniti interesset ea cum. Ius id atomorum expetendis, et pri hinc necessitatibus. In mundi audiam maiorum quo, sit no erant ornatus eligendi. Ad his omittantur adversarium. His eu stet periculis.</p>
   <p>Est cu modus debet eripuit. Et ius feugiat assentior. Enim maiorum ocurreret id eam, duo cu iisque deserunt, pri id quando impetus percipitur. Clita malorum no mel, nonumy dicunt mel cu. Paulo theophrastus ea mel, has soleat assueverit in. Unum probo nec et, sit posse officiis ut. Cum facete verear nominavi cu.</p>
@@ -785,15 +820,15 @@ This initial attempt is the most straightforward method where all variants are c
 -->
 
 <template data-unit="leaderboard">
-  <gpt-ad data-size-map="leaderboard" data-pl="story" data-atf="y" data-pkg="d" data-path="/7675/MIA.site_miamiherald/Sports"></gpt-ad>
+  <fake-ad size="[[970,250],[728,90]]"></fake-ad>
 </template>
 
 <template data-unit="ad">
-  <gpt-ad data-pl="story"></gpt-ad>
+  <fake-ad></fake-ad>
 </template>
 
 <template data-unit="banner">
-  <gpt-ad data-size-map="banner" data-pl="story"></gpt-ad>
+  <fake-ad size="[728,90]"></fake-ad>
 </template>
 
 <template data-unit="subscription">
@@ -921,7 +956,7 @@ This initial attempt is the most straightforward method where all variants are c
 </template>
 
 <template data-unit="zergnet">
-  <zergnet-stories data-id="53329"></zergnet-stories>
+  <fake-ad size="[728,525]" style="margin-top: 30px;"></fake-ad>
 </template>
 
 <template data-unit="related-stories">
@@ -955,7 +990,7 @@ This initial attempt is the most straightforward method where all variants are c
 </template>
 
 <template data-unit="connatix">
-  <connatix-top-stories token="4220831b-8160-4a28-84c2-af427a06ec9d"></connatix-top-stories>
+  <fake-ad size="[728,400]"></fake-ad>
 </template>
 
     

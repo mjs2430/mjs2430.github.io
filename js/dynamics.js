@@ -20,25 +20,17 @@ class Dynamics extends Zones {
   fill(zones) {
     this.render(zones);
     zones.forEach(z => {
-      let slots = document.querySelectorAll(`[data-zone=${z.name}]`);
+      let slots = document.querySelectorAll(`[data-zone="${z.zone}"]`);
 
       if(slots.length == 0) {
-        console.warn(`missing zone: ${z.name}`);
+        console.warn(`missing zone: ${z.zone}`);
       } else {
         slots.forEach(slot => {
           z.units.forEach(u => {
-            let t = document.querySelector(`template[data-unit=${u}]`);
+            let t = document.querySelector(`template[data-unit="${u}"]`);
 
             if(t) {
               let clone = t.content.cloneNode(true);
-              let gptAd = clone.querySelector("gpt-ad");
-
-              if(z.gpt && gptAd) {
-                for(let [k,v] of Object.entries(z.gpt)) {
-                  gptAd.dataset[k] = v;
-                }
-              }
-
               slot.appendChild(clone);
             } else {
               console.warn(`missing unit template: ${u}`);

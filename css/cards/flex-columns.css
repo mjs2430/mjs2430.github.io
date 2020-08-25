@@ -26,6 +26,11 @@
     margin: 15px;
   }
 
+  .flex-columns > zeus-ad {
+    flex: none;
+    padding: 15px;
+  }
+
   .flex-columns > .flex-columns {
     margin: 0;
   }

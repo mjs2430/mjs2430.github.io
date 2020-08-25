@@ -4,16 +4,6 @@
  * need to "line up with the grid".
  */
 
-/* section.big-news { */
-/*   margin-top: 0; */
-/*   padding-bottom: 15px; */
-/* } */
-
-/* .big-news > * { */
-/*   max-width: 1140px; */
-/*   margin: 0 auto; */
-/* } */
-
 section.big-news {
   padding: 0;
 }
@@ -29,8 +19,21 @@ section.big-news {
 }
 
 .big-news .h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .big-news .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1140px) {
+  .big-news .h1 {
+    font-size: 3rem;
+  }
 }
 
 .big-news h3,
@@ -42,11 +45,10 @@ section.big-news {
   padding: 10px 15px 0;
 }
 
-/* @media(max-width: 1170px) { */
-/*   .big-news figcaption { */
-/*     padding: 10px 15px; */
-/*   } */
-/* } */
+.big-news figure:last-child {
+  /* fix if there is no grid */
+  padding-bottom: 15px;
+}
 
 .big-news .featured .package {
   padding: 15px 0 0;

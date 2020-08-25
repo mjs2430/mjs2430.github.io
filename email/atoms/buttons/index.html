@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../../css/cards/grid.css">
     <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
     <link rel="stylesheet" href="../../../css/cards/flex-row.css">
-    <link rel="stylesheet" href="../../../css/cards/ad-widget.css">
+    <link rel="stylesheet" href="../../../css/cards/ads.css">
     <link rel="stylesheet" href="../../../css/cards/digest.css">
     <link rel="stylesheet" href="../../../css/cards/immersive.css">
     <link rel="stylesheet" href="../../../css/cards/story-body.css">
@@ -102,160 +102,274 @@
   <div class="paper story-body details">
     <h2 class="page-header">buttons
     </h2>
-    <p>Buttons are made entirely of HTML and CSS and should never be images. The default button is dark gray with white text.</p>
-<h4 id="example">EXAMPLE</h4>
-<div style="background-color: #ececec;padding: 24px;">
-    <eds-button></eds-button>
+    <p>All CSS for buttons is found in the framework. Buttons are made entirely of HTML and CSS and should never be images. The default button is dark gray with white text and a dark gray border.</p>
+<div class="note">
+Note: Our buttons are coded so that the entire area of the button is clickable and not just the text. To make this method work in Outlook Desktop on Windows, it requires a border on the anchor tag. This forces Outlook to render the top and bottom padding and the border radius on the button. Otherwise none of the padding would render and it would lose the appearance of a button.
 </div>
-<h4 id="html">HTML</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span>&gt;
-   &lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
-      &lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button&#34;</span>&gt;
-         &lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">target</span>=<span style="color:#00f">&#34;_blank&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button-link&#34;</span>&gt;Button Text&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
-      &lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
-   &lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+<h3 id="examples">Examples</h3>
+<p><eds-button></eds-button></p>
+<h3 id="html">HTML</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span>&gt;
+	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button&#34;</span>&gt;
+			&lt;<span style="color:#000080;font-weight:bold">a</span> <span style="color:#f00">href</span>=<span style="color:#00f">&#34;#&#34;</span> <span style="color:#f00">target</span>=<span style="color:#00f">&#34;_blank&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;button-link&#34;</span>&gt;Button Text&lt;/<span style="color:#000080;font-weight:bold">a</span>&gt;
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+	&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
 &lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
-</code></pre></div><h4 id="css">CSS</h4>
-<p>Be sure to use the <code>.button</code> and <code>.button-link</code> classes as shown above. To change the background color, there are helper classes: <code>.bg-white</code> and <code>.bg-blue</code>. To change the link color, there are also helper classes: <code>.dark</code> and <code>.blue</code>. Simply add these after the required classes. All of the CSS for these classes is already included in the base templates.</p>
+</code></pre></div><h3 id="rules">Rules</h3>
+<p>Be sure to include the <code>.button</code> and <code>.button-link</code> classes as shown above.</p>
+<p>To change the background color, there are helper classes to add after the default <code>.button</code> class: <code>.bg-white</code> and <code>.bg-blue</code>. You must also add in a border class to match the background color that goes in <em>after</em> the <code>.button-link</code> class. The border classes are <code>.border-white</code> and <code>.border-blue</code> (<code>.button-link</code> already has the dark gray border for the default button).</p>
+<p>To change the link color, the helper classes are: <code>.gray</code> and <code>.blue</code>. The link color should match the background color of the card, with the exception of a light gray card, where the button text is white.</p>
 <script>
 class EdsButton extends HTMLElement {
-  /*
-   * Element Shadow Template
-   * Went with ShadowDOM on this one for a graceful failure of nothing
-   * and because very little if any is customizable.
-   */
-  get template() {
-    let t = document.createElement("template");
-    t.innerHTML = `
-<head>
-     <style>
-       @import url( '/css/email/eds.css' )
-     </style>
-</head>
-<body>
-        <table border="0" cellpadding="0" cellspacing="20">
-           <tr>
-              <td align="center" valign="top" class="button">
-                 <a href="javascript:void(0)" target="_blank" class="button-link">Button Text</a>
-              </td>
-             <td class="ps8"></td>
-              <td align="center" valign="top" class="button bg-blue">
-                 <a href="javascript:void(0)" target="_blank" class="button-link">Button Text</a>
-              </td>
-            <td class="ps8"></td>    
-              <td align="center" valign="top" class="button bg-white">
-                 <a href="javascript:void(0)" target="_blank" class="button-link dark">Button Text</a>
-              </td>
-           </tr>
-        </table>
-</body>
+	get template() {
+		let t = document.createElement("template");
+		t.innerHTML = `
+		<head>
+			<style>
+				@import url( '/css/email/eds.css' )
+			</style>
+<pre><code>    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div style=&quot;padding: 12px;background-color: #f4f4f4;&quot;&gt;
+        &lt;table role=&quot;presentation&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+            &lt;tr&gt;
+                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;button-link&quot;&gt;Button Text&lt;/a&gt;
+                &lt;/td&gt;
+                &lt;td class=&quot;ps8&quot;&gt;&lt;/td&gt;
+                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button bg-blue&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;button-link border-blue white&quot;&gt;Button Text&lt;/a&gt;
+                &lt;/td&gt;
+                &lt;td class=&quot;ps8&quot;&gt;&lt;/td&gt;
+                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button bg-white&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;button-link border-white gray&quot;&gt;Button Text&lt;/a&gt;
+                &lt;/td&gt;
+                &lt;td class=&quot;ps8&quot;&gt;&lt;/td&gt;
+                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button bg-white&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;button-link border-white blue&quot;&gt;Button Text&lt;/a&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
     `;
-    return t;   
-  }
-  constructor() {
+    return t;
+}
+constructor() {
     super();
-  }
-  connectedCallback() {
+}
+connectedCallback() {
     let clone = this.template.content.cloneNode(true);
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: &quot;open&quot; });
     this.shadowRoot.appendChild(clone);
-  }
-} // end Class
-customElements.define("eds-button", EdsButton);
-</script>
+}
+</code></pre>
+<p>} // end Class
+customElements.define(&ldquo;eds-button&rdquo;, EdsButton);
+</script></p>
 
   </div>
 
   
 <div class="paper digest list">
-  <div class="atoms">
-    <div class="label">
-      <h5>ATOMS</h5>
-    </div>
-    <div class="package">
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/buttons/" class="active">buttons</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/campaign-shortcodes/" class="">campaign shortcodes</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/typography/" class="">typography</a>
-      </h5>
-      
-    </div>
-  </div>
 
-  <div class="molecules">
-    <div class="label">
-      <h5>MOLECULES</h5>
-    </div>
-    
-    
-    <div class="package">
-      <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/molecules/sample4/">sample 4</a>
-      </h4>
-      <p class="summary">Goes on the top of the homepage during large news events.</p>
-    </div>
-    
-  </div>
+	<div class="atoms">
+		<div class="label">
+			<h5>OVERVIEW</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/overview/description/" class="">Description</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/overview/how-to/" class="">How to Use the EDS</a>
+			</h5>
+			
+		</div>
+	</div>
 
-  <div class="layouts">
-    <div class="label">
-      <h5>LAYOUTS</h5>
-    </div>
-    
-    
-    <div class="package">
-      <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/layouts/two-column-module/">two column module</a>
-      </h4>
-      <p class="summary">two col module</p>
-    </div>
-    
-  </div>
+	<div class="atoms">
+		<div class="label">
+			<h5>FRAMEWORK</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/standard-framework/">Email Framework</a>
+			</h4>
+			<p class="summary">standard email framework</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/full-width-framework/">Full-Width Email Framework</a>
+			</h4>
+			<p class="summary">used for full-width backgrounds</p>
+		</div>
+		
+	</div>
 
-  <div class="templates">
-    <div class="label">
-      <h5>TEMPLATES</h5>
-    </div>
-    
-    
-    <div class="package">
-      <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/templates/full-width-template/">full width email template</a>
-      </h4>
-      <p class="summary">the full screen email template</p>
-    </div>
-    
-    
-    <div class="package">
-      <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/templates/standard-template/">standard email template</a>
-      </h4>
-      <p class="summary">the standard (600px) email template</p>
-    </div>
-    
-  </div>
+	<div class="atoms">
+		<div class="label">
+			<h5>ATOMS</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/buttons/" class="eds-active">buttons</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/footer-text/" class="">footer text/fine print</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h1/" class="">h1</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h2/" class="">h2</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h3/" class="">h3</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h4/" class="">h4</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/links/" class="">links</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/p/" class="">p</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/small/" class="">small text</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/text-modifiers/" class="">text modifiers</a>
+			</h5>
+			
+		</div>
+	</div>
 
-  <script src="../../../js/style-guide.js"></script>
+	<div class="atoms">
+		<div class="label">
+			<h5>MOLECULES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/apps-molecule/">App Molecule</a>
+			</h4>
+			<p class="summary">download our app and app badges</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/basic-molecule/">Basic Molecule</a>
+			</h4>
+			<p class="summary">large icon, subheading, body copy and button</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>LAYOUTS</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/columns/">Columns</a>
+			</h4>
+			<p class="summary">how to work with multi-column layouts</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/zigzag/">Zig-Zag Layout</a>
+			</h4>
+			<p class="summary">how to create a zig-zag layout that collapses gracefully on mobile</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ADOBE CAMPAIGN</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/campaign-shortcodes/">Campaign Shortcodes</a>
+			</h4>
+			<p class="summary">shortcodes for Adobe Campaign that import dynamic content or personalization data</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/conditional-formatting/">Conditional Formatting</a>
+			</h4>
+			<p class="summary">how to use if-else formatting to display content</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>TEMPLATES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Digest Newsletter</a>
+			</h4>
+			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+	</div>
+
+	<script src="../../../js/style-guide.js"></script>
 </div>
 
 </div>

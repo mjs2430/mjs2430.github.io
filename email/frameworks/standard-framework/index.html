@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Email Framework</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../../../css/atoms/typography.css">
+    <link rel="stylesheet" href="../../../css/atoms/media.css">
+    <link rel="stylesheet" href="../../../css/atoms/section.css">
+    <link rel="stylesheet" href="../../../css/atoms/button.css">
+    <link rel="stylesheet" href="../../../css/atoms/inputs.css">
+
+    
+    <link rel="stylesheet" href="../../../css/molecules/paper.css">
+    <link rel="stylesheet" href="../../../css/molecules/package.css">
+    <link rel="stylesheet" href="../../../css/molecules/impact.css">
+    <link rel="stylesheet" href="../../../css/molecules/social-media.css">
+    <link rel="stylesheet" href="../../../css/molecules/expander.css">
+    <link rel="stylesheet" href="../../../css/molecules/utilities.css">
+    <link rel="stylesheet" href="../../../css/molecules/progress.css">
+    <link rel="stylesheet" href="../../../css/molecules/page-title.css">
+    <link rel="stylesheet" href="../../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/tertiary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/account-sub-nav.css">
+    <link rel="stylesheet" href="../../../css/molecules/masthead.css">
+
+
+    
+    <link rel="stylesheet" href="../../../css/cards/grid.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-row.css">
+    <link rel="stylesheet" href="../../../css/cards/ads.css">
+    <link rel="stylesheet" href="../../../css/cards/digest.css">
+    <link rel="stylesheet" href="../../../css/cards/immersive.css">
+    <link rel="stylesheet" href="../../../css/cards/story-body.css">
+    <link rel="stylesheet" href="../../../css/cards/header.css">
+    <link rel="stylesheet" href="../../../css/cards/series-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/correction.css">
+    <link rel="stylesheet" href="../../../css/cards/related-stories.css">
+    <link rel="stylesheet" href="../../../css/cards/author-card.css">
+    <link rel="stylesheet" href="../../../css/cards/author-bio.css">
+    <link rel="stylesheet" href="../../../css/cards/timeline.css">
+    <link rel="stylesheet" href="../../../css/cards/transparency.css">
+    <link rel="stylesheet" href="../../../css/cards/big-news.css">
+    <link rel="stylesheet" href="../../../css/cards/in-depth.css">
+    <link rel="stylesheet" href="../../../css/cards/swg-promo.css">
+    <link rel="stylesheet" href="../../../css/cards/read-next.css">
+    <link rel="stylesheet" href="../../../css/cards/section-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/modals.css">
+    <link rel="stylesheet" href="../../../css/cards/inline-cta.css">
+    <link rel="stylesheet" href="../../../css/cards/upper-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/sponsor.css">
+    <link rel="stylesheet" href="../../../css/cards/gallery.css">
+    <link rel="stylesheet" href="../../../css/cards/dsp.css">
+    <link rel="stylesheet" href="../../../css/cards/review-order.css">
+    <link rel="stylesheet" href="../../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../../css/cards/subscription-offers.css">
+    <link rel="stylesheet" href="../../../css/cards/hidden.css">
+
+   
+    
+    <link rel="stylesheet" href="../../../css/site.css">
+<link rel="stylesheet" href="../../../css/style-guide.css">
+
+  </head>
+
+  <body class="">
+    <div class="banner paper">
+      <a href="../../../" style="padding: 0;"><img class="logo" src="../../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mjs2430.github.io/saratoga/" class="">
+          <span>style guide</span>
+        </a>
+        <a href="https://mjs2430.github.io/markets/" class="">
+          <span>markets</span>
+        </a>
+        <a href="https://mjs2430.github.io/ads/" class="">
+          <span>ads</span>
+        </a>
+        <a href="https://mjs2430.github.io/email/" class="active">
+          <span>email</span>
+        </a>
+        <a href="https://mjs2430.github.io/labs/" class="">
+          <span>labs</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">Email Framework
+    </h2>
+    <p>This is the most-used framework, with a maximum table width of 600px. The default padding is 24px, which leaves a 552px-wide area for content. On screens with a width of 480px and smaller that support media queries, the framework will scale to a width of 100%, with a maximum width of 480px. All of the default CSS is included in this framework in addition to the basic HTML structure.</p>
+<p><a class="button big promo" style="margin-bottom:32px;" target="_blank" href="https://drive.google.com/file/d/10EsPhNR_64FQqmwPqBw2ny8kwvR3B5G9/view?usp=sharing" download >download HTML</a></p>
+<h3 id="sample-email-using-standard-framework">sample email using standard framework</h3>
+<div class="example">
+		<standard-framework></standard-framework>
+</div>
+<script type="text/javascript">
+class StandardFramework extends HTMLElement {
+	get template() {
+		let t = document.createElement("template");
+		t.innerHTML = `
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<style>
+				@import url( '/css/email/eds.css' )
+			</style>
+<pre><code>    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;center&gt;
+            &lt;!-- BODY TABLE // --&gt;
+            &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; height=&quot;100%&quot; width=&quot;100%&quot; role=&quot;presentation&quot; id=&quot;body-table&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; id=&quot;body-cell&quot;&gt;
+                        &lt;!--PREVENT OUTLOOK FROM DEFAULTING TO TIMES NEW ROMAN BECAUSE OF CUSTOM FONTS--&gt;
+                        &lt;!--[if mso]&gt;
+                        &lt;style type=&quot;text/css&quot;&gt;
+                        td, .preview-text, .h1, .h2, .h3, .p, a, .button-link {font-family: Tahoma, Arial, sans-serif !important;}
+                        .h4, .serif {font-family: 'Times New Roman', serif !important;}
+                        &lt;/style&gt;
+                        &lt;![endif]--&gt;
+                        &lt;div class=&quot;preview-text&quot;&gt;
+                            &lt;!-- PREVIEW TEXT GOES HERE --&gt;
+                            &amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;
+                        &lt;/div&gt;
+                        &lt;!-- HEADER TABLE // --&gt;
+                        &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; role=&quot;presentation&quot; id=&quot;header-table&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; id=&quot;header&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse;&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;background-color: #fff;border-top: 1px solid #ccc;border-bottom: 2px solid #ccc;padding: 12px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;&quot;&gt;
+                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/logos-color/charlotte-color.png&quot; alt=&quot;The Charlotte Observer logo&quot; width=&quot;289&quot; style=&quot;display: inline-block;border: 0;outline: none;text-decoration: none;&quot; /&gt;&lt;/a&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                        &lt;!-- // HEADER TABLE --&gt;
+                        &lt;!-- MAIN TABLE // --&gt;
+                        &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;600&quot; role=&quot;presentation&quot; id=&quot;email-table&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;card bg-gray&quot;&gt;
+                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; role=&quot;presentation&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;h1 white&quot;&gt;
+                                                Welcome
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;card bg-white&quot;&gt;
+                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; role=&quot;presentation&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;p&quot;&gt;
+                                                Dear Reader,&lt;br /&gt;&lt;br /&gt;
+                                                Welcome to The Charlotte Observer. With your subscription, you’re helping support vital local journalism in our community, and we deeply appreciate your commitment. The Observer’s journalists are also deeply committed &amp;mdash; to making sure we bring you the important news in our city and state, to telling you stories about inspiring people around us and to sharing information that helps you live a good life here. For our reporters, editors, videographers and others, this is also our community &amp;mdash; where we live, work, shop and play. Our local roots and connection are at the heart of The Observer’s mission to serve our community. Thank you for helping make our work possible with your support.
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;card&quot;&gt;
+                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;h2 pb24&quot;&gt;
+                                                Get to know us
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;pb24&quot;&gt;
+                                                &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;136&quot; class=&quot;headshot collapse center-mobile&quot;&gt;
+                                                            &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png&quot; width=&quot;120&quot; class=&quot;img-inline&quot; alt=&quot;reporter headshot&quot; /&gt;
+                                                        &lt;/td&gt;
+                                                        &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;small collapse&quot;&gt;
+                                                            &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;h3 pb8&quot;&gt;
+                                                                        Albus Dumbledore, O.M.
+                                                                    &lt;/td&gt;
+                                                                    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
+                                                                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png&quot; width=&quot;24&quot; alt=&quot;email&quot;&gt;&lt;/a&gt;
+                                                                    &lt;/td&gt;
+                                                                    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
+                                                                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png&quot; width=&quot;24&quot; alt=&quot;twitter&quot;&gt;&lt;/a&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/table&gt;
+                                                            Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
+                                                        &lt;/td&gt;
+                                                    &lt;/tr&gt;
+                                                &lt;/table&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;pb24&quot;&gt;
+                                                &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;136&quot; class=&quot;headshot collapse center-mobile&quot;&gt;
+                                                            &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png&quot; width=&quot;120&quot; class=&quot;img-inline&quot; alt=&quot;reporter headshot&quot; /&gt;
+                                                        &lt;/td&gt;
+                                                        &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;small collapse&quot;&gt;
+                                                            &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;h3 pb8&quot;&gt;
+                                                                        Albus Dumbledore, O.M.
+                                                                    &lt;/td&gt;
+                                                                    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
+                                                                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png&quot; width=&quot;24&quot; alt=&quot;email&quot;&gt;&lt;/a&gt;
+                                                                    &lt;/td&gt;
+                                                                    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
+                                                                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png&quot; width=&quot;24&quot; alt=&quot;twitter&quot;&gt;&lt;/a&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/table&gt;
+                                                                    Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
+                                                                &lt;/td&gt;
+                                                            &lt;/tr&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+                                                        &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                                                            &lt;tr&gt;
+                                                                &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;136&quot; class=&quot;headshot collapse center-mobile&quot;&gt;
+                                                                    &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png&quot; width=&quot;120&quot; class=&quot;img-inline&quot; alt=&quot;reporter headshot&quot; /&gt;
+                                                                &lt;/td&gt;
+                                                                &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;small collapse&quot;&gt;
+                                                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                                                                        &lt;tr&gt;
+                                                                            &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;h3 pb8&quot;&gt;
+                                                                                Albus Dumbledore, O.M.
+                                                                            &lt;/td&gt;
+                                                                            &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
+                                                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png&quot; width=&quot;24&quot; alt=&quot;email&quot;&gt;&lt;/a&gt;
+                                                                            &lt;/td&gt;
+                                                                            &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
+                                                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png&quot; width=&quot;24&quot; alt=&quot;twitter&quot;&gt;&lt;/a&gt;
+                                                                            &lt;/td&gt;
+                                                                        &lt;/tr&gt;
+                                                                    &lt;/table&gt;
+                                                                    Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
+                                                                &lt;/td&gt;
+                                                            &lt;/tr&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/table&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;card bg-blue&quot;&gt;
+                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                                         &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;pb24&quot;&gt;
+                                                &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/paper-plane-white.png&quot; width=&quot;40&quot; alt=&quot;paper plane icon&quot; /&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                         &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;h2 white pb8&quot;&gt;
+                                             Sign up for newsletters
+                                         &lt;/td&gt;
+                                     &lt;/tr&gt;
+                                     &lt;tr&gt;
+                                        &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;p white pb24&quot;&gt;
+                                            Email newsletters are an easy way to keep up with breaking news and the latest on your favorite topics.
+                                        &lt;/td&gt;
+                                    &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
+                                                &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                                     &lt;tr&gt;
+                                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button bg-white&quot;&gt;
+                                                                 &lt;a href=&quot;#&quot; class=&quot;button-link border-white blue&quot;&gt;Sign Up Now&lt;/a&gt;
+                                                            &lt;/td&gt;
+                                                     &lt;/tr&gt;
+                                                &lt;/table&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;!-- FOOTER BLOCK // --&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; id=&quot;footer&quot;&gt;
+                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; role=&quot;presentation&quot; width=&quot;100%&quot;&gt;
+                                            &lt;tr&gt;
+                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding:24px 24px 8px;&quot;&gt;
+                                                            &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; role=&quot;presentation&quot;&gt;
+                                                                    &lt;tr&gt;
+                                                                            &lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;padding-right:5px;&quot;&gt;
+                                                                                    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http://media.mcclatchy.com/email-assets/global/icons/facebook-gray.png&quot; alt=&quot;Facebook icon&quot; width=&quot;10&quot; style=&quot;display: block; border: 0px none; outline: none; text-decoration: none;&quot; /&gt;&lt;/a&gt;
+                                                                            &lt;/td&gt;
+                                                                            &lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;padding-left:5px;&quot;&gt;
+                                                                                    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http://media.mcclatchy.com/email-assets/global/icons/twitter-gray.png&quot; alt=&quot;Twitter icon&quot; width=&quot;21&quot; style=&quot;display: block; border: 0px none; outline: none; text-decoration: none;&quot; /&gt;&lt;/a&gt;
+                                                                            &lt;/td&gt;
+                                                                    &lt;/tr&gt;
+                                                            &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;tr&gt;
+                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;&quot;&gt;
+                                                        Copyright &amp;copy; 2020 Official Property Name.
+                                                        All Rights Reserved.
+                                                    &lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;tr&gt;
+                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;&quot;&gt;
+                                                            Official Property Name&lt;br&gt;
+                                                            123 Street Name&lt;br&gt;
+                                                            City, ST 000000
+                                                    &lt;/td&gt;
+                                            &lt;/tr&gt;
+                                            &lt;tr&gt;
+                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;&quot;&gt;
+                                                            We respect your right to privacy and protect your private information at all times.
+                                                    &lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding: 8px 24px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;&quot;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot;&gt;About Us&lt;/a&gt;&amp;nbsp;|&amp;nbsp;
+                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot;&gt;Terms of Use&lt;/a&gt;&amp;nbsp;|&amp;nbsp;
+                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot;&gt;Manage Newsletter Subscriptions&lt;/a&gt;&amp;nbsp;|&amp;nbsp;
+                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot; target=&quot;_blank&quot;&gt;View as webpage&lt;/a&gt;&amp;nbsp;|&amp;nbsp;
+                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot;&gt;Unsubscribe&lt;/a&gt;
+                                            &lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/table&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;!-- // FOOTER BLOCK --&gt;
+                        &lt;/table&gt;
+                        &lt;!-- // MAIN TABLE --&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;!-- // BODY TABLE --&gt;
+            &lt;!-- Font Awesome Free by @fontawesome - https://fontawesome.com --&gt;
+        &lt;/center&gt;
+    &lt;/body&gt;
+    `;
+    return t;   
+}
+constructor() {
+    super();
+}
+connectedCallback() {
+    let clone = this.template.content.cloneNode(true);
+    this.attachShadow({ mode: &quot;open&quot; });
+    this.shadowRoot.appendChild(clone);
+}
+</code></pre>
+<p>} // end Class
+customElements.define(&ldquo;standard-framework&rdquo;, StandardFramework);
+</script></p>
+
+  </div>
+
+  
+<div class="paper digest list">
+
+	<div class="atoms">
+		<div class="label">
+			<h5>OVERVIEW</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/overview/description/" class="">Description</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/overview/how-to/" class="">How to Use the EDS</a>
+			</h5>
+			
+		</div>
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>FRAMEWORK</h5>
+		</div>
+		
+		
+		<div class="package eds-active">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/standard-framework/">Email Framework</a>
+			</h4>
+			<p class="summary">standard email framework</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/full-width-framework/">Full-Width Email Framework</a>
+			</h4>
+			<p class="summary">used for full-width backgrounds</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ATOMS</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/footer-text/" class="">footer text/fine print</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h1/" class="">h1</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h2/" class="">h2</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h3/" class="">h3</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h4/" class="">h4</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/links/" class="">links</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/p/" class="">p</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/small/" class="">small text</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/text-modifiers/" class="">text modifiers</a>
+			</h5>
+			
+		</div>
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>MOLECULES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/apps-molecule/">App Molecule</a>
+			</h4>
+			<p class="summary">download our app and app badges</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/basic-molecule/">Basic Molecule</a>
+			</h4>
+			<p class="summary">large icon, subheading, body copy and button</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>LAYOUTS</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/columns/">Columns</a>
+			</h4>
+			<p class="summary">how to work with multi-column layouts</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/zigzag/">Zig-Zag Layout</a>
+			</h4>
+			<p class="summary">how to create a zig-zag layout that collapses gracefully on mobile</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ADOBE CAMPAIGN</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/campaign-shortcodes/">Campaign Shortcodes</a>
+			</h4>
+			<p class="summary">shortcodes for Adobe Campaign that import dynamic content or personalization data</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/conditional-formatting/">Conditional Formatting</a>
+			</h4>
+			<p class="summary">how to use if-else formatting to display content</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>TEMPLATES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Digest Newsletter</a>
+			</h4>
+			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+	</div>
+
+	<script src="../../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>
+  </body>
+</html>

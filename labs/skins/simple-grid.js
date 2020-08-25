@@ -29,9 +29,14 @@ class SimpleGrid extends HTMLElement {
       grid-auto-flow: dense;
       max-width: 1140px;
       margin: 30px auto;
+      box-sizing: content-box;
     }
 
-    @media(min-width: 660px) {
+    @media(min-width: 630px) {
+      .grid {
+        padding: 0 15px;
+      }
+
       ::slotted(.photo-lede) {
         grid-column: 1/-1;
       }
@@ -57,7 +62,8 @@ class SimpleGrid extends HTMLElement {
       --lc: white;
     }
 
-    :host([theme=dark]) ::slotted(.card) {
+    :host([theme=dark]) ::slotted(.card),
+    :host([theme=dark]) ::slotted(.no-img) {
       background-color: #373737 !important;
     }
     </style>
@@ -118,6 +124,7 @@ class SimpleGrid extends HTMLElement {
 
     // Append articles
     this._articles.forEach((a, i) => {
+      a.style.order = i + 1;
       this.appendChild(a);
     });
 
@@ -179,7 +186,7 @@ class SimpleGrid extends HTMLElement {
    */
 
   get _articles() {
-    let list = this.queryAll("article.card");
+    let list = this.queryAll("article.card, div.no-img");
     let arr = Array.from(list).filter((a) => {
       return a.querySelector(".label") == null;
     });
@@ -213,7 +220,7 @@ class SimpleGrid extends HTMLElement {
     let lede = this._articles[0];
 
     // Different changes depending on the lede content type
-    if(lede.querySelector(".video") != null) {
+    if(lede && lede.querySelector(".video") != null) {
       lede.classList.add("video-lede");
 
       this.addCSS(`
@@ -362,22 +369,28 @@ class SimpleGrid extends HTMLElement {
   handleZones() {
     if(this.zones == "simple") {
       try {
-        this.insertBefore(this.getZone(3), this._articles[4]);
-        this.insertBefore(this.getZone(5), this._articles[4]);
+        let z3 = this.getZone(3);
+        z3.style.order = 4;
+        this.appendChild(z3);
+
+        let z5 = this.getZone(5);
+        z5.style.order = 4;
+        this.appendChild(z5);
 
         let z6 = this.getZone(6);
         z6.setAttribute("slot", "");
-        this.insertBefore(z6, this._articles[4]);
+        z6.style.order = 4;
+        this.appendChild(z6);
       } catch(e) {
         console.warn("Error moving zones:", e);
       }
-
-      this.addCSS(`
-      ${this.localName} .ad-widget { 
-        margin-top: 0; 
-        margin-bottom: 0; 
-      }`);
     }
+
+    // Nativo slot needs order added as well
+    this.addCSS(`
+    .ntv-ap {
+      order: 7;
+    }`);
 
     // Notify
     this.dispatchEvent(new CustomEvent("change", {
@@ -395,3 +408,10 @@ class SimpleGrid extends HTMLElement {
  */
 
 customElements.define("simple-grid", SimpleGrid);
+
+/**
+ * Safari does not load a global classes in ES6 modules.
+ * Need to attach to the window object to be able to import and extend.
+ */
+
+window.SimpleGrid = SimpleGrid;

@@ -4,7 +4,6 @@
  */
 
 import { trackInteraction } from "./tracking.js";
-import MarketLogo from "./market-logo.js"
 
 class DynamicModal extends HTMLElement {
 
@@ -17,17 +16,20 @@ class DynamicModal extends HTMLElement {
     t.innerHTML = `
     <style>
       :host {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 100px 30px 0;
+        padding: 100px 0 30px;
         box-sizing: border-box;
         z-index: 9999;
         --bbc: #222;
         --bc: white;
+        --hf: var(--sans);
+        --tf: var(--sans);
+        --ts: 0.875rem;
       }
 
       :host:before {
@@ -40,11 +42,17 @@ class DynamicModal extends HTMLElement {
         background-color: var(--screen-color, rgba(0,0,0,0.8));
       }
 
+      :host(.showing) {
+        display: block;
+      }
+
       .card {
         position: relative;
-        max-width: 700px;
+        width: var(--story-width);
+        max-width: calc(100vw - 30px);
         margin: 0 auto;
         padding-right: 50px;
+        box-sizing: border-box;
         background-color: var(--paper-color, white);
       }
 
@@ -110,7 +118,7 @@ class DynamicModal extends HTMLElement {
         <slot name="image"></slot>
       </div>
       <div class="package">
-        <slot></slot>
+        <slot id="main"></slot>
       </div>
       <svg class="close" width="20" height="20" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
     </div>
@@ -124,33 +132,27 @@ class DynamicModal extends HTMLElement {
 
   constructor() {
     super();
-    this.stamped = false
-  }
 
-  /**
-   * Fires when added to the DOM
-   */
+    // Attach Shadow DOM
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(this.template.content.cloneNode(true));
 
-  connectedCallback() {
-    if(this.g2g) {
-      // Attach Shadow DOM
-      this.attachShadow({ mode: "open" });
-      this.shadowRoot.appendChild(this.template.content.cloneNode(true));
+    // Load template into Shadow DOM
+    let imgSlot = this.shadowRoot.querySelector("slot[name=image]");
+    imgSlot.addEventListener("slotchange", (e) => {
+      this.classList.toggle("has-img", imgSlot.assignedNodes().length > 0);
+    });
 
-      // Load template into Shadow DOM
-      let imgSlot = this.shadowRoot.querySelector("slot[name=image]");
-      imgSlot.addEventListener("slotchange", (e) => {
-        this.classList.toggle("has-img", imgSlot.assignedNodes().length > 0);
-      });
+    // Set up close events
+    let cb = this.shadowRoot.querySelector(".close");
+    cb.addEventListener("click", e => {
+      trackInteraction("Close", false);
+      this.classList.remove("showing");
+    });
 
-      // Set up close events
-      let cb = this.shadowRoot.querySelector(".close");
-      cb.addEventListener("click", e => {
-        trackInteraction("Close", false);
-        this.hidden = true;
-      });
-
-      // Check for children with interaction messages
+    // Check for children with interaction messages
+    let mainSlot = this.shadowRoot.querySelector("slot#main");
+    mainSlot.addEventListener("slotchange", (e) => {
       [...this.children].forEach((c) => {
         let message = c.dataset.interaction;
 
@@ -160,29 +162,19 @@ class DynamicModal extends HTMLElement {
           });
         }
       });
-
-      // Flag for next run
-      this.hidden = false;
-      this.stamped = true;
-    }
+    });
   }
 
   /**
-   * Checks to see if the modal should show
+   * Element methods
    */
 
-  get g2g() {
-    // Already showing on the page
-    if(this.stamped) {
-      return false;
-    }
+  show() {
+    this.classList.add("showing");
+  }
 
-    // No if there is another one on the page
-    if(document.querySelector("dynamic-modal") != this) {
-      return false;
-    }
-    
-    return true;
+  hide() {
+    this.classList.remove("showing");
   }
 }
 

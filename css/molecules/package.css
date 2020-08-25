@@ -37,6 +37,10 @@
   align-items: flex-end;
 }
 
+.package.no-img {
+  box-sizing: border-box;
+}
+
 .package.no-img h3,
 .package.no-img .h3 {
   font-size: x-large;

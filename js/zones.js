@@ -10,13 +10,13 @@ class Zones {
 
   static get zoneMap() {
     return {
-      "zone1": "before",
-      "zone2": 3,
-      "zone3": 6,
-      "zone4": 11,
-      "zone5": 15,
+      "1": "before",
+      "2": 3,
+      "3": 6,
+      "4": 11,
+      "5": 15,
       "dynamic": 20,
-      "zone6": "after"
+      "6": "after"
     }
   }
 
@@ -63,7 +63,7 @@ class Zones {
     let t = document.createElement("template");
 
     t.innerHTML = `
-      <div class="zone ${z.class || ''}" data-zone="${z.name}"></div>
+      <div class="zone ${z.class || ''}" data-zone="${z.zone}"></div>
     `;
     return t;
   }
@@ -76,7 +76,7 @@ class Zones {
     let v = this.validInsertionPoints;
 
     zones.forEach(z => {
-      let position = this.constructor.zoneMap[z.name];
+      let position = this.constructor.zoneMap[z.zone];
 
       if(position) {
         let clone = this.template(z).content.cloneNode(true);
@@ -98,7 +98,7 @@ class Zones {
         }
 
         // Additional injections for dynamic zones
-        if(z.name == "dynamic") {
+        if(z.zone == "dynamic") {
           let dz = v.slice(position);
           for(let i = 1, l = dz.length; i < l; i++) {
             if( i % 5 == 0) {

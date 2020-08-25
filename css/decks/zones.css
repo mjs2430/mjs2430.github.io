@@ -17,10 +17,6 @@
   }
 }
 
-.zone[data-zone="zone1"] {
-  padding: 30px 15px;
-}
-
 .zone .related-stories {
   margin: 0 auto;
 }

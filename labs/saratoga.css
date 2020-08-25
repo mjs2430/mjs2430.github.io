@@ -117,7 +117,7 @@ ul li {
   list-style-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiLz48L3N2Zz4=");
 }
 
-time {
+time, .time {
   max-width: unset;
   display: inline-block;
   text-transform: uppercase;
@@ -302,6 +302,7 @@ input, select {
   border: 1px solid #373737;
   padding: 10px;
   font-size: 0.875rem;
+  --tc: #222;
 }
 
 input[type=text] {
@@ -514,6 +515,10 @@ button:hover,
   align-items: flex-end;
 }
 
+.package.no-img {
+  box-sizing: border-box;
+}
+
 .package.no-img h3,
 .package.no-img .h3 {
   font-size: x-large;
@@ -589,6 +594,7 @@ button:hover,
 .expander:after {
   content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBkPSJNMjg4LjY2MiAzNTJIMzEuMzM4Yy0xNy44MTggMC0yNi43NDEtMjEuNTQzLTE0LjE0Mi0zNC4xNDJsMTI4LjY2Mi0xMjguNjYyYzcuODEtNy44MSAyMC40NzQtNy44MSAyOC4yODQgMGwxMjguNjYyIDEyOC42NjJjMTIuNiAxMi41OTkgMy42NzYgMzQuMTQyLTE0LjE0MiAzNC4xNDJ6Ii8+PC9zdmc+Cg==");
   width: 14px;
+  min-width: 14px;
   line-height: 0;
   margin-left: 5px;
   transition: transform 0.5s ease;
@@ -659,7 +665,7 @@ summary, .summary {
   color: var(--tc, #31409F);
 }
 
-.error {
+.error, .errorText {
   color: var(--tc, #D63031);
 }
 
@@ -746,6 +752,11 @@ summary, .summary {
     margin: 15px;
   }
 
+  .flex-columns > zeus-ad {
+    flex: none;
+    padding: 15px;
+  }
+
   .flex-columns > .flex-columns {
     margin: 0;
   }
@@ -794,8 +805,9 @@ summary, .summary {
 }
 
 /**
- * Ads for both
+ * Ad styling
  */
+/* Pre Zeus (can be removed when merger complete) */
 .ad-widget {
   text-align: center;
 }
@@ -803,6 +815,11 @@ summary, .summary {
 .ad-widget iframe,
 .ad-widget > div {
   margin: 0 auto;
+}
+
+/* Zeus integration */
+#zeus_mn-gpt-2:not(:empty) {
+  padding: 15px;
 }
 
 /**
@@ -933,19 +950,19 @@ summary, .summary {
 /**
  * Mugshots
  */
-.story-body figure.mugshot {
+.story-body .mugshot {
   padding: 0 15px;
-  margin: 0 auto;
 }
 
-.story-body figure.mugshot > * {
-  float: right;
-  width: 125px;
-  margin: 0 0 15px 15px;
+.story-body .mugshot .img-container {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  grid-gap: 15px;
 }
 
-.story-body figure.mugshot figcaption {
-  padding: 5px 0 0;
+.story-body .mugshot figcaption {
+  padding: 0;
+  align-self: end;
 }
 
 /**
@@ -1068,6 +1085,7 @@ summary, .summary {
  * Series nav
  */
 .series-nav {
+  padding: 0;
   --hf:var(--serif);
   --hw: 400;
   --ht:none;
@@ -1331,14 +1349,6 @@ summary, .summary {
  * Note: we need something for labels "outside the grid" but
  * need to "line up with the grid".
  */
-/* section.big-news { */
-/*   margin-top: 0; */
-/*   padding-bottom: 15px; */
-/* } */
-/* .big-news > * { */
-/*   max-width: 1140px; */
-/*   margin: 0 auto; */
-/* } */
 section.big-news {
   padding: 0;
 }
@@ -1354,10 +1364,21 @@ section.big-news {
 }
 
 .big-news .h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
+  align-self: center;
 }
 
+@media (min-width: 768px) {
+  .big-news .h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1140px) {
+  .big-news .h1 {
+    font-size: 3rem;
+  }
+}
 .big-news h3,
 .big-news .h3 {
   font-size: large;
@@ -1367,11 +1388,11 @@ section.big-news {
   padding: 10px 15px 0;
 }
 
-/* @media(max-width: 1170px) { */
-/*   .big-news figcaption { */
-/*     padding: 10px 15px; */
-/*   } */
-/* } */
+.big-news figure:last-child {
+  /* fix if there is no grid */
+  padding-bottom: 15px;
+}
+
 .big-news .featured .package {
   padding: 15px 0 0;
 }
@@ -1788,10 +1809,10 @@ section.flag {
 
 .footer .icon img {
   display: block;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  margin: 2px 0 0 2px;
+  border-radius: 20%;
+  width: 28px;
+  height: 28px;
+  margin: 1px 0 0 1px;
 }
 
 .footer .social svg {
@@ -2139,10 +2160,25 @@ section.flag {
   margin-top: 0;
 }
 
-.inline-cta > div[class*=recaptcha] {
-  margin: 10px 0 0;
+.grecaptcha-badge {
+  display: none;
 }
 
 .story-body .ng_endnote_contact {
   margin: 15px auto;
+}
+
+/* section > section fix */
+@media (min-width: 600px) {
+  section#main-content {
+    padding: 0 15px;
+  }
+
+  section#main-content > section {
+    padding: 0;
+  }
+}
+/* Top of section triple up on margin fix */
+#nav-section-front, .subnav-section-name {
+  margin-top: 0;
 }

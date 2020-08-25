@@ -6,6 +6,7 @@ input, select {
   border: 1px solid #373737;
   padding: 10px;
   font-size: 0.875rem;
+  --tc: #222;
 }
 
 input[type=text] {

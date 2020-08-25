@@ -54,7 +54,7 @@ td:first-child {
   background-color: #FDFDF6;
 }
 
-.list .decks, .list .molecules {
+.list .decks, .list .molecules, {
   background-color: #D2EFF2;
 }
 
@@ -66,6 +66,24 @@ td:first-child {
   border-top: 1px solid #ddd;
 }
 
+.list .eds-shasta {
+  background-color: #5169B8;
+  color: white;
+  --lc: white;
+  --lhc: white;
+}
+
+.list .eds-pegacorn {
+  background-color: #808CD8;
+}
+
+.list .eds-dumbledore {
+  background-color: #31409F;
+  color: white;
+  --lc: white;
+  --lhc: white;
+}
+
 .list .package.active {
   background-color: #377f6a;
   color: white;
@@ -75,6 +93,17 @@ td:first-child {
 
 .list a.active {
   color: #377f6a;
+}
+
+.list .package.eds-active {
+  background-color: #31409F;
+  color: white;
+  --lc: white;
+  --lhc: white;
+}
+
+.list a.eds-active {
+  color: #31409F;
 }
 
 .list .new:after {

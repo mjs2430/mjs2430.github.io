@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../../css/cards/grid.css">
     <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
     <link rel="stylesheet" href="../../../css/cards/flex-row.css">
-    <link rel="stylesheet" href="../../../css/cards/ad-widget.css">
+    <link rel="stylesheet" href="../../../css/cards/ads.css">
     <link rel="stylesheet" href="../../../css/cards/digest.css">
     <link rel="stylesheet" href="../../../css/cards/immersive.css">
     <link rel="stylesheet" href="../../../css/cards/story-body.css">
@@ -84,13 +84,43 @@
 <link rel="stylesheet" href="../../../css/decks/purple-tuesdays.css">
 
 <script defer src="../../../js/navigation.js"></script>
-<script defer src="../../../js/gpt-ad.js"></script>
+<script defer src="../../../labs/fake-ad.js"></script>
 
 
 <style>
 gpt-ad {
   display: flex;
   justify-content: center;
+}
+
+[data-zone="1"] fake-ad {
+  padding: 15px 0;
+}
+
+[data-zone] {
+  position: relative;
+}
+
+[data-zone]:after {
+  content: attr(data-zone);
+  display: flex;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  background-color: rgba(244,244,244,0.6);
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  color: #222;
+  position: absolute;
+  left: calc(50% - 60px);
+  top: calc(50% - 60px);
+  z-index: 10;
+}
+
+[data-zone="dynamic"]:after {
+  font-size: large;
 }
 </style>
 
@@ -159,7 +189,7 @@ gpt-ad {
 
 
 <section>
-  <gpt-ad data-size-map="leaderboard"></gpt-ad>
+  <fake-ad size="[[970,250],[728,90]]"></fake-ad>
 </section>
 
 
@@ -295,7 +325,7 @@ gpt-ad {
   <a href="https://mcclatchy.github.io/saratoga/opinion/" class="more-link">MORE OPINION</a>
 </div>
 
-      <gpt-ad data-size="[300,600]"></gpt-ad>
+      <fake-ad size="[300,600]"></fake-ad>
     </div>
   </div>
 </section>
@@ -403,8 +433,8 @@ gpt-ad {
 <section>
   <div class="flex-columns">
     <div class="rail flex-columns">
-      <gpt-ad></gpt-ad>
-      <gpt-ad></gpt-ad>
+      <fake-ad></fake-ad>
+      <fake-ad></fake-ad>
     </div>
     <div class="main-stage flex-columns">
       <article class="card ">

@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../../css/cards/grid.css">
     <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
     <link rel="stylesheet" href="../../../css/cards/flex-row.css">
-    <link rel="stylesheet" href="../../../css/cards/ad-widget.css">
+    <link rel="stylesheet" href="../../../css/cards/ads.css">
     <link rel="stylesheet" href="../../../css/cards/digest.css">
     <link rel="stylesheet" href="../../../css/cards/immersive.css">
     <link rel="stylesheet" href="../../../css/cards/story-body.css">
@@ -102,112 +102,215 @@
   <div class="paper story-body details">
     <h2 class="page-header">spacing
     </h2>
-    <p>The <code>.card</code> class adds 24px spacing on all sides and is the primary class applied to the main <code>&lt;td&gt;</code> for every row. To put padding before, after or beside individual elements within a card or if a custom template requires special spacing, there are 3 sets of classes to use. Padding can be added to the just the top, bottom or sides and can be 8, 16 or 24 px. Note: Outlook Desktop Windows ignores padding applied to images, so if an image needs spacing, apply the padding class to the element that the image needs spacing from instead of the image itself.</p>
-<h4 id="css">CSS</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/*spacing*/</span>
-.card {<span style="color:#000080;font-weight:bold">padding</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pt24 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-.ps24 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pb24 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">24</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pt16 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
-.ps16 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pb16 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">16</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pt8 {<span style="color:#000080;font-weight:bold">padding-top</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
-.ps8 {<span style="color:#000080;font-weight:bold">padding-right</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;<span style="color:#000080;font-weight:bold">padding-left</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
-.pb8 {<span style="color:#000080;font-weight:bold">padding-bottom</span>: <span style="color:#00f">8</span><span style="color:#000080;font-weight:bold">px</span>;}
-</code></pre></div>
+    <p>All CSS classes for default spacing are found in the framework. The <code>.card</code> class adds 24px padding on all sides of an element and is usually applied to each outermost <code>td</code> in the <code>#email-table</code>. To put padding before, after or on the sides of individual elements within a card, or if a custom template requires different spacing, there are 3 sets of classes in the base template that can be used. Padding can be added to the just the top, bottom or sides with these classes and can be 8, 16 or 24 px.</p>
+<p>Otherwise, new classes or ids will be need to be created. The only rules are to use only padding and never margin and to use multiples of 8.</p>
+<div class="note">
+	Outlook Desktop on Windows ignores padding applied to images, so if an image needs padding, apply the padding class to the image's parent container or the other element from which you are separating the image.<br><br>
+	Outlook also ignores padding on anchor tags (inline and block) unless there is a border -- then it will render top and bottom padding.<br><br>
+	Outlook also ignores padding on heading tags, so don't use those and instead use the supplied heading classes on a <code>td</code>.
+</div>
+
   </div>
 
   
 <div class="paper digest list">
-  <div class="atoms">
-    <div class="label">
-      <h5>ATOMS</h5>
-    </div>
-    <div class="package">
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/campaign-shortcodes/" class="">campaign shortcodes</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/spacing/" class="active">spacing</a>
-      </h5>
-      
-      
-      <h5 class="sans bold ">
-        <a href="https://mjs2430.github.io/email/atoms/typography/" class="">typography</a>
-      </h5>
-      
-    </div>
-  </div>
 
-  <div class="molecules">
-    <div class="label">
-      <h5>MOLECULES</h5>
-    </div>
-    
-    
-    <div class="package">
-      <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/molecules/sample4/">sample 4</a>
-      </h4>
-      <p class="summary">Goes on the top of the homepage during large news events.</p>
-    </div>
-    
-  </div>
+	<div class="atoms">
+		<div class="label">
+			<h5>OVERVIEW</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/overview/description/" class="">Description</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/overview/how-to/" class="">How to Use the EDS</a>
+			</h5>
+			
+		</div>
+	</div>
 
-  <div class="layouts">
-    <div class="label">
-      <h5>LAYOUTS</h5>
-    </div>
-    
-    
-    <div class="package">
-      <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/layouts/two-column-module/">two column module</a>
-      </h4>
-      <p class="summary">two col module</p>
-    </div>
-    
-  </div>
+	<div class="atoms">
+		<div class="label">
+			<h5>FRAMEWORK</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/standard-framework/">Email Framework</a>
+			</h4>
+			<p class="summary">standard email framework</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/full-width-framework/">Full-Width Email Framework</a>
+			</h4>
+			<p class="summary">used for full-width backgrounds</p>
+		</div>
+		
+	</div>
 
-  <div class="templates">
-    <div class="label">
-      <h5>TEMPLATES</h5>
-    </div>
-    
-    
-    <div class="package">
-      <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/templates/full-width-template/">full width email template</a>
-      </h4>
-      <p class="summary">the full screen email template</p>
-    </div>
-    
-    
-    <div class="package">
-      <h4 class="sans bold">
-        <a class="" href="https://mjs2430.github.io/email/templates/standard-template/">standard email template</a>
-      </h4>
-      <p class="summary">the standard (600px) email template</p>
-    </div>
-    
-  </div>
+	<div class="atoms">
+		<div class="label">
+			<h5>ATOMS</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/footer-text/" class="">footer text/fine print</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h1/" class="">h1</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h2/" class="">h2</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h3/" class="">h3</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h4/" class="">h4</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/links/" class="">links</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/p/" class="">p</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/small/" class="">small text</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/spacing/" class="eds-active">spacing</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/text-modifiers/" class="">text modifiers</a>
+			</h5>
+			
+		</div>
+	</div>
 
-  <script src="../../../js/style-guide.js"></script>
+	<div class="atoms">
+		<div class="label">
+			<h5>MOLECULES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/apps-molecule/">App Molecule</a>
+			</h4>
+			<p class="summary">download our app and app badges</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/basic-molecule/">Basic Molecule</a>
+			</h4>
+			<p class="summary">large icon, subheading, body copy and button</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>LAYOUTS</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/columns/">Columns</a>
+			</h4>
+			<p class="summary">how to work with multi-column layouts</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/zigzag/">Zig-Zag Layout</a>
+			</h4>
+			<p class="summary">how to create a zig-zag layout that collapses gracefully on mobile</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ADOBE CAMPAIGN</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/campaign-shortcodes/">Campaign Shortcodes</a>
+			</h4>
+			<p class="summary">shortcodes for Adobe Campaign that import dynamic content or personalization data</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/conditional-formatting/">Conditional Formatting</a>
+			</h4>
+			<p class="summary">how to use if-else formatting to display content</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>TEMPLATES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Digest Newsletter</a>
+			</h4>
+			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+	</div>
+
+	<script src="../../../js/style-guide.js"></script>
 </div>
 
 </div>
