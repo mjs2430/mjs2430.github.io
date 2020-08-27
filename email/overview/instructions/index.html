@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>small text</title>
+    <title>Instructions</title>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -100,47 +100,28 @@
     </div>
 <div class="panels">
   <div class="paper story-body details">
-    <h2 class="page-header">small text
+    <h2 class="page-header">Instructions
     </h2>
-    <p><code>.small</code>  is used for smaller body copy and is typically paired with <code>.h3</code> or <code>.h4</code>.</p>
+    <p>This guide has frameworks files, descriptions and code snippets of common atoms and other molecules used in the system, as well as some ready-to-use templates that only need content added to be used. All the CSS is in a <code>style</code> tag in the <code>head</code> and must be inlined before use.</p>
+<p>The EDS is not limited to the default CSS included in the framework; it is meant to be used as a starting point. If an element is needed that does not already exist, it can be added as long as it follows the style guide structure and rules.</p>
+<h3 id="basic-guide">Basic Guide</h3>
+<ol>
+<li>Design your email using the <a href="https://www.sketch.com/s/c087e533-60f4-428c-9880-02d982ec41bb" target="_blank">Email Design System Sketch library</a>.</li>
+<li>Divide your design into sections (these will be called molecules or organisms, depending on the complexity). Usually this can be determined by a change in background color or a new subheading. Each of these molecules or organisms will be coded as a separate `table` that is inserted into a new row and cell in the `#email-table`.</li>
+<h4 id="example">Example</h4>
+<p>The green outlines represent the different molecules and organisms that will become <code>tables</code>.<br><br>
+<img src="../../../img/email/email-sections.png" width="250"><br></p>
+<li>Choose the framework file that suits your design.</li>
+<li>Further divide each section into rows and columns if needed.</li>
+<h4 id="example-1">Example</h4>
+<p>The magenta outlines represent rows in each <code>table</code>. The cyan outlines are columns within those rows. Some of these columns will end up with nested <code>tables</code> of their own because they have more than one type of content.<br><br>
+<img src="../../../img/email/email-subsections.png" width="250"><br></p>
+<li>Code each molecule and organism for your email, using email best practices and the EDS structure. (The header and footer are personalization blocks in Adobe Campaign and the shortcodes for those are already in the framework files.) Copy and paste any needed layouts, molecules or atoms from this site.</li>
+<li>When your HTML file is ready and approved, use an <a href="http://templates.mailchimp.com/resources/inline-css/" target="_blank">inliner tool</a> to inline the CSS. Be sure to save the inlined version as a separate file. It's much easier to make design edits to a non-inlined file and re-inline it than to edit one that is already inlined.</li>
 <div class="note">
-This class is intended to be assigned to <code>td</code> (or on occasion <code>span</code>) tags. Avoid using tags such as <code>h1</code>, <code>p</code> or <code>div</code>, as these HTML elements render inconsistently across email clients and devices.
+The Mailchimp inliner does convert some of the Adobe Campaign <code><</code> <code>></code> symbols (depending on where they are in the email) into their corresponding HTML entities, which doesn't break anything, but can look messy. It can easily be switched back with find-and-replace after inlining to keep things neat. Other inliner tools tend to do stranger things than this one, so it really is the best option.
 </div>
-<h3 id="example">EXAMPLE</h3>
-<p><span style="font-family: 'Noto Sans', Tahoma, sans-serif;font-size:14px;font-weight:400;line-height:20px;text-transform:none;">Mistletoe dungeons expecto patronum floo powder duel. Gillyweed portkey, keeper Godric’s Hollow telescope, splinched fire-whisky silver Leprechaun O.W.L.</span>
-<br><br></p>
-<h3 id="specifications">SPECIFICATIONS</h3>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Font Stack</td>
-<td>&lsquo;Noto Sans&rsquo;, Tahoma, sans-serif;</td>
-</tr>
-<tr>
-<td>Font Size</td>
-<td>14px</td>
-</tr>
-<tr>
-<td>Line Height</td>
-<td>20px*</td>
-</tr>
-<tr>
-<td>Font Weight</td>
-<td>400</td>
-</tr>
-<tr>
-<td>Default Color</td>
-<td>#222</td>
-</tr>
-</tbody>
-</table>
-<p><span style="font-size:14px;">*This is not a multiple of 8, but it is the best option in this case. Sometimes rules are meant to be broken.</span></p>
+<li>Put the completed template into Adobe Campaign and proof it. As long as it renders correctly, then it's ready to go.</li>
 
   </div>
 
@@ -161,7 +142,7 @@ This class is intended to be assigned to <code>td</code> (or on occasion <code>s
 		</div>
 		
 		
-		<div class="package">
+		<div class="package eds-active">
 			<h4 class="sans bold">
 				<a class="" href="https://mjs2430.github.io/email/overview/instructions/">Instructions</a>
 			</h4>
@@ -254,7 +235,7 @@ This class is intended to be assigned to <code>td</code> (or on occasion <code>s
 			
 			
 			<h5 class="sans bold ">
-				<a href="https://mjs2430.github.io/email/atoms/small/" class="eds-active">small text</a>
+				<a href="https://mjs2430.github.io/email/atoms/small/" class="">small text</a>
 			</h5>
 			
 			

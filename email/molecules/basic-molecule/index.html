@@ -164,60 +164,58 @@ class BasicMolecule extends HTMLElement {
 								<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
 									<tr>
 										<td align="center" valign="top" width="100%" class="card bg-white">
-<pre><code>                                        &lt;table role=&quot;presentation&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                            &lt;tr&gt;
-                                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;pb16&quot;&gt;
-                                                    &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/bolt-dark-unicon.png&quot; width=&quot;40&quot; alt=&quot;bolt icon&quot; /&gt;
-                                                &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;pb8 h2&quot;&gt;
-                                                Subheading
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;pb24 p&quot;&gt;
-                                                Devil’s snare love potion Ravenclaw, Professor Sinistra time-turner steak and kidney pie. Cabbage Daily Prophet letters from no one.
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot;&gt;
-                                                &lt;table role=&quot;presentation&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-                                                    &lt;tr&gt;
-                                                        &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button&quot;&gt;
-                                                            &lt;a href=&quot;#&quot; target=&quot;_blank&quot; class=&quot;button-link&quot;&gt;Button&lt;/a&gt;
-                                                        &lt;/td&gt;
-                                                    &lt;/tr&gt;
-                                                &lt;/table&gt;
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                    &lt;/table&gt;
-                                &lt;/td&gt;
-                            &lt;/tr&gt;
-                        &lt;/table&gt;
-                        &lt;!-- // MAIN TABLE --&gt;
-                    &lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;!-- // BODY TABLE --&gt;
-&lt;/center&gt;
-</code></pre>
+											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="center" valign="top" class="pb16">
+														<img src="https://media.mcclatchy.com/email-assets/global/icons/bolt-dark-unicon.png" width="40" alt="bolt icon" />
+													</td>
+												</tr>
+												<tr>
+												<td align="center" valign="top" class="pb8 h2">
+													Subheading
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="top" class="pb24 p">
+													Devil’s snare love potion Ravenclaw, Professor Sinistra time-turner steak and kidney pie. Cabbage Daily Prophet letters from no one.
+												</td>
+											</tr>
+											<tr>
+												<td align="center" valign="top">
+													<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" valign="top" class="button">
+																<a href="#" target="_blank" class="button-link">Button</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- // MAIN TABLE -->
+						</td>
+			</tr>
+		</table>
+		<!-- // BODY TABLE -->
+	</center>
 </body>
-<pre><code>    `;
-    return t;   
-}
-constructor() {
-    super();
-}
-connectedCallback() {
-    let clone = this.template.content.cloneNode(true);
-    this.attachShadow({ mode: &quot;open&quot; });
-    this.shadowRoot.appendChild(clone);
-}
-</code></pre>
-<p>} // end Class
-customElements.define(&ldquo;basic-molecule&rdquo;, BasicMolecule);
-</script></p>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("basic-molecule", BasicMolecule);
+</script>
 
   </div>
 
@@ -228,19 +226,31 @@ customElements.define(&ldquo;basic-molecule&rdquo;, BasicMolecule);
 		<div class="label">
 			<h5>OVERVIEW</h5>
 		</div>
+		
+		
 		<div class="package">
-			
-			
-			<h5 class="sans bold ">
-				<a href="https://mjs2430.github.io/email/overview/description/" class="">Description</a>
-			</h5>
-			
-			
-			<h5 class="sans bold ">
-				<a href="https://mjs2430.github.io/email/overview/how-to/" class="">How to Use the EDS</a>
-			</h5>
-			
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/description/">Description</a>
+			</h4>
+			<p class="summary">EDS purpose and structure</p>
 		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/instructions/">Instructions</a>
+			</h4>
+			<p class="summary">how to use the EDS</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/resources/">Resources</a>
+			</h4>
+			<p class="summary">links and information about HTML email</p>
+		</div>
+		
 	</div>
 
 	<div class="atoms">
@@ -412,9 +422,49 @@ customElements.define(&ldquo;basic-molecule&rdquo;, BasicMolecule);
 		
 		<div class="package">
 			<h4 class="sans bold">
-				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Digest Newsletter</a>
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-content/">Marketing | Content</a>
+			</h4>
+			<p class="summary">email template for content marketing</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-event/">Marketing | Event</a>
+			</h4>
+			<p class="summary">email template for event promotion</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-offer/">Marketing | Offer</a>
+			</h4>
+			<p class="summary">email template for marketing offer</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Newsletter | Digest</a>
 			</h4>
 			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-dynamic/">Newsletter | Dynamic</a>
+			</h4>
+			<p class="summary">email template for dynamic newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-long-form/">Newsletter | Long-Form</a>
+			</h4>
+			<p class="summary">email template for long-form newsletters</p>
 		</div>
 		
 	</div>

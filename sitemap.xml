@@ -124,10 +124,6 @@
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/email/templates/newsletter-digest/</loc>
-  </url>
-  
-  <url>
     <loc>https://mjs2430.github.io/email/frameworks/standard-framework/</loc>
   </url>
   
@@ -232,10 +228,6 @@
   </url>
   
   <url>
-    <loc>https://mjs2430.github.io/email/overview/how-to/</loc>
-  </url>
-  
-  <url>
     <loc>https://mjs2430.github.io/saratoga/decks/immersive/</loc>
   </url>
   
@@ -264,6 +256,10 @@
   </url>
   
   <url>
+    <loc>https://mjs2430.github.io/email/overview/instructions/</loc>
+  </url>
+  
+  <url>
     <loc>https://mjs2430.github.io/saratoga/label/</loc>
   </url>
   
@@ -277,6 +273,18 @@
   
   <url>
     <loc>https://mjs2430.github.io/markets/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/templates/marketing-content/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/templates/marketing-event/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/templates/marketing-offer/</loc>
   </url>
   
   <url>
@@ -301,6 +309,18 @@
   
   <url>
     <loc>https://mjs2430.github.io/saratoga/decks/my-account/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/templates/newsletter-digest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/templates/newsletter-dynamic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/templates/newsletter-long-form/</loc>
   </url>
   
   <url>
@@ -377,6 +397,10 @@
   
   <url>
     <loc>https://mjs2430.github.io/saratoga/related-stories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mjs2430.github.io/email/overview/resources/</loc>
   </url>
   
   <url>

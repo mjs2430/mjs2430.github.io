@@ -103,7 +103,7 @@
     <h2 class="page-header">Email Framework
     </h2>
     <p>This is the most-used framework, with a maximum table width of 600px. The default padding is 24px, which leaves a 552px-wide area for content. On screens with a width of 480px and smaller that support media queries, the framework will scale to a width of 100%, with a maximum width of 480px. All of the default CSS is included in this framework in addition to the basic HTML structure.</p>
-<p><a class="button big promo" style="margin-bottom:32px;" target="_blank" href="https://drive.google.com/file/d/10EsPhNR_64FQqmwPqBw2ny8kwvR3B5G9/view?usp=sharing" download >download HTML</a></p>
+<p><a class="button big promo" style="margin-bottom:32px;" target="_blank" href="https://drive.google.com/file/d/1F7pGLzI06adz1WergXdPBvF30Q7XxVph/view?usp=sharing">Get HTML</a></p>
 <h3 id="sample-email-using-standard-framework">sample email using standard framework</h3>
 <div class="example">
 		<standard-framework></standard-framework>
@@ -113,267 +113,267 @@ class StandardFramework extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
 		t.innerHTML = `
-		<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-			<style>
-				@import url( '/css/email/eds.css' )
-			</style>
-<pre><code>    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;center&gt;
-            &lt;!-- BODY TABLE // --&gt;
-            &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; height=&quot;100%&quot; width=&quot;100%&quot; role=&quot;presentation&quot; id=&quot;body-table&quot;&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; id=&quot;body-cell&quot;&gt;
-                        &lt;!--PREVENT OUTLOOK FROM DEFAULTING TO TIMES NEW ROMAN BECAUSE OF CUSTOM FONTS--&gt;
-                        &lt;!--[if mso]&gt;
-                        &lt;style type=&quot;text/css&quot;&gt;
-                        td, .preview-text, .h1, .h2, .h3, .p, a, .button-link {font-family: Tahoma, Arial, sans-serif !important;}
-                        .h4, .serif {font-family: 'Times New Roman', serif !important;}
-                        &lt;/style&gt;
-                        &lt;![endif]--&gt;
-                        &lt;div class=&quot;preview-text&quot;&gt;
-                            &lt;!-- PREVIEW TEXT GOES HERE --&gt;
-                            &amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;&amp;zwnj;&amp;nbsp;
-                        &lt;/div&gt;
-                        &lt;!-- HEADER TABLE // --&gt;
-                        &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; role=&quot;presentation&quot; id=&quot;header-table&quot;&gt;
-                            &lt;tr&gt;
-                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; id=&quot;header&quot;&gt;
-                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;border-collapse: collapse;&quot;&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;background-color: #fff;border-top: 1px solid #ccc;border-bottom: 2px solid #ccc;padding: 12px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;&quot;&gt;
-                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/logos-color/charlotte-color.png&quot; alt=&quot;The Charlotte Observer logo&quot; width=&quot;289&quot; style=&quot;display: inline-block;border: 0;outline: none;text-decoration: none;&quot; /&gt;&lt;/a&gt;
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                    &lt;/table&gt;
-                                &lt;/td&gt;
-                            &lt;/tr&gt;
-                        &lt;/table&gt;
-                        &lt;!-- // HEADER TABLE --&gt;
-                        &lt;!-- MAIN TABLE // --&gt;
-                        &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;600&quot; role=&quot;presentation&quot; id=&quot;email-table&quot;&gt;
-                            &lt;tr&gt;
-                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;card bg-gray&quot;&gt;
-                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; role=&quot;presentation&quot;&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;h1 white&quot;&gt;
-                                                Welcome
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                    &lt;/table&gt;
-                                &lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;card bg-white&quot;&gt;
-                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; role=&quot;presentation&quot;&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;p&quot;&gt;
-                                                Dear Reader,&lt;br /&gt;&lt;br /&gt;
-                                                Welcome to The Charlotte Observer. With your subscription, you’re helping support vital local journalism in our community, and we deeply appreciate your commitment. The Observer’s journalists are also deeply committed &amp;mdash; to making sure we bring you the important news in our city and state, to telling you stories about inspiring people around us and to sharing information that helps you live a good life here. For our reporters, editors, videographers and others, this is also our community &amp;mdash; where we live, work, shop and play. Our local roots and connection are at the heart of The Observer’s mission to serve our community. Thank you for helping make our work possible with your support.
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                    &lt;/table&gt;
-                                &lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;card&quot;&gt;
-                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;h2 pb24&quot;&gt;
-                                                Get to know us
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;pb24&quot;&gt;
-                                                &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                                    &lt;tr&gt;
-                                                        &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;136&quot; class=&quot;headshot collapse center-mobile&quot;&gt;
-                                                            &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png&quot; width=&quot;120&quot; class=&quot;img-inline&quot; alt=&quot;reporter headshot&quot; /&gt;
-                                                        &lt;/td&gt;
-                                                        &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;small collapse&quot;&gt;
-                                                            &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                                                &lt;tr&gt;
-                                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;h3 pb8&quot;&gt;
-                                                                        Albus Dumbledore, O.M.
-                                                                    &lt;/td&gt;
-                                                                    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
-                                                                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png&quot; width=&quot;24&quot; alt=&quot;email&quot;&gt;&lt;/a&gt;
-                                                                    &lt;/td&gt;
-                                                                    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
-                                                                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png&quot; width=&quot;24&quot; alt=&quot;twitter&quot;&gt;&lt;/a&gt;
-                                                                    &lt;/td&gt;
-                                                                &lt;/tr&gt;
-                                                            &lt;/table&gt;
-                                                            Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
-                                                        &lt;/td&gt;
-                                                    &lt;/tr&gt;
-                                                &lt;/table&gt;
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;pb24&quot;&gt;
-                                                &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                                    &lt;tr&gt;
-                                                        &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;136&quot; class=&quot;headshot collapse center-mobile&quot;&gt;
-                                                            &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png&quot; width=&quot;120&quot; class=&quot;img-inline&quot; alt=&quot;reporter headshot&quot; /&gt;
-                                                        &lt;/td&gt;
-                                                        &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;small collapse&quot;&gt;
-                                                            &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                                                &lt;tr&gt;
-                                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;h3 pb8&quot;&gt;
-                                                                        Albus Dumbledore, O.M.
-                                                                    &lt;/td&gt;
-                                                                    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
-                                                                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png&quot; width=&quot;24&quot; alt=&quot;email&quot;&gt;&lt;/a&gt;
-                                                                    &lt;/td&gt;
-                                                                    &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
-                                                                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png&quot; width=&quot;24&quot; alt=&quot;twitter&quot;&gt;&lt;/a&gt;
-                                                                    &lt;/td&gt;
-                                                                &lt;/tr&gt;
-                                                            &lt;/table&gt;
-                                                                    Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
-                                                                &lt;/td&gt;
-                                                            &lt;/tr&gt;
-                                                        &lt;/table&gt;
-                                                    &lt;/td&gt;
-                                                &lt;/tr&gt;
-                                                &lt;tr&gt;
-                                                    &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
-                                                        &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                                            &lt;tr&gt;
-                                                                &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;136&quot; class=&quot;headshot collapse center-mobile&quot;&gt;
-                                                                    &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png&quot; width=&quot;120&quot; class=&quot;img-inline&quot; alt=&quot;reporter headshot&quot; /&gt;
-                                                                &lt;/td&gt;
-                                                                &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;small collapse&quot;&gt;
-                                                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                                                        &lt;tr&gt;
-                                                                            &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;h3 pb8&quot;&gt;
-                                                                                Albus Dumbledore, O.M.
-                                                                            &lt;/td&gt;
-                                                                            &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
-                                                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png&quot; width=&quot;24&quot; alt=&quot;email&quot;&gt;&lt;/a&gt;
-                                                                            &lt;/td&gt;
-                                                                            &lt;td align=&quot;right&quot; valign=&quot;middle&quot; width=&quot;48&quot;&gt;
-                                                                                &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png&quot; width=&quot;24&quot; alt=&quot;twitter&quot;&gt;&lt;/a&gt;
-                                                                            &lt;/td&gt;
-                                                                        &lt;/tr&gt;
-                                                                    &lt;/table&gt;
-                                                                    Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
-                                                                &lt;/td&gt;
-                                                            &lt;/tr&gt;
-                                                        &lt;/table&gt;
-                                                    &lt;/td&gt;
-                                                &lt;/tr&gt;
-                                            &lt;/table&gt;
-                                &lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;card bg-blue&quot;&gt;
-                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                         &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;pb24&quot;&gt;
-                                                &lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/icons/paper-plane-white.png&quot; width=&quot;40&quot; alt=&quot;paper plane icon&quot; /&gt;
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                         &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;h2 white pb8&quot;&gt;
-                                             Sign up for newsletters
-                                         &lt;/td&gt;
-                                     &lt;/tr&gt;
-                                     &lt;tr&gt;
-                                        &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; class=&quot;p white pb24&quot;&gt;
-                                            Email newsletters are an easy way to keep up with breaking news and the latest on your favorite topics.
-                                        &lt;/td&gt;
-                                    &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot;&gt;
-                                                &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-                                                     &lt;tr&gt;
-                                                            &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button bg-white&quot;&gt;
-                                                                 &lt;a href=&quot;#&quot; class=&quot;button-link border-white blue&quot;&gt;Sign Up Now&lt;/a&gt;
-                                                            &lt;/td&gt;
-                                                     &lt;/tr&gt;
-                                                &lt;/table&gt;
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                    &lt;/table&gt;
-                                &lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;!-- FOOTER BLOCK // --&gt;
-                            &lt;tr&gt;
-                                &lt;td align=&quot;center&quot; valign=&quot;top&quot; width=&quot;100%&quot; id=&quot;footer&quot;&gt;
-                                    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; role=&quot;presentation&quot; width=&quot;100%&quot;&gt;
-                                            &lt;tr&gt;
-                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding:24px 24px 8px;&quot;&gt;
-                                                            &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; role=&quot;presentation&quot;&gt;
-                                                                    &lt;tr&gt;
-                                                                            &lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;padding-right:5px;&quot;&gt;
-                                                                                    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http://media.mcclatchy.com/email-assets/global/icons/facebook-gray.png&quot; alt=&quot;Facebook icon&quot; width=&quot;10&quot; style=&quot;display: block; border: 0px none; outline: none; text-decoration: none;&quot; /&gt;&lt;/a&gt;
-                                                                            &lt;/td&gt;
-                                                                            &lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;padding-left:5px;&quot;&gt;
-                                                                                    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http://media.mcclatchy.com/email-assets/global/icons/twitter-gray.png&quot; alt=&quot;Twitter icon&quot; width=&quot;21&quot; style=&quot;display: block; border: 0px none; outline: none; text-decoration: none;&quot; /&gt;&lt;/a&gt;
-                                                                            &lt;/td&gt;
-                                                                    &lt;/tr&gt;
-                                                            &lt;/table&gt;
-                                                    &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;&quot;&gt;
-                                                        Copyright &amp;copy; 2020 Official Property Name.
-                                                        All Rights Reserved.
-                                                    &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;&quot;&gt;
-                                                            Official Property Name&lt;br&gt;
-                                                            123 Street Name&lt;br&gt;
-                                                            City, ST 000000
-                                                    &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                            &lt;tr&gt;
-                                                    &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding: 8px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;&quot;&gt;
-                                                            We respect your right to privacy and protect your private information at all times.
-                                                    &lt;/td&gt;
-                                            &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                            &lt;td align=&quot;left&quot; valign=&quot;top&quot; width=&quot;100%&quot; style=&quot;padding: 8px 24px 24px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;&quot;&gt;
-                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot;&gt;About Us&lt;/a&gt;&amp;nbsp;|&amp;nbsp;
-                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot;&gt;Terms of Use&lt;/a&gt;&amp;nbsp;|&amp;nbsp;
-                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot;&gt;Manage Newsletter Subscriptions&lt;/a&gt;&amp;nbsp;|&amp;nbsp;
-                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot; target=&quot;_blank&quot;&gt;View as webpage&lt;/a&gt;&amp;nbsp;|&amp;nbsp;
-                                                &lt;a href=&quot;#&quot; style=&quot;font-size: 11px;color: #525252;&quot;&gt;Unsubscribe&lt;/a&gt;
-                                            &lt;/td&gt;
-                                        &lt;/tr&gt;
-                                    &lt;/table&gt;
-                                &lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;!-- // FOOTER BLOCK --&gt;
-                        &lt;/table&gt;
-                        &lt;!-- // MAIN TABLE --&gt;
-                    &lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/table&gt;
-            &lt;!-- // BODY TABLE --&gt;
-            &lt;!-- Font Awesome Free by @fontawesome - https://fontawesome.com --&gt;
-        &lt;/center&gt;
-    &lt;/body&gt;
-    `;
-    return t;   
-}
-constructor() {
-    super();
-}
-connectedCallback() {
-    let clone = this.template.content.cloneNode(true);
-    this.attachShadow({ mode: &quot;open&quot; });
-    this.shadowRoot.appendChild(clone);
-}
-</code></pre>
-<p>} // end Class
-customElements.define(&ldquo;standard-framework&rdquo;, StandardFramework);
-</script></p>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        @import url( '/css/email/eds.css' )
+    </style>
+</head>
+<body>
+    <center>
+        <!-- BODY TABLE // -->
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" role="presentation" id="body-table">
+            <tr>
+                <td align="center" valign="top" width="100%" id="body-cell">
+                    <!--PREVENT OUTLOOK FROM DEFAULTING TO TIMES NEW ROMAN BECAUSE OF CUSTOM FONTS-->
+                    <!--[if mso]>
+                    <style type="text/css">
+                    td, .preview-text, .h1, .h2, .h3, .p, a, .button-link {font-family: Tahoma, Arial, sans-serif !important;}
+                    .h4, .serif {font-family: 'Times New Roman', serif !important;}
+                    </style>
+                    <![endif]-->
+                    <div class="preview-text">
+                        <!-- PREVIEW TEXT GOES HERE -->
+                        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+                    </div>
+                    <!-- HEADER TABLE // -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" id="header-table">
+                        <tr>
+                            <td align="center" valign="top" width="100%" id="header">
+                                <table cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                    <tr>
+                                        <td align="center" valign="top" width="100%" style="background-color: #fff;border-top: 1px solid #ccc;border-bottom: 2px solid #ccc;padding: 12px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;">
+                                            <a href="#"><img src="https://media.mcclatchy.com/email-assets/global/logos-color/charlotte-color.png" alt="The Charlotte Observer logo" width="289" style="display: inline-block;border: 0;outline: none;text-decoration: none;" /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- // HEADER TABLE -->
+                    <!-- MAIN TABLE // -->
+                    <table border="0" cellpadding="0" cellspacing="0" width="600" role="presentation" id="email-table">
+                        <tr>
+                            <td align="center" valign="top" width="100%" class="card bg-gray">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+                                    <tr>
+                                        <td align="center" valign="top" width="100%" class="h1 white">
+                                            Welcome
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" width="100%" class="card bg-white">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+                                    <tr>
+                                        <td align="left" valign="top" width="100%" class="p">
+                                            Dear Reader,<br /><br />
+                                            Welcome to The Charlotte Observer. With your subscription, you’re helping support vital local journalism in our community, and we deeply appreciate your commitment. The Observer’s journalists are also deeply committed &mdash; to making sure we bring you the important news in our city and state, to telling you stories about inspiring people around us and to sharing information that helps you live a good life here. For our reporters, editors, videographers and others, this is also our community &mdash; where we live, work, shop and play. Our local roots and connection are at the heart of The Observer’s mission to serve our community. Thank you for helping make our work possible with your support.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" width="100%" class="card">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td align="center" valign="top" width="100%" class="h2 pb24">
+                                            Get to know us
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="top" width="100%" class="pb24">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td align="left" valign="top" width="136" class="headshot collapse center-mobile">
+                                                        <img src="https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png" width="120" class="img-inline" alt="reporter headshot" />
+                                                    </td>
+                                                    <td align="left" valign="top" class="small collapse">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="left" valign="top" class="h3 pb8">
+                                                                    Albus Dumbledore, O.M.
+                                                                </td>
+                                                                <td align="right" valign="middle" width="48">
+                                                                    <a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
+                                                                </td>
+                                                                <td align="right" valign="middle" width="48">
+                                                                    <a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="top" width="100%" class="pb24">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td align="left" valign="top" width="136" class="headshot collapse center-mobile">
+                                                        <img src="https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png" width="120" class="img-inline" alt="reporter headshot" />
+                                                    </td>
+                                                    <td align="left" valign="top" class="small collapse">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="left" valign="top" class="h3 pb8">
+                                                                    Albus Dumbledore, O.M.
+                                                                </td>
+                                                                <td align="right" valign="middle" width="48">
+                                                                    <a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
+                                                                </td>
+                                                                <td align="right" valign="middle" width="48">
+                                                                    <a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                                Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="top" width="100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td align="left" valign="top" width="136" class="headshot collapse center-mobile">
+                                                                <img src="https://media.mcclatchy.com/email-assets/global/headshots/dumbledore.png" width="120" class="img-inline" alt="reporter headshot" />
+                                                            </td>
+                                                            <td align="left" valign="top" class="small collapse">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                    <tr>
+                                                                        <td align="left" valign="top" class="h3 pb8">
+                                                                            Albus Dumbledore, O.M.
+                                                                        </td>
+                                                                        <td align="right" valign="middle" width="48">
+                                                                            <a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/envelope-alt-dark-unicon.png" width="24" alt="email"></a>
+                                                                        </td>
+                                                                        <td align="right" valign="middle" width="48">
+                                                                            <a href="#"><img src="https://media.mcclatchy.com/email-assets/global/icons/twitter-dark.png" width="24" alt="twitter"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                Professor Albus Percival Wulfric Brian Dumbledore, O.M. (First Class) was the Headmaster of Hogwarts School of Witchcraft and Wizardry. He was considered to have been the greatest wizard of modern times, perhaps of all time.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" width="100%" class="card bg-blue">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                     <tr>
+                                        <td align="center" valign="top" width="100%" class="pb24">
+                                            <img src="https://media.mcclatchy.com/email-assets/global/icons/paper-plane-white.png" width="40" alt="paper plane icon" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                     <td align="center" valign="top" width="100%" class="h2 white pb8">
+                                         Sign up for newsletters
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="top" width="100%" class="p white pb24">
+                                        Email newsletters are an easy way to keep up with breaking news and the latest on your favorite topics.
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td align="center" valign="top" width="100%">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                 <tr>
+                                                        <td align="center" valign="top" class="button bg-white">
+                                                             <a href="#" class="button-link border-white blue">Sign Up Now</a>
+                                                        </td>
+                                                 </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- FOOTER BLOCK // -->
+                        <tr>
+                            <td align="center" valign="top" width="100%" id="footer">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                                <td align="left" valign="top" width="100%" style="padding:24px 24px 8px;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                <tr>
+                                                                        <td align="center" valign="middle" style="padding-right:5px;">
+                                                                                <a href="#"><img src="http://media.mcclatchy.com/email-assets/global/icons/facebook-gray.png" alt="Facebook icon" width="10" style="display: block; border: 0px none; outline: none; text-decoration: none;" /></a>
+                                                                        </td>
+                                                                        <td align="center" valign="middle" style="padding-left:5px;">
+                                                                                <a href="#"><img src="http://media.mcclatchy.com/email-assets/global/icons/twitter-gray.png" alt="Twitter icon" width="21" style="display: block; border: 0px none; outline: none; text-decoration: none;" /></a>
+                                                                        </td>
+                                                                </tr>
+                                                        </table>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
+                                                    Copyright &copy; 2020 Official Property Name.
+                                                    All Rights Reserved.
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
+                                                        Official Property Name<br>
+                                                        123 Street Name<br>
+                                                        City, ST 000000
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td align="left" valign="top" width="100%" style="padding: 8px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
+                                                        We respect your right to privacy and protect your private information at all times.
+                                                </td>
+                                        </tr>
+                                    <tr>
+                                        <td align="left" valign="top" width="100%" style="padding: 8px 24px 24px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-size: 11px;color: #525252;line-height: 16px;">
+                                            <a href="#" style="font-size: 11px;color: #525252;">About Us</a>&nbsp;|&nbsp;
+                                            <a href="#" style="font-size: 11px;color: #525252;">Terms of Use</a>&nbsp;|&nbsp;
+                                            <a href="#" style="font-size: 11px;color: #525252;">Manage Newsletter Subscriptions</a>&nbsp;|&nbsp;
+                                            <a href="#" style="font-size: 11px;color: #525252;" target="_blank">View as webpage</a>&nbsp;|&nbsp;
+                                            <a href="#" style="font-size: 11px;color: #525252;">Unsubscribe</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- // FOOTER BLOCK -->
+                    </table>
+                    <!-- // MAIN TABLE -->
+                </td>
+            </tr>
+        </table>
+        <!-- // BODY TABLE -->
+        <!-- Font Awesome Free by @fontawesome - https://fontawesome.com -->
+    </center>
+</body>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("standard-framework", StandardFramework);
+</script>
 
   </div>
 
@@ -384,19 +384,31 @@ customElements.define(&ldquo;standard-framework&rdquo;, StandardFramework);
 		<div class="label">
 			<h5>OVERVIEW</h5>
 		</div>
+		
+		
 		<div class="package">
-			
-			
-			<h5 class="sans bold ">
-				<a href="https://mjs2430.github.io/email/overview/description/" class="">Description</a>
-			</h5>
-			
-			
-			<h5 class="sans bold ">
-				<a href="https://mjs2430.github.io/email/overview/how-to/" class="">How to Use the EDS</a>
-			</h5>
-			
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/description/">Description</a>
+			</h4>
+			<p class="summary">EDS purpose and structure</p>
 		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/instructions/">Instructions</a>
+			</h4>
+			<p class="summary">how to use the EDS</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/resources/">Resources</a>
+			</h4>
+			<p class="summary">links and information about HTML email</p>
+		</div>
+		
 	</div>
 
 	<div class="atoms">
@@ -568,9 +580,49 @@ customElements.define(&ldquo;standard-framework&rdquo;, StandardFramework);
 		
 		<div class="package">
 			<h4 class="sans bold">
-				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Digest Newsletter</a>
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-content/">Marketing | Content</a>
+			</h4>
+			<p class="summary">email template for content marketing</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-event/">Marketing | Event</a>
+			</h4>
+			<p class="summary">email template for event promotion</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-offer/">Marketing | Offer</a>
+			</h4>
+			<p class="summary">email template for marketing offer</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Newsletter | Digest</a>
 			</h4>
 			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-dynamic/">Newsletter | Dynamic</a>
+			</h4>
+			<p class="summary">email template for dynamic newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-long-form/">Newsletter | Long-Form</a>
+			</h4>
+			<p class="summary">email template for long-form newsletters</p>
 		</div>
 		
 	</div>

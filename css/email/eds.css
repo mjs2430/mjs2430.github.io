@@ -1,12 +1,3 @@
-/*----------FONTS----------*/
-	/*McClatchy Sans*/
-	@font-face {font-family: 'McClatchy Sans Web';src: url('https://media.mcclatchy.com/email-assets/global/fonts/mcclatchy-sans-web-regular.woff');font-weight: 400;font-style: normal;}
-	@font-face {font-family: 'McClatchy Sans Web';src: url('https://media.mcclatchy.com/email-assets/global/fonts/mcclatchy-sans-web-demi.woff');font-weight: 600;font-style: normal;}
-
-	/*McClatchy Serif*/
-	@font-face {font-family: 'McClatchy Serif Web';src: url('https://media.mcclatchy.com/email-assets/global/fonts/mcclatchy-serif-web-regular.woff');font-weight: 400;font-style: normal;}
-	@font-face {font-family: 'McClatchy Serif Web';src: url('https://media.mcclatchy.com/email-assets/global/fonts/mcclatchy-serif-web-demi.woff');font-weight: 600;font-style: normal;}
-
 	/*----------RESET----------*/
 	body, #body-table, #body-cell {height: 100% !important;margin: 0;padding: 0;width: 100% !important;}
 	table {border-collapse: collapse;}
@@ -45,16 +36,16 @@
 	.last {padding-right: 0;} /* the very last column in a group */
 
 	/* typography */
-	.p {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 400;color: #222;font-size: 16px;line-height: 24px;}
-	.small {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 400;color: #222;font-size: 14px;line-height: 20px;}
-	.h1 {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 600;font-size: 36px;line-height: 40px;color: #222;}
-	.h2 {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 600;font-size: 20px;line-height: 24px;text-transform: uppercase;color: #222;}
-	.h3 {font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;font-weight: 600;font-size: 18px;line-height: 24px;text-transform: uppercase;color: #222;}
-	.h4 {font-family: 'McClatchy Serif Web', 'Times New Roman', serif;font-weight: 600;font-size: 18px;line-height: 24px;color: #222;}
+	.p {font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-weight: 400;color: #222;font-size: 16px;line-height: 24px;}
+	.small {font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-weight: 400;color: #222;font-size: 14px;line-height: 20px;}
+	.h1 {font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-weight: 700;font-size: 36px;line-height: 40px;color: #222;}
+	.h2 {font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-weight: 700;font-size: 20px;line-height: 24px;text-transform: uppercase;color: #222;}
+	.h3 {font-family: 'Noto Sans', Tahoma, Arial, sans-serif;font-weight: 700;font-size: 18px;line-height: 24px;text-transform: uppercase;color: #222;}
+	.h4 {font-family: 'Noto Serif', 'Times New Roman', serif;font-weight: 700;font-size: 18px;line-height: 24px;color: #222;}
 
 	/* buttons */
 	.button {border-radius: 2px;background-color: #222;}
-	.button-link {display: block;padding: 8px 16px;border: 1px solid #222;border-radius: 2px;font-family: 'McClatchy Sans Web', Tahoma, Arial, sans-serif;color: #fff;font-weight: 600;font-size: 16px;line-height: 24px;letter-spacing: 1px;text-transform: uppercase;text-decoration: none;}
+	.button-link {display: block;padding: 8px 16px;border: 1px solid #222;border-radius: 2px;font-family: 'Noto Sans', Tahoma, Arial, sans-serif;color: #fff;font-weight: 700;font-size: 16px;line-height: 24px;letter-spacing: 1px;text-transform: uppercase;text-decoration: none;}
 	.border-blue {border-color: #31409f;}
 	.border-white {border-color: #fff;}
 
@@ -64,8 +55,8 @@
 	.bg-blue {background-color: #31409f;}
 
 	/* text modifiers -- be sure to keep these last */
-	.bold {font-weight: 600;}
-	.serif {font-family: 'McClatchy Serif Web', Georgia, serif;}
+	.bold {font-weight: 700;}
+	.serif {font-family: 'Noto Serif', Georgia, serif;}
 	.gray {color: #222;}
 	.white {color: #fff;}
 	.blue {color: #31409f;}

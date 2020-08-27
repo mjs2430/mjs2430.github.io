@@ -166,21 +166,19 @@ class AppMolecule extends HTMLElement {
 </tr>
 <tr>
 	<td align="center" valign="top">
-<pre><code>    &lt;!-- APP BADGES // --&gt;
-    &lt;table role=&quot;presentation&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
-        &lt;tr&gt;
-            &lt;td align=&quot;right&quot; valign=&quot;top&quot; class=&quot;col-fixed first&quot;&gt;
-                &lt;a href=&quot;https://&lt;%= recipient.siteBrand.iosApp %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/app-store-badge.png&quot; width=&quot;120&quot; alt=&quot;Download on the App Store&quot; /&gt;&lt;/a&gt;
-            &lt;/td&gt;
-            &lt;td align=&quot;left&quot; valign=&quot;top&quot; class=&quot;col-fixed last&quot;&gt;
-                &lt;a href=&quot;https://&lt;%= recipient.siteBrand.googlePlayApp %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://media.mcclatchy.com/email-assets/global/google-play-badge.png&quot; width=&quot;134&quot; alt=&quot;Get it on Google Play&quot; /&gt;&lt;/a&gt;
-            &lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;!-- // APP BADGES --&gt;
-
-&lt;/td&gt;
-</code></pre>
+		<!-- APP BADGES // -->
+		<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td align="right" valign="top" class="col-fixed first">
+					<a href="https://<%= recipient.siteBrand.iosApp %>" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/app-store-badge.png" width="120" alt="Download on the App Store" /></a>
+				</td>
+				<td align="left" valign="top" class="col-fixed last">
+					<a href="https://<%= recipient.siteBrand.googlePlayApp %>" target="_blank"><img src="https://media.mcclatchy.com/email-assets/global/google-play-badge.png" width="134" alt="Get it on Google Play" /></a>
+				</td>
+			</tr>
+		</table>
+		<!-- // APP BADGES -->
+	</td>
 </tr>
 </table>
 <!-- // DOWNLOAD OUR APP -->
@@ -194,21 +192,20 @@ class AppMolecule extends HTMLElement {
 		<!-- // BODY TABLE -->
 	</center>
 </body>
-<pre><code>    `;
-    return t;   
-}
-constructor() {
-    super();
-}
-connectedCallback() {
-    let clone = this.template.content.cloneNode(true);
-    this.attachShadow({ mode: &quot;open&quot; });
-    this.shadowRoot.appendChild(clone);
-}
-</code></pre>
-<p>} // end Class
-customElements.define(&ldquo;app-molecule&rdquo;, AppMolecule);
-</script></p>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("app-molecule", AppMolecule);
+</script>
 
   </div>
 
@@ -219,19 +216,31 @@ customElements.define(&ldquo;app-molecule&rdquo;, AppMolecule);
 		<div class="label">
 			<h5>OVERVIEW</h5>
 		</div>
+		
+		
 		<div class="package">
-			
-			
-			<h5 class="sans bold ">
-				<a href="https://mjs2430.github.io/email/overview/description/" class="">Description</a>
-			</h5>
-			
-			
-			<h5 class="sans bold ">
-				<a href="https://mjs2430.github.io/email/overview/how-to/" class="">How to Use the EDS</a>
-			</h5>
-			
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/description/">Description</a>
+			</h4>
+			<p class="summary">EDS purpose and structure</p>
 		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/instructions/">Instructions</a>
+			</h4>
+			<p class="summary">how to use the EDS</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/resources/">Resources</a>
+			</h4>
+			<p class="summary">links and information about HTML email</p>
+		</div>
+		
 	</div>
 
 	<div class="atoms">
@@ -403,9 +412,49 @@ customElements.define(&ldquo;app-molecule&rdquo;, AppMolecule);
 		
 		<div class="package">
 			<h4 class="sans bold">
-				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Digest Newsletter</a>
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-content/">Marketing | Content</a>
+			</h4>
+			<p class="summary">email template for content marketing</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-event/">Marketing | Event</a>
+			</h4>
+			<p class="summary">email template for event promotion</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-offer/">Marketing | Offer</a>
+			</h4>
+			<p class="summary">email template for marketing offer</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Newsletter | Digest</a>
 			</h4>
 			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-dynamic/">Newsletter | Dynamic</a>
+			</h4>
+			<p class="summary">email template for dynamic newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-long-form/">Newsletter | Long-Form</a>
+			</h4>
+			<p class="summary">email template for long-form newsletters</p>
 		</div>
 		
 	</div>
