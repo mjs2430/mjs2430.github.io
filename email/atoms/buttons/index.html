@@ -107,7 +107,9 @@
 Note: Our buttons are coded so that the entire area of the button is clickable and not just the text. To make this method work in Outlook Desktop on Windows, it requires a border on the anchor tag. This forces Outlook to render the top and bottom padding and the border radius on the button. Otherwise none of the padding would render and it would lose the appearance of a button.
 </div>
 <h3 id="examples">Examples</h3>
-<p><eds-button></eds-button></p>
+<div>
+    <eds-button></eds-button>
+</div>
 <h3 id="html">HTML</h3>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span>&gt;
 	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
@@ -125,49 +127,48 @@ class EdsButton extends HTMLElement {
 	get template() {
 		let t = document.createElement("template");
 		t.innerHTML = `
-		<head>
-			<style>
-				@import url( '/css/email/eds.css' )
-			</style>
-<pre><code>    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;div style=&quot;padding: 12px;background-color: #f4f4f4;&quot;&gt;
-        &lt;table role=&quot;presentation&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-            &lt;tr&gt;
-                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button&quot;&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;button-link&quot;&gt;Button Text&lt;/a&gt;
-                &lt;/td&gt;
-                &lt;td class=&quot;ps8&quot;&gt;&lt;/td&gt;
-                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button bg-blue&quot;&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;button-link border-blue white&quot;&gt;Button Text&lt;/a&gt;
-                &lt;/td&gt;
-                &lt;td class=&quot;ps8&quot;&gt;&lt;/td&gt;
-                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button bg-white&quot;&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;button-link border-white gray&quot;&gt;Button Text&lt;/a&gt;
-                &lt;/td&gt;
-                &lt;td class=&quot;ps8&quot;&gt;&lt;/td&gt;
-                &lt;td align=&quot;center&quot; valign=&quot;top&quot; class=&quot;button bg-white&quot;&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;button-link border-white blue&quot;&gt;Button Text&lt;/a&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;
-        &lt;/table&gt;
-        &lt;/div&gt;
-    &lt;/body&gt;
-    `;
-    return t;
-}
-constructor() {
-    super();
-}
-connectedCallback() {
-    let clone = this.template.content.cloneNode(true);
-    this.attachShadow({ mode: &quot;open&quot; });
-    this.shadowRoot.appendChild(clone);
-}
-</code></pre>
-<p>} // end Class
-customElements.define(&ldquo;eds-button&rdquo;, EdsButton);
-</script></p>
+<head>
+    <style>
+        @import url( '/css/email/eds.css' )
+    </style>
+</head>
+<body>
+<div style="padding: 12px;background-color: #f4f4f4;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" valign="top" class="button">
+                <a href="#" class="button-link">Button Text</a>
+            </td>
+            <td class="ps8"></td>
+            <td align="center" valign="top" class="button bg-blue">
+                <a href="#" class="button-link border-blue white">Button Text</a>
+            </td>
+            <td class="ps8"></td>
+            <td align="center" valign="top" class="button bg-white">
+                <a href="#" class="button-link border-white gray">Button Text</a>
+            </td>
+            <td class="ps8"></td>
+            <td align="center" valign="top" class="button bg-white">
+                <a href="#" class="button-link border-white blue">Button Text</a>
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+		`;
+		return t;
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("eds-button", EdsButton);
+</script>
 
   </div>
 
