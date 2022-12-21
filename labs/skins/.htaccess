@@ -1,3 +1,0 @@
-Header add Access-Control-Allow-Origin "*"
-Header add Access-Control-Allow-Methods: "GET"
-Header add Cache-Control "public, max-age=1200, must-revalidate"
