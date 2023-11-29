@@ -1,0 +1,101 @@
+/**
+ * About page
+ */
+
+.about {
+  background-color: white;
+  padding: 50px 0;
+}
+
+header {
+  max-width: 710px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+p {
+  font: small/1.5em var(--sans);
+}
+
+/**
+ * Bios
+ */
+
+section {
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .grid:not(.director) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .director {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  .director .bio {
+    grid-column: 2;
+  }
+}
+
+.bio * {
+  font-family: var(--sans);
+}
+
+.bio h4 {
+  font-weight: bold;
+}
+
+.bio p {
+  font-size: small;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 75px;
+}
+
+.badges {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.badges img {
+  width: 50px;
+  padding: 5px;
+}
+
+.name > * {
+  margin: 10px;
+}
+
+/* Manager specials */
+
+.director, .managers {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.bio.manager .avatar {
+  width: 125px;
+}

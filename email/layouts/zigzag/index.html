@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Zig-Zag Layout</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../../../css/atoms/typography.css">
+    <link rel="stylesheet" href="../../../css/atoms/media.css">
+    <link rel="stylesheet" href="../../../css/atoms/section.css">
+    <link rel="stylesheet" href="../../../css/atoms/button.css">
+    <link rel="stylesheet" href="../../../css/atoms/inputs.css">
+
+    
+    <link rel="stylesheet" href="../../../css/molecules/paper.css">
+    <link rel="stylesheet" href="../../../css/molecules/package.css">
+    <link rel="stylesheet" href="../../../css/molecules/impact.css">
+    <link rel="stylesheet" href="../../../css/molecules/social-media.css">
+    <link rel="stylesheet" href="../../../css/molecules/expander.css">
+    <link rel="stylesheet" href="../../../css/molecules/utilities.css">
+    <link rel="stylesheet" href="../../../css/molecules/progress.css">
+    <link rel="stylesheet" href="../../../css/molecules/page-title.css">
+    <link rel="stylesheet" href="../../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/tertiary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/account-sub-nav.css">
+    <link rel="stylesheet" href="../../../css/molecules/masthead.css">
+
+
+    
+    <link rel="stylesheet" href="../../../css/cards/grid.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-row.css">
+    <link rel="stylesheet" href="../../../css/cards/ads.css">
+    <link rel="stylesheet" href="../../../css/cards/digest.css">
+    <link rel="stylesheet" href="../../../css/cards/immersive.css">
+    <link rel="stylesheet" href="../../../css/cards/story-body.css">
+    <link rel="stylesheet" href="../../../css/cards/header.css">
+    <link rel="stylesheet" href="../../../css/cards/series-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/correction.css">
+    <link rel="stylesheet" href="../../../css/cards/related-stories.css">
+    <link rel="stylesheet" href="../../../css/cards/author-card.css">
+    <link rel="stylesheet" href="../../../css/cards/author-bio.css">
+    <link rel="stylesheet" href="../../../css/cards/timeline.css">
+    <link rel="stylesheet" href="../../../css/cards/transparency.css">
+    <link rel="stylesheet" href="../../../css/cards/big-news.css">
+    <link rel="stylesheet" href="../../../css/cards/in-depth.css">
+    <link rel="stylesheet" href="../../../css/cards/swg-promo.css">
+    <link rel="stylesheet" href="../../../css/cards/read-next.css">
+    <link rel="stylesheet" href="../../../css/cards/section-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/modals.css">
+    <link rel="stylesheet" href="../../../css/cards/inline-cta.css">
+    <link rel="stylesheet" href="../../../css/cards/upper-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/sponsor.css">
+    <link rel="stylesheet" href="../../../css/cards/gallery.css">
+    <link rel="stylesheet" href="../../../css/cards/dsp.css">
+    <link rel="stylesheet" href="../../../css/cards/review-order.css">
+    <link rel="stylesheet" href="../../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../../css/cards/subscription-offers.css">
+    <link rel="stylesheet" href="../../../css/cards/hidden.css">
+
+   
+    
+    <link rel="stylesheet" href="../../../css/site.css">
+<link rel="stylesheet" href="../../../css/style-guide.css">
+
+  </head>
+
+  <body class="">
+    <div class="banner paper">
+      <a href="../../../" style="padding: 0;"><img class="logo" src="../../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mjs2430.github.io/saratoga/" class="">
+          <span>style guide</span>
+        </a>
+        <a href="https://mjs2430.github.io/markets/" class="">
+          <span>markets</span>
+        </a>
+        <a href="https://mjs2430.github.io/ads/" class="">
+          <span>ads</span>
+        </a>
+        <a href="https://mjs2430.github.io/email/" class="active">
+          <span>email</span>
+        </a>
+        <a href="https://mjs2430.github.io/labs/" class="">
+          <span>labs</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">Zig-Zag Layout
+    </h2>
+    <p>Zig-zag layouts are great on desktop, but need to collapse so that everything is in the same order on mobile. This layout uses elements from the <a href="../columns">columns</a> layout.</p>
+<p>How to zig-zag:</p>
+<ol>
+<li>Code every row in a zig-zag layout in the order intended for mobile (usually image in the left column and text in the right).</li>
+<li>For reversed rows, put the <code>.first</code>/<code>.row-end</code>/<code>.last</code> classes in reverse (so the first column on each row as coded would have <code>.last</code> or <code>.row-end</code> but the last one would have <code>.first</code>).</li>
+<li>Add the <code>dir=rtl</code> attribute on the outermost <code>td</code> for the zig-zag rows and add <code>dir=ltr</code> on each column in the zig-zag rows.</li>
+</ol>
+<h3 id="example">Example</h3>
+<h4 id="desktop-render">Desktop Render</h4>
+<div class="example">
+	<zig-zag></zig-zag>
+</div>
+<h4 id="mobile-render">Mobile Render</h4>
+<div class="example">
+	<zig-zag-mobile></zig-zag-mobile>
+</div>
+<h3 id="html">HTML</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#080;font-style:italic">&lt;!-- ZIG-ZAG MOLECULE // --&gt;</span>
+&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+	<span style="color:#080;font-style:italic">&lt;!-- NORMAL ROW // --&gt;</span>
+	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;pb24&#34;</span>&gt;
+
+			&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+				&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+					&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;168&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col first collapse&#34;</span>&gt;
+						image
+					&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+					&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;middle&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;360&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col row-end collapse&#34;</span>&gt;
+						text (use a nested table if there are different styles of text)
+					&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+				&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+			&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+	&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+	<span style="color:#080;font-style:italic">&lt;!-- // NORMAL ROW --&gt;</span>
+	<span style="color:#080;font-style:italic">&lt;!-- ZIG-ZAG ROW // --&gt;</span>
+	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;pb24&#34;</span> <span style="color:#f00">dir</span>=<span style="color:#00f">&#34;rtl&#34;</span>&gt;
+
+			&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+				&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+					&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;168&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col row-end collapse&#34;</span> <span style="color:#f00">dir</span>=<span style="color:#00f">&#34;ltr&#34;</span>&gt;
+						image
+					&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+					&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;middle&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;360&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col first collapse&#34;</span> <span style="color:#f00">dir</span>=<span style="color:#00f">&#34;ltr&#34;</span>&gt;
+						text (use a nested table if there are different styles of text)
+					&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+				&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+			&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+	&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+	<span style="color:#080;font-style:italic">&lt;!-- // ZIG-ZAG ROW --&gt;</span>
+	<span style="color:#080;font-style:italic">&lt;!-- NORMAL ROW // --&gt;</span>
+	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;pb24&#34;</span>&gt;
+
+			&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+				&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+					&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;168&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col first collapse&#34;</span>&gt;
+						image
+					&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+					&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;middle&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;360&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col last collapse&#34;</span>&gt;
+						text (use a nested table if there are different styles of text)
+					&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+				&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+			&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+	&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+	<span style="color:#080;font-style:italic">&lt;!-- // NORMAL ROW --&gt;</span>
+&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+<span style="color:#080;font-style:italic">&lt;!-- // ZIG-ZAG MOLECULE --&gt;</span>
+
+</code></pre></div><script>
+class ZigZagLayout extends HTMLElement {
+	get template() {
+		let t = document.createElement("template");
+		t.innerHTML = `
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		 <style>
+			 @import url( '/css/email/eds.css' )
+		 </style>
+</head>
+<body>
+	<center>
+		<!-- BODY TABLE // -->
+		<table border="0" cellpadding="0" cellspacing="0" role="presentation" height="100%" width="100%" id="body-table">
+			<tr>
+				<td align="center" valign="top" id="body-cell">
+					<!-- MAIN TABLE // -->
+					<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+					<tr>
+						<td align="center" valign="top" width="100%" class="card bg-white">
+							<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+								<tr>
+									<td align="center" valign="top" class="pb16">
+										<img src="https://media.mcclatchy.com/email-assets/global/icons/star-dark.png" width="40" alt="star icon" />
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="pb8 h2">
+										Exclusive Content
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="pb24 p">
+										The eEdition offers exclusive content not available in print.
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="pb24">
+										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+											<tr>
+												<td align="left" valign="top" width="168" class="col first collapse">
+													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-extra-extra.png" width="168" alt="Extra Extra section" />
+												</td>
+												<td align="center" valign="middle" width="360" class="col row-end collapse">
+													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+														<tr>
+															<td align="left" valign="top" class="pb8">
+																<img src="https://media.mcclatchy.com/email-assets/global/icons/bullhorn-dark.png" width="24" alt="bullhorn icon" />
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="pb8 h3">
+																Extra Extra
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="small">
+																The best and most interesting stories from around the nation and world are showcased, featuring the latest in news, politics, entertainment, health, faith and more.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="pb24" dir="rtl">
+										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+											<tr>
+												<td align="left" valign="top" width="168" class="col row-end collapse" dir="ltr">
+													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-sportsxtra.png" width="168" alt="SportsXtra section" />
+												</td>
+												<td align="center" valign="middle" width="360" class="col first collapse" dir="ltr">
+													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+														<tr>
+															<td align="left" valign="top" class="pb8">
+																<img src="https://media.mcclatchy.com/email-assets/global/icons/pennant-dark.png" width="24" alt="pennant icon" />
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="pb8 h3">
+																SportsXtra
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="small">
+																Want the latest sports news from around the country? SportsXtra offers highlights and recaps, as well as analysis and commentary that go beyond the game.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="">
+										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+											<tr>
+												<td align="left" valign="top" width="168" class="col first collapse">
+													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-money-markets.png" width="168" alt="Money &amp; Markets section" />
+												</td>
+												<td align="center" valign="middle" width="360" class="col last collapse">
+													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+														<tr>
+															<td align="left" valign="top" class="pb8">
+																<img src="https://media.mcclatchy.com/email-assets/global/icons/money-bill-wave-dark.png" width="24" alt="dollar bill icon" />
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="pb8 h3">
+																Money &amp; Markets
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="small">
+																View key stats on market happenings that affect you and your money. Explore performance of mutual funds, commodities, interest rates and more.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+					<!-- // MAIN TABLE -->
+				</td>
+			</tr>
+		</table>
+		<!-- // BODY TABLE -->
+	</center>
+</body>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("zig-zag", ZigZagLayout);
+class ZigZagMobile extends HTMLElement {
+	get template() {
+		let t = document.createElement("template");
+		t.innerHTML = `
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		 <style>
+			 @import url( '/css/email/eds.css' )
+		 </style>
+		 <style type="text/css">
+		 .fake-mobile #email-table {
+			height: auto !important;
+			max-width: 375px !important;
+			width: 100% !important;
+		}
+		.fake-mobile .collapse {
+			display: block !important;
+			width: 100% !important;
+			direction: ltr !important;
+		}
+		.fake-mobile img {
+			max-width: 100% !important;
+		}
+		.fake-mobile .center-mobile {
+			text-align: center !important;
+		}
+		.fake-mobile .center-mobile img {
+			margin: 0 auto !important;
+		}
+		.fake-mobile .col {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			padding-bottom: 24px !important;
+		}
+		.fake-mobile .last {
+			padding-bottom: 0 !important;
+		}
+		</style>
+</head>
+<body>
+	<center>
+		<!-- BODY TABLE // -->
+		<table border="0" cellpadding="0" cellspacing="0" role="presentation" height="100%" width="100%" id="body-table" class="fake-mobile">
+			<tr>
+				<td align="center" valign="top" id="body-cell">
+					<!-- MAIN TABLE // -->
+					<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+					<tr>
+						<td align="center" valign="top" width="100%" class="card bg-white">
+							<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+								<tr>
+									<td align="center" valign="top" class="pb16">
+										<img src="https://media.mcclatchy.com/email-assets/global/icons/star-dark.png" width="40" alt="star icon" />
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="pb8 h2">
+										Exclusive Content
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="pb24 p">
+										The eEdition offers exclusive content not available in print.
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="pb24">
+										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+											<tr>
+												<td align="left" valign="top" width="168" class="col first collapse">
+													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-extra-extra.png" width="168" alt="Extra Extra section" />
+												</td>
+												<td align="center" valign="middle" width="360" class="col row-end collapse">
+													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+														<tr>
+															<td align="left" valign="top" class="pb8">
+																<img src="https://media.mcclatchy.com/email-assets/global/icons/bullhorn-dark.png" width="24" alt="bullhorn icon" />
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="pb8 h3">
+																Extra Extra
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="small">
+																The best and most interesting stories from around the nation and world are showcased, featuring the latest in news, politics, entertainment, health, faith and more.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="pb24" dir="rtl">
+										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+											<tr>
+												<td align="left" valign="top" width="168" class="col row-end collapse" dir="ltr">
+													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-sportsxtra.png" width="168" alt="SportsXtra section" />
+												</td>
+												<td align="center" valign="middle" width="360" class="col first collapse" dir="ltr">
+													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+														<tr>
+															<td align="left" valign="top" class="pb8">
+																<img src="https://media.mcclatchy.com/email-assets/global/icons/pennant-dark.png" width="24" alt="pennant icon" />
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="pb8 h3">
+																SportsXtra
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="small">
+																Want the latest sports news from around the country? SportsXtra offers highlights and recaps, as well as analysis and commentary that go beyond the game.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" class="">
+										<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+											<tr>
+												<td align="left" valign="top" width="168" class="col first collapse">
+													<img src="https://media.mcclatchy.com/email-assets/global/welcome-series/ipad-money-markets.png" width="168" alt="Money &amp; Markets section" />
+												</td>
+												<td align="center" valign="middle" width="360" class="col last collapse">
+													<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+														<tr>
+															<td align="left" valign="top" class="pb8">
+																<img src="https://media.mcclatchy.com/email-assets/global/icons/money-bill-wave-dark.png" width="24" alt="dollar bill icon" />
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="pb8 h3">
+																Money &amp; Markets
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" class="small">
+																View key stats on market happenings that affect you and your money. Explore performance of mutual funds, commodities, interest rates and more.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					</table>
+					<!-- // MAIN TABLE -->
+				</td>
+			</tr>
+		</table>
+		<!-- // BODY TABLE -->
+	</center>
+</body>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("zig-zag-mobile", ZigZagMobile);
+</script>
+
+  </div>
+
+  
+<div class="paper digest list">
+
+	<div class="atoms">
+		<div class="label">
+			<h5>OVERVIEW</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/description/">Description</a>
+			</h4>
+			<p class="summary">EDS purpose and structure</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/instructions/">Instructions</a>
+			</h4>
+			<p class="summary">how to use the EDS</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/resources/">Resources</a>
+			</h4>
+			<p class="summary">links and information about HTML email</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>FRAMEWORK</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/standard-framework/">Email Framework</a>
+			</h4>
+			<p class="summary">standard email framework</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/full-width-framework/">Full-Width Email Framework</a>
+			</h4>
+			<p class="summary">used for full-width backgrounds</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ATOMS</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/footer-text/" class="">footer text/fine print</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h1/" class="">h1</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h2/" class="">h2</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h3/" class="">h3</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h4/" class="">h4</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/links/" class="">links</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/p/" class="">p</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/small/" class="">small text</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/text-modifiers/" class="">text modifiers</a>
+			</h5>
+			
+		</div>
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>MOLECULES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/apps-molecule/">App Molecule</a>
+			</h4>
+			<p class="summary">download our app and app badges</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/basic-molecule/">Basic Molecule</a>
+			</h4>
+			<p class="summary">large icon, subheading, body copy and button</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>LAYOUTS</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/columns/">Columns</a>
+			</h4>
+			<p class="summary">how to work with multi-column layouts</p>
+		</div>
+		
+		
+		<div class="package eds-active">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/zigzag/">Zig-Zag Layout</a>
+			</h4>
+			<p class="summary">how to create a zig-zag layout that collapses gracefully on mobile</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ADOBE CAMPAIGN</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/campaign-shortcodes/">Campaign Shortcodes</a>
+			</h4>
+			<p class="summary">shortcodes for Adobe Campaign that import dynamic content or personalization data</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/conditional-formatting/">Conditional Formatting</a>
+			</h4>
+			<p class="summary">how to use if-else formatting to display content</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>TEMPLATES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-content/">Marketing | Content</a>
+			</h4>
+			<p class="summary">email template for content marketing</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-event/">Marketing | Event</a>
+			</h4>
+			<p class="summary">email template for event promotion</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-offer/">Marketing | Offer</a>
+			</h4>
+			<p class="summary">email template for marketing offer</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Newsletter | Digest</a>
+			</h4>
+			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-dynamic/">Newsletter | Dynamic</a>
+			</h4>
+			<p class="summary">email template for dynamic newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-long-form/">Newsletter | Long-Form</a>
+			</h4>
+			<p class="summary">email template for long-form newsletters</p>
+		</div>
+		
+	</div>
+
+	<script src="../../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>
+  </body>
+</html>

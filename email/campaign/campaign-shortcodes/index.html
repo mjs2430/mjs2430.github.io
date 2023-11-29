@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Campaign Shortcodes</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../../../css/atoms/typography.css">
+    <link rel="stylesheet" href="../../../css/atoms/media.css">
+    <link rel="stylesheet" href="../../../css/atoms/section.css">
+    <link rel="stylesheet" href="../../../css/atoms/button.css">
+    <link rel="stylesheet" href="../../../css/atoms/inputs.css">
+
+    
+    <link rel="stylesheet" href="../../../css/molecules/paper.css">
+    <link rel="stylesheet" href="../../../css/molecules/package.css">
+    <link rel="stylesheet" href="../../../css/molecules/impact.css">
+    <link rel="stylesheet" href="../../../css/molecules/social-media.css">
+    <link rel="stylesheet" href="../../../css/molecules/expander.css">
+    <link rel="stylesheet" href="../../../css/molecules/utilities.css">
+    <link rel="stylesheet" href="../../../css/molecules/progress.css">
+    <link rel="stylesheet" href="../../../css/molecules/page-title.css">
+    <link rel="stylesheet" href="../../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/tertiary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/account-sub-nav.css">
+    <link rel="stylesheet" href="../../../css/molecules/masthead.css">
+
+
+    
+    <link rel="stylesheet" href="../../../css/cards/grid.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-row.css">
+    <link rel="stylesheet" href="../../../css/cards/ads.css">
+    <link rel="stylesheet" href="../../../css/cards/digest.css">
+    <link rel="stylesheet" href="../../../css/cards/immersive.css">
+    <link rel="stylesheet" href="../../../css/cards/story-body.css">
+    <link rel="stylesheet" href="../../../css/cards/header.css">
+    <link rel="stylesheet" href="../../../css/cards/series-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/correction.css">
+    <link rel="stylesheet" href="../../../css/cards/related-stories.css">
+    <link rel="stylesheet" href="../../../css/cards/author-card.css">
+    <link rel="stylesheet" href="../../../css/cards/author-bio.css">
+    <link rel="stylesheet" href="../../../css/cards/timeline.css">
+    <link rel="stylesheet" href="../../../css/cards/transparency.css">
+    <link rel="stylesheet" href="../../../css/cards/big-news.css">
+    <link rel="stylesheet" href="../../../css/cards/in-depth.css">
+    <link rel="stylesheet" href="../../../css/cards/swg-promo.css">
+    <link rel="stylesheet" href="../../../css/cards/read-next.css">
+    <link rel="stylesheet" href="../../../css/cards/section-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/modals.css">
+    <link rel="stylesheet" href="../../../css/cards/inline-cta.css">
+    <link rel="stylesheet" href="../../../css/cards/upper-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/sponsor.css">
+    <link rel="stylesheet" href="../../../css/cards/gallery.css">
+    <link rel="stylesheet" href="../../../css/cards/dsp.css">
+    <link rel="stylesheet" href="../../../css/cards/review-order.css">
+    <link rel="stylesheet" href="../../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../../css/cards/subscription-offers.css">
+    <link rel="stylesheet" href="../../../css/cards/hidden.css">
+
+   
+    
+    <link rel="stylesheet" href="../../../css/site.css">
+<link rel="stylesheet" href="../../../css/style-guide.css">
+
+  </head>
+
+  <body class="">
+    <div class="banner paper">
+      <a href="../../../" style="padding: 0;"><img class="logo" src="../../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mjs2430.github.io/saratoga/" class="">
+          <span>style guide</span>
+        </a>
+        <a href="https://mjs2430.github.io/markets/" class="">
+          <span>markets</span>
+        </a>
+        <a href="https://mjs2430.github.io/ads/" class="">
+          <span>ads</span>
+        </a>
+        <a href="https://mjs2430.github.io/email/" class="active">
+          <span>email</span>
+        </a>
+        <a href="https://mjs2430.github.io/labs/" class="">
+          <span>labs</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">Campaign Shortcodes
+    </h2>
+    <p>Campaign Shortcodes pull in content blocks, user information, property information, logos, and more. This is a list of items that are used frequently, but is not a comprehensive list.</p>
+<div class="note">
+In order for Adobe Campaign to properly track any URLs in its tables, the URLs have to be inserted in the tables without <code>https://</code> at the beginning and the <code>https://</code> must be added in the HTML as shown in the list below.
+</div>
+<h3 id="content-blocks">Content blocks</h3>
+<h4 id="header">Header</h4>
+<pre><code>&lt;%@ include view='mccDynamicHeader' %&gt;
+</code></pre><h4 id="footer">FOOTER</h4>
+<pre><code>&lt;%@ include view='mccDynamicFooterLeftAligned' %&gt;
+&lt;%@ include view='mccDynamicFooterFlexibleWidth' %&gt;
+&lt;%@ include view='mccFooterNoSocial' %&gt;
+</code></pre><h4 id="terms-of-service">TERMS OF SERVICE</h4>
+<pre><code>&lt;%@ include view='tos_digital_2019_10' %&gt;
+&lt;%@ include view='tos_combo_2019_10' %&gt;
+</code></pre><br>
+<h3 id="importing-content-from-a-csv">Importing Content From a CSV</h3>
+<pre><code>&lt;%= targetData.imageURL %&gt;
+(Replace imageURL with whatever the name of the column is in the spreadsheet)
+</code></pre><br>
+<h3 id="site-brand-table">Site Brand Table</h3>
+<h4 id="property-names">Property Names</h4>
+<pre><code>Official Property Name (what it says in the masthead)
+&lt;%= recipient.siteBrand.paperName %&gt;
+
+The Property Name
+&lt;%= recipient.siteBrand.upperThePropertyName %&gt;
+
+the Property Name
+&lt;%= recipient.siteBrand.lowerThePropertyName %&gt;
+
+Property Name
+&lt;%= recipient.siteBrand.propertyName %&gt;
+</code></pre><h4 id="publication-links">Publication Links</h4>
+<pre><code>https://&lt;%= recipient.siteBrand.publicationUrl %&gt;
+https://&lt;%= recipient.siteBrand.eeditionVanity %&gt;
+https://&lt;%= recipient.siteBrand.subActivation %&gt;
+https://&lt;%= recipient.siteBrand.gamesPage %&gt;
+https://&lt;%= recipient.siteBrand.nieDonationURL %&gt;
+
+You can also add a link to a specific section of a publication or vanity link by using the structure:
+https://www.&lt;%= recipient.siteName %&gt;/section
+</code></pre><h4 id="app-links">App Links</h4>
+<pre><code>https://&lt;%= recipient.siteBrand.googlePlayApp %&gt;
+https://&lt;%= recipient.siteBrand.iosApp %&gt;
+</code></pre><h4 id="social-media-links">Social Media Links</h4>
+<pre><code>https://www.facebook.com/&lt;%= recipient.siteBrand.connectFacebookUrl %&gt;
+https://www.twitter.com/&lt;%= recipient.siteBrand.connectTwitterUrl %&gt;
+https://www.instagram.com/&lt;%= recipient.siteBrand.connectInstagramUrl %&gt;
+</code></pre><h4 id="customer-service">CUSTOMER SERVICE</h4>
+<pre><code>&lt;%= recipient.siteBrand.customerServiceEmail %&gt;
+&lt;%= recipient.siteBrand.customerServicePh1 %&gt;
+https://&lt;%= recipient.siteBrand.customerServicePage %&gt;
+</code></pre><br>
+<h3 id="subscriber-table">Subscriber Table</h3>
+<pre><code>&lt;%= recipient.firstName %&gt;
+&lt;%= recipient.lastName %&gt;
+&lt;%= recipient.account %&gt;
+</code></pre>
+  </div>
+
+  
+<div class="paper digest list">
+
+	<div class="atoms">
+		<div class="label">
+			<h5>OVERVIEW</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/description/">Description</a>
+			</h4>
+			<p class="summary">EDS purpose and structure</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/instructions/">Instructions</a>
+			</h4>
+			<p class="summary">how to use the EDS</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/resources/">Resources</a>
+			</h4>
+			<p class="summary">links and information about HTML email</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>FRAMEWORK</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/standard-framework/">Email Framework</a>
+			</h4>
+			<p class="summary">standard email framework</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/full-width-framework/">Full-Width Email Framework</a>
+			</h4>
+			<p class="summary">used for full-width backgrounds</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ATOMS</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/footer-text/" class="">footer text/fine print</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h1/" class="">h1</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h2/" class="">h2</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h3/" class="">h3</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h4/" class="">h4</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/links/" class="">links</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/p/" class="">p</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/small/" class="">small text</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/text-modifiers/" class="">text modifiers</a>
+			</h5>
+			
+		</div>
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>MOLECULES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/apps-molecule/">App Molecule</a>
+			</h4>
+			<p class="summary">download our app and app badges</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/basic-molecule/">Basic Molecule</a>
+			</h4>
+			<p class="summary">large icon, subheading, body copy and button</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>LAYOUTS</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/columns/">Columns</a>
+			</h4>
+			<p class="summary">how to work with multi-column layouts</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/zigzag/">Zig-Zag Layout</a>
+			</h4>
+			<p class="summary">how to create a zig-zag layout that collapses gracefully on mobile</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ADOBE CAMPAIGN</h5>
+		</div>
+		
+		
+		<div class="package eds-active">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/campaign-shortcodes/">Campaign Shortcodes</a>
+			</h4>
+			<p class="summary">shortcodes for Adobe Campaign that import dynamic content or personalization data</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/conditional-formatting/">Conditional Formatting</a>
+			</h4>
+			<p class="summary">how to use if-else formatting to display content</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>TEMPLATES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-content/">Marketing | Content</a>
+			</h4>
+			<p class="summary">email template for content marketing</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-event/">Marketing | Event</a>
+			</h4>
+			<p class="summary">email template for event promotion</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-offer/">Marketing | Offer</a>
+			</h4>
+			<p class="summary">email template for marketing offer</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Newsletter | Digest</a>
+			</h4>
+			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-dynamic/">Newsletter | Dynamic</a>
+			</h4>
+			<p class="summary">email template for dynamic newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-long-form/">Newsletter | Long-Form</a>
+			</h4>
+			<p class="summary">email template for long-form newsletters</p>
+		</div>
+		
+	</div>
+
+	<script src="../../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>
+  </body>
+</html>

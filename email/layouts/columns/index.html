@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Columns</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../../../css/atoms/typography.css">
+    <link rel="stylesheet" href="../../../css/atoms/media.css">
+    <link rel="stylesheet" href="../../../css/atoms/section.css">
+    <link rel="stylesheet" href="../../../css/atoms/button.css">
+    <link rel="stylesheet" href="../../../css/atoms/inputs.css">
+
+    
+    <link rel="stylesheet" href="../../../css/molecules/paper.css">
+    <link rel="stylesheet" href="../../../css/molecules/package.css">
+    <link rel="stylesheet" href="../../../css/molecules/impact.css">
+    <link rel="stylesheet" href="../../../css/molecules/social-media.css">
+    <link rel="stylesheet" href="../../../css/molecules/expander.css">
+    <link rel="stylesheet" href="../../../css/molecules/utilities.css">
+    <link rel="stylesheet" href="../../../css/molecules/progress.css">
+    <link rel="stylesheet" href="../../../css/molecules/page-title.css">
+    <link rel="stylesheet" href="../../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/tertiary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/account-sub-nav.css">
+    <link rel="stylesheet" href="../../../css/molecules/masthead.css">
+
+
+    
+    <link rel="stylesheet" href="../../../css/cards/grid.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-row.css">
+    <link rel="stylesheet" href="../../../css/cards/ads.css">
+    <link rel="stylesheet" href="../../../css/cards/digest.css">
+    <link rel="stylesheet" href="../../../css/cards/immersive.css">
+    <link rel="stylesheet" href="../../../css/cards/story-body.css">
+    <link rel="stylesheet" href="../../../css/cards/header.css">
+    <link rel="stylesheet" href="../../../css/cards/series-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/correction.css">
+    <link rel="stylesheet" href="../../../css/cards/related-stories.css">
+    <link rel="stylesheet" href="../../../css/cards/author-card.css">
+    <link rel="stylesheet" href="../../../css/cards/author-bio.css">
+    <link rel="stylesheet" href="../../../css/cards/timeline.css">
+    <link rel="stylesheet" href="../../../css/cards/transparency.css">
+    <link rel="stylesheet" href="../../../css/cards/big-news.css">
+    <link rel="stylesheet" href="../../../css/cards/in-depth.css">
+    <link rel="stylesheet" href="../../../css/cards/swg-promo.css">
+    <link rel="stylesheet" href="../../../css/cards/read-next.css">
+    <link rel="stylesheet" href="../../../css/cards/section-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/modals.css">
+    <link rel="stylesheet" href="../../../css/cards/inline-cta.css">
+    <link rel="stylesheet" href="../../../css/cards/upper-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/sponsor.css">
+    <link rel="stylesheet" href="../../../css/cards/gallery.css">
+    <link rel="stylesheet" href="../../../css/cards/dsp.css">
+    <link rel="stylesheet" href="../../../css/cards/review-order.css">
+    <link rel="stylesheet" href="../../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../../css/cards/subscription-offers.css">
+    <link rel="stylesheet" href="../../../css/cards/hidden.css">
+
+   
+    
+    <link rel="stylesheet" href="../../../css/site.css">
+<link rel="stylesheet" href="../../../css/style-guide.css">
+
+  </head>
+
+  <body class="">
+    <div class="banner paper">
+      <a href="../../../" style="padding: 0;"><img class="logo" src="../../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mjs2430.github.io/saratoga/" class="">
+          <span>style guide</span>
+        </a>
+        <a href="https://mjs2430.github.io/markets/" class="">
+          <span>markets</span>
+        </a>
+        <a href="https://mjs2430.github.io/ads/" class="">
+          <span>ads</span>
+        </a>
+        <a href="https://mjs2430.github.io/email/" class="active">
+          <span>email</span>
+        </a>
+        <a href="https://mjs2430.github.io/labs/" class="">
+          <span>labs</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">Columns
+    </h2>
+    <p>All CSS for columns is included in the framework. The 552px content space can be divided into several collapsible or fixed columns by using the class <code>.col</code> on a <code>td</code> to create the column and <code>.collapse</code> to make it collapse for mobile screens. If you want fixed columns, use the class <code>.col-fixed</code> and do not use <code>.collapse</code>.</p>
+<p>The first column in each row will need the <code>.first</code> class and the last one will need <code>.last</code>. If the group of columns goes onto more than 1 row, like in a 2x2 grid layout, the last column in each row should be given <code>.row-end</code> instead of <code>.last</code>, with only the final column on the final row being assigned <code>.last</code>. This ensures correct padding when collapsed.</p>
+<p>The <code>width</code> attribute value determines the width of a column on desktop, and is always a multiple of 8. Gutters are always 24px (achieved with side padding values of 12px on each column). Adjust the text alignment by changing the align attribute value in each <code>td</code>.</p>
+<div class="note">
+Centering for mobile view only: There may be instances in which a column is left-aligned on desktop and needs to be centered on mobile. For this, set the desktop alignment using the <code>align="left"</code> attribute on the <code>td</code> and add the class <code>.center-mobile</code>.
+</div>
+<hr>
+<h3 id="two-equal-width-columns">Two equal-width columns</h3>
+<p>Two columns of equal width that collapse on mobile.</p>
+<h4 id="example">Example</h4>
+<div class="example">
+	<two-column-module></two-column-module>
+</div>
+<h4 id="html">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#080;font-style:italic">&lt;!-- TWO EQUAL-WIDTH COLLAPSING COLUMNS // --&gt;</span>
+&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse first&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;264&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse last&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;264&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+	&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+<span style="color:#080;font-style:italic">&lt;!-- // TWO EQUAL-WIDTH COLLAPSING COLUMNS --&gt;</span>
+</code></pre></div><hr>
+<h3 id="two-unequal-width-columns-thirds">Two unequal-width columns (thirds)</h3>
+<p>Two columns &ndash; one of 1/3 width and the other 2/3 width &ndash; that collapse on mobile.</p>
+<h4 id="example-1">Example</h4>
+<div class="example">
+	<two-column-thirds></two-column-thirds>
+</div>
+<h4 id="html-1">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#080;font-style:italic">&lt;!-- TWO UNEQUAL-WIDTH COLLAPSING COLUMNS (THIRDS) // --&gt;</span>
+&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse first&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;168&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse last&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+	&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+<span style="color:#080;font-style:italic">&lt;!-- // TWO UNEQUAL-WIDTH COLLAPSING COLUMNS (THIRDS) --&gt;</span>
+</code></pre></div><hr>
+<h3 id="two-unequal-width-columns-fourths">Two unequal-width columns (fourths)</h3>
+<p>Two columns &ndash; one of 1/4 width and the other 3/4 width &ndash; that <em>do not</em> collapse on mobile (the column with a set width stays the same size and the other column fills the remaining space).</p>
+<h4 id="example-2">Example</h4>
+<div class="example">
+	<two-column-fourths></two-column-fourths>
+</div>
+<h4 id="html-2">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#080;font-style:italic">&lt;!-- TWO UNEQUAL NON-COLLAPSING COLUMNS (FOURTHS) --&gt;</span>
+&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col-fixed first&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;120&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;left&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col-fixed last&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+	&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+<span style="color:#080;font-style:italic">&lt;!-- // TWO UNEQUAL NON-COLLAPSING COLUMNS (FOURTHS) --&gt;</span>
+</code></pre></div><hr>
+<h3 id="three-equal-width-columns">Three equal-width columns</h3>
+<p>Three columns of equal width that collapse on mobile.</p>
+<h4 id="example-3">Example</h4>
+<div class="example">
+	<three-column-module></three-column-module>
+</div>
+<h4 id="html-3">HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#080;font-style:italic">&lt;!-- THREE EQUAL-WIDTH COLLAPSING COLUMNS // --&gt;</span>
+&lt;<span style="color:#000080;font-weight:bold">table</span> <span style="color:#f00">role</span>=<span style="color:#00f">&#34;presentation&#34;</span> <span style="color:#f00">border</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellpadding</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">cellspacing</span>=<span style="color:#00f">&#34;0&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;100%&#34;</span>&gt;
+	&lt;<span style="color:#000080;font-weight:bold">tr</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse first&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;168&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;168&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+		&lt;<span style="color:#000080;font-weight:bold">td</span> <span style="color:#f00">align</span>=<span style="color:#00f">&#34;center&#34;</span> <span style="color:#f00">valign</span>=<span style="color:#00f">&#34;top&#34;</span> <span style="color:#f00">class</span>=<span style="color:#00f">&#34;col collapse last&#34;</span> <span style="color:#f00">width</span>=<span style="color:#00f">&#34;168&#34;</span>&gt;
+			use a nested table if more than 1 type of content is going here
+		&lt;/<span style="color:#000080;font-weight:bold">td</span>&gt;
+	&lt;/<span style="color:#000080;font-weight:bold">tr</span>&gt;
+&lt;/<span style="color:#000080;font-weight:bold">table</span>&gt;
+<span style="color:#080;font-style:italic">&lt;!-- // THREE EQUAL-WIDTH COLLAPSING COLUMNS --&gt;</span>
+</code></pre></div><script>
+class TwoColumnModule extends HTMLElement {
+	get template() {
+		let t = document.createElement("template");
+		t.innerHTML = `
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		 <style>
+			 @import url( '/css/email/eds.css' )
+		 </style>
+</head>
+<body>
+	<center>
+		<!-- BODY TABLE // -->
+		<table border="0" cellpadding="0" cellspacing="0" role="presentation" height="100%" width="100%" id="body-table">
+			<tr>
+				<td align="center" valign="top" id="body-cell">
+					<!-- MAIN TABLE // -->
+					<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+						<tr>
+							<td align="left" valign="top" width="100%" class="">
+							<!-- EMAIL TABLE // -->
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+					<tr>
+						<td align="center" valign="top" width="100%" class="card bg-white">
+							<!-- TWO EQUAL-WIDTH COLLAPSING COLUMNS // -->
+							<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+								<tr>
+									<td align="left" valign="top" class="col collapse first" width="264">
+										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td align="left" valign="top" width="100%" class="pb16">
+													<a href="#" target="_blank"><img src="https://via.placeholder.com/528" width="264" alt=""></a>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" valign="top" width="100%" class="h3">
+													Gamp's Elemental Law
+												</td>
+											</tr>
+											<tr>
+												<td align="left" valign="top" width="100%" class="small">
+													Room of Requirement Shrieking Shack. Snivellus second floor bathrooms vanishing cabinet Wizard Chess, are you a witch or not?
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td align="left" valign="top" class="col collapse last" width="264">
+										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td align="left" valign="top" width="100%" class="pb16">
+													<a href="#" target="_blank"><img src="https://via.placeholder.com/528" width="264" alt=""></a>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" valign="top" width="100%" class="h3">
+													Gamp's Elemental Law
+												</td>
+											</tr>
+											<tr>
+												<td align="left" valign="top" width="100%" class="small">
+													Room of Requirement Shrieking Shack. Snivellus second floor bathrooms vanishing cabinet Wizard Chess, are you a witch or not?
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- // TWO EQUAL-WIDTH COLLAPSING COLUMNS -->
+								</td>
+							</tr>
+					</table>
+					<!-- // MAIN TABLE -->
+				</td>
+			</tr>
+		</table>
+		<!-- // BODY TABLE -->
+	</center>
+</body>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("two-column-module", TwoColumnModule);
+class TwoColumnThirds extends HTMLElement {
+	get template() {
+		let t = document.createElement("template");
+		t.innerHTML = `
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		 <style>
+			 @import url( '/css/email/eds.css' )
+		 </style>
+</head>
+<body>
+	<center>
+		<!-- BODY TABLE // -->
+		<table border="0" cellpadding="0" cellspacing="0" role="presentation" height="100%" width="100%" id="body-table">
+			<tr>
+				<td align="center" valign="top" id="body-cell">
+					<!-- MAIN TABLE // -->
+					<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+						<tr>
+							<td align="left" valign="top" width="100%" class="">
+							<!-- EMAIL TABLE // -->
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+					<tr>
+						<td align="center" valign="top" width="100%" class="card bg-white">
+						<!-- TWO UNEQUAL-WIDTH COLLAPSING COLUMNS (THIRDS) // -->
+							<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td align="left" valign="top" class="col collapse first p center-mobile" width="168">
+										<a href="#" target="_blank"><img src="https://via.placeholder.com/336" width="168" alt="" /></a>
+									</td>
+									<td align="left" valign="top" class="col collapse last p center-mobile">
+										Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Bred in captivity fell through the veil, quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire.
+									</td>
+								</tr>
+							</table>
+							<!-- // TWO UNEQUAL-WIDTH COLLAPSING COLUMNS (THIRDS) -->
+								</td>
+							</tr>
+					</table>
+					<!-- // MAIN TABLE -->
+				</td>
+			</tr>
+		</table>
+		<!-- // BODY TABLE -->
+	</center>
+</body>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("two-column-thirds", TwoColumnThirds);
+class TwoColumnFourths extends HTMLElement {
+	get template() {
+		let t = document.createElement("template");
+		t.innerHTML = `
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		 <style>
+			 @import url( '/css/email/eds.css' )
+		 </style>
+</head>
+<body>
+	<center>
+		<!-- BODY TABLE // -->
+		<table border="0" cellpadding="0" cellspacing="0" role="presentation" height="100%" width="100%" id="body-table">
+			<tr>
+				<td align="center" valign="top" id="body-cell">
+					<!-- MAIN TABLE // -->
+					<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+						<tr>
+							<td align="left" valign="top" width="100%" class="">
+							<!-- EMAIL TABLE // -->
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+					<tr>
+						<td align="center" valign="top" width="100%" class="card bg-white">
+						<!-- TWO UNEQUAL NON-COLLAPSING COLUMNS (FOURTHS) -->
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr>
+										<td align="left" valign="top" class="col-fixed first p" width="120">
+											<a href="#" target="_blank"><img src="https://via.placeholder.com/240" width="120" alt="" /></a>
+										</td>
+										<td align="left" valign="top" class="col-fixed last p">
+											Stan Shunpike doe patronus, suck his soul Muggle Born large order of drills the trace. Slytherin's Heir mewing kittens Remus Lupin.
+										</td>
+									</tr>
+								</table>
+								<!-- // TWO UNEQUAL NON-COLLAPSING COLUMNS (FOURTHS) -->
+								</td>
+							</tr>
+					</table>
+					<!-- // MAIN TABLE -->
+				</td>
+			</tr>
+		</table>
+		<!-- // BODY TABLE -->
+	</center>
+</body>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("two-column-fourths", TwoColumnFourths);
+class ThreeColumnModule extends HTMLElement {
+	get template() {
+		let t = document.createElement("template");
+		t.innerHTML = `
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		 <style>
+			 @import url( '/css/email/eds.css' )
+		 </style>
+</head>
+<body>
+	<center>
+		<!-- BODY TABLE // -->
+		<table border="0" cellpadding="0" cellspacing="0" role="presentation" height="100%" width="100%" id="body-table">
+			<tr>
+				<td align="center" valign="top" id="body-cell">
+					<!-- MAIN TABLE // -->
+					<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+						<tr>
+							<td align="left" valign="top" width="100%" class="">
+							<!-- EMAIL TABLE // -->
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" id="email-table">
+					<tr>
+						<td align="center" valign="top" width="100%" class="card bg-white">
+						<!-- THREE EQUAL-WIDTH COLLAPSING COLUMNS // -->
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr>
+										<td align="center" valign="top" class="col collapse first" width="168">
+											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="center" valign="top" width="100%" class="pb8">
+														<img src="https://media.mcclatchy.com/email-assets/global/icons/bolt-dark-unicon.png" width="40" alt="bolt icon">
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" width="100%" class="p">
+														Nearly-Headless Nick now string them together.
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td align="center" valign="top" class="col collapse" width="168">
+											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="center" valign="top" width="100%" class="pb8">
+														<img src="https://media.mcclatchy.com/email-assets/global/icons/bolt-dark-unicon.png" width="40" alt="bolt icon">
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" width="100%" class="p">
+														Flying cars golden locket vanishing cabinet
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td align="center" valign="top" class="col collapse last" width="168">
+											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="center" valign="top" width="100%" class="pb8">
+														<img src="https://media.mcclatchy.com/email-assets/global/icons/bolt-dark-unicon.png" width="40" alt="bolt icon">
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" width="100%" class="p">
+														Poltergeist sticking charm, umbrella stand.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- // THREE EQUAL-WIDTH COLLAPSING COLUMNS -->
+								</td>
+							</tr>
+					</table>
+					<!-- // MAIN TABLE -->
+				</td>
+			</tr>
+		</table>
+		<!-- // BODY TABLE -->
+	</center>
+</body>
+		`;
+		return t;   
+	}
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		let clone = this.template.content.cloneNode(true);
+		this.attachShadow({ mode: "open" });
+		this.shadowRoot.appendChild(clone);
+	}
+} // end Class
+customElements.define("three-column-module", ThreeColumnModule);
+</script>
+
+  </div>
+
+  
+<div class="paper digest list">
+
+	<div class="atoms">
+		<div class="label">
+			<h5>OVERVIEW</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/description/">Description</a>
+			</h4>
+			<p class="summary">EDS purpose and structure</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/instructions/">Instructions</a>
+			</h4>
+			<p class="summary">how to use the EDS</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/overview/resources/">Resources</a>
+			</h4>
+			<p class="summary">links and information about HTML email</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>FRAMEWORK</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/standard-framework/">Email Framework</a>
+			</h4>
+			<p class="summary">standard email framework</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/frameworks/full-width-framework/">Full-Width Email Framework</a>
+			</h4>
+			<p class="summary">used for full-width backgrounds</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ATOMS</h5>
+		</div>
+		<div class="package">
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/footer-text/" class="">footer text/fine print</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h1/" class="">h1</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h2/" class="">h2</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h3/" class="">h3</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/h4/" class="">h4</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/links/" class="">links</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/p/" class="">p</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/small/" class="">small text</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
+			</h5>
+			
+			
+			<h5 class="sans bold ">
+				<a href="https://mjs2430.github.io/email/atoms/text-modifiers/" class="">text modifiers</a>
+			</h5>
+			
+		</div>
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>MOLECULES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/apps-molecule/">App Molecule</a>
+			</h4>
+			<p class="summary">download our app and app badges</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/molecules/basic-molecule/">Basic Molecule</a>
+			</h4>
+			<p class="summary">large icon, subheading, body copy and button</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>LAYOUTS</h5>
+		</div>
+		
+		
+		<div class="package eds-active">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/columns/">Columns</a>
+			</h4>
+			<p class="summary">how to work with multi-column layouts</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/layouts/zigzag/">Zig-Zag Layout</a>
+			</h4>
+			<p class="summary">how to create a zig-zag layout that collapses gracefully on mobile</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>ADOBE CAMPAIGN</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/campaign-shortcodes/">Campaign Shortcodes</a>
+			</h4>
+			<p class="summary">shortcodes for Adobe Campaign that import dynamic content or personalization data</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/campaign/conditional-formatting/">Conditional Formatting</a>
+			</h4>
+			<p class="summary">how to use if-else formatting to display content</p>
+		</div>
+		
+	</div>
+
+	<div class="atoms">
+		<div class="label">
+			<h5>TEMPLATES</h5>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-content/">Marketing | Content</a>
+			</h4>
+			<p class="summary">email template for content marketing</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-event/">Marketing | Event</a>
+			</h4>
+			<p class="summary">email template for event promotion</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/marketing-offer/">Marketing | Offer</a>
+			</h4>
+			<p class="summary">email template for marketing offer</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-digest/">Newsletter | Digest</a>
+			</h4>
+			<p class="summary">email template for digest newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-dynamic/">Newsletter | Dynamic</a>
+			</h4>
+			<p class="summary">email template for dynamic newsletters</p>
+		</div>
+		
+		
+		<div class="package">
+			<h4 class="sans bold">
+				<a class="" href="https://mjs2430.github.io/email/templates/newsletter-long-form/">Newsletter | Long-Form</a>
+			</h4>
+			<p class="summary">email template for long-form newsletters</p>
+		</div>
+		
+	</div>
+
+	<script src="../../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.inline-cta {
+  text-align: left;
+  --bc: white;
+  --bbc: #222;
+}
+
+.inline-cta .h1 {
+  --hf: var(--serif);
+}
+
+.inline-cta input {
+  align-self: stretch;
+}
+
+.inline-cta .summary {
+  margin-top: 5px;
+}
+
+.impact .inline-cta {
+  --bc: #222;
+  --bbc: white;
+}

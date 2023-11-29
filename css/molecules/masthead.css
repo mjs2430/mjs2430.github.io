@@ -1,0 +1,73 @@
+/**
+ * Masthead DSP
+ */
+
+.dsp .flag {
+    margin-bottom: 15px;
+}
+
+.dsp .flag .top{
+    display: block;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 15px 0;
+}
+
+.dsp .flag .links {
+    justify-content: center;
+    z-index: 2;
+    padding: 10px 0 0;
+}
+ 
+.dsp .flag .market-logo {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dsp .flag .market-logo img {
+    height: 36px;
+}
+
+.dsp .flag .button {
+    padding: 0;
+    font-size: 14px;
+    color: #707070; 
+}
+
+.dsp .flag .button:hover {
+    color: #000;
+}
+
+.dsp .flag .button:after { 
+    content: "|";
+    padding: 0 5px;
+}
+
+.dsp .flag .more-link {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+ 
+.dsp .flag {
+    margin-bottom: 30px;
+}
+    
+.dsp .flag .top{
+    display: flex;
+}
+
+.dsp .flag .links {
+    justify-content: flex-end;
+    padding: 5px 50px 5px 0;
+}
+
+.dsp .flag .market-logo {
+    position: absolute;
+} 
+
+  

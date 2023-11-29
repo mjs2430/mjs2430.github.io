@@ -1,0 +1,14 @@
+.sponsor {
+  display: grid;
+  grid-template-columns: 75px minmax(0, 1fr);
+  grid-gap: 30px;
+}
+
+.sponsor img {
+  display: block;
+  width: 100%;
+}
+
+.sponsor .package {
+  justify-content: center;
+}

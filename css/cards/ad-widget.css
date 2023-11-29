@@ -1,0 +1,12 @@
+/**
+ * Ads for both
+ */
+
+.ad-widget {
+  text-align: center;
+}
+
+.ad-widget iframe, 
+.ad-widget > div {
+  margin: 0 auto;
+}

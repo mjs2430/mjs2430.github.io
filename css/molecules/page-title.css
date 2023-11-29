@@ -1,0 +1,38 @@
+.dsp .title {
+    text-align: center;
+    padding: 15px;
+}
+   
+.dsp .title p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+    
+.dsp .title p a {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.dsp .title.purchase-flow {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+    padding: 15px  15px 15px;
+}
+
+
+@media (min-width:900px) {
+    
+.dsp .title {
+    padding: 30px 15px;;
+}
+
+    
+.dsp .title.purchase-flow {
+    grid-template-columns: 1fr 1fr;
+    padding: 15px  0px 15px;
+}
+   
+}

@@ -1,0 +1,45 @@
+/**
+ * offer details card
+ */
+
+.dsp .offer-details {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dsp .offer-details .expander {
+    margin: 15px 0;
+}
+
+.dsp .offer-details p {
+    margin: 0;
+}
+
+.dsp .offer-details .grid {
+    width: 100%;
+}
+
+.dsp .offer-details .grid > * {
+    grid-column: span 2;
+}
+
+@media (min-width: 900px) { 
+    
+.dsp .offer-details {
+    grid-column: span 2;
+}
+
+.dsp .offer-details .package {
+    padding: 30px;
+}
+    
+.dsp .offer-details .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.dsp .offer-details .grid > * {
+    grid-column: span 1;
+}
+    
+} 
+

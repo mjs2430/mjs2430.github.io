@@ -1,0 +1,206 @@
+/** 
+DSP Overrides
+**/
+
+.dsp h1,
+.dsp h2,
+.dsp h3 {
+    margin: 0;
+}
+
+.dsp .h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    text-transform: none;  
+}
+
+.dsp .h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.dsp .h4 {
+    font: 700 19px var(--sans);
+    line-height: 28px;
+    text-transform: none;
+}
+
+.dsp button {
+    width: 100%;
+}
+
+.dsp .button {
+    padding: 10px 30px;
+    align-self: center;
+}
+
+.dsp a {
+ --lc: #5169B8;
+ --lhc: #222;
+}
+
+.dsp .s-modal a {
+    --lc: #fff;
+}
+
+.dsp ul {
+    padding: 0;
+    text-align: left;
+}
+.dsp ul li {
+    font: 400 14px var(--sans); 
+    line-height: 21px;
+    margin: 5px 0;
+}
+
+.dsp .more-link {
+    --lc: #707070;
+    padding: 0;
+    cursor: pointer;
+}
+
+.dsp .more-link.primary {
+  --lc: #31409f;
+  --lhc: #5169B8;
+}
+
+.dsp .more-link.inline {
+  --lc: #31409f;
+  --lhc: #5169B8;
+}
+
+.dsp.example {
+    padding: 15px 0;
+} 
+
+.dsp .package {   
+    padding: 30px 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.dsp .package.small {
+    padding: 15px;
+}
+
+.dsp .paper,
+.dsp .card {
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .13)
+}
+
+.dsp .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 15px 30px;
+}
+
+.dsp form .grid {
+    grid-template-columns: repeat( auto-fit, minmax(40px, 1fr) );
+    grid-gap: 15px;
+}
+
+.dsp small { 
+    font: 400 small var(--sans);
+    color: #707070;
+    margin: 0 0 0 0;  
+    display: block;
+}
+
+.dsp form small {
+   font: 400 11px var(--sans); 
+   margin: 2px 0 0 0;  
+}
+
+.dsp .expander:after {
+  content: "\f0d8"; 
+  font: 700 14px Font Awesome\ 5 Free;
+  width: 10px;
+}
+
+.dsp small.expander {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.dsp small.stretch {
+  grid-column: span 2;
+  padding-top: 15px;
+}
+
+.dsp section {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dsp .horizontal.package.small {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 95px;
+    grid-gap: 0px;
+    order: 1;
+    align-items: flex-start;
+}
+
+
+.dsp small.secure {
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.dsp i {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+.dsp .flex-columns > * {
+    margin: 15px 0;
+}
+
+
+/***** Media queries ****/
+
+
+@media (min-width: 768px) {
+    
+.dsp section {
+    max-width: 450px;
+}
+    
+}
+
+
+@media (min-width: 900px) {
+
+.dsp .grid {
+   grid-template-columns: 1fr 1fr;  
+   grid-gap: 30px;
+}
+    
+.dsp section {
+    max-width: 900px;
+}
+
+.dsp .horizontal.package.small  {
+    align-self: flex-start;
+    grid-template-columns: 1fr;
+    order: 2;
+    text-align: center;
+}
+    
+.dsp .horizontal small.expander {
+    display: none;
+}
+    
+.dsp .stretch {
+     display: block;
+}
+
+    
+.dsp .flex-columns > * {
+    margin: 7.5px 0;
+}
+
+}    

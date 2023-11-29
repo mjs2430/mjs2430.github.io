@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>typography</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../../../css/atoms/typography.css">
+    <link rel="stylesheet" href="../../../css/atoms/media.css">
+    <link rel="stylesheet" href="../../../css/atoms/section.css">
+    <link rel="stylesheet" href="../../../css/atoms/button.css">
+    <link rel="stylesheet" href="../../../css/atoms/inputs.css">
+
+    
+    <link rel="stylesheet" href="../../../css/molecules/paper.css">
+    <link rel="stylesheet" href="../../../css/molecules/package.css">
+    <link rel="stylesheet" href="../../../css/molecules/impact.css">
+    <link rel="stylesheet" href="../../../css/molecules/social-media.css">
+    <link rel="stylesheet" href="../../../css/molecules/expander.css">
+    <link rel="stylesheet" href="../../../css/molecules/utilities.css">
+    <link rel="stylesheet" href="../../../css/molecules/progress.css">
+    <link rel="stylesheet" href="../../../css/molecules/page-title.css">
+    <link rel="stylesheet" href="../../../css/molecules/offer-details.css">
+    <link rel="stylesheet" href="../../../css/molecules/primary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/secondary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/tertiary-offer.css">
+    <link rel="stylesheet" href="../../../css/molecules/account-sub-nav.css">
+    <link rel="stylesheet" href="../../../css/molecules/masthead.css">
+
+
+    
+    <link rel="stylesheet" href="../../../css/cards/grid.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-columns.css">
+    <link rel="stylesheet" href="../../../css/cards/flex-row.css">
+    <link rel="stylesheet" href="../../../css/cards/ad-widget.css">
+    <link rel="stylesheet" href="../../../css/cards/digest.css">
+    <link rel="stylesheet" href="../../../css/cards/immersive.css">
+    <link rel="stylesheet" href="../../../css/cards/story-body.css">
+    <link rel="stylesheet" href="../../../css/cards/header.css">
+    <link rel="stylesheet" href="../../../css/cards/series-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/correction.css">
+    <link rel="stylesheet" href="../../../css/cards/related-stories.css">
+    <link rel="stylesheet" href="../../../css/cards/author-card.css">
+    <link rel="stylesheet" href="../../../css/cards/author-bio.css">
+    <link rel="stylesheet" href="../../../css/cards/timeline.css">
+    <link rel="stylesheet" href="../../../css/cards/transparency.css">
+    <link rel="stylesheet" href="../../../css/cards/big-news.css">
+    <link rel="stylesheet" href="../../../css/cards/in-depth.css">
+    <link rel="stylesheet" href="../../../css/cards/swg-promo.css">
+    <link rel="stylesheet" href="../../../css/cards/read-next.css">
+    <link rel="stylesheet" href="../../../css/cards/section-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/modals.css">
+    <link rel="stylesheet" href="../../../css/cards/inline-cta.css">
+    <link rel="stylesheet" href="../../../css/cards/upper-nav.css">
+    <link rel="stylesheet" href="../../../css/cards/sponsor.css">
+    <link rel="stylesheet" href="../../../css/cards/gallery.css">
+    <link rel="stylesheet" href="../../../css/cards/dsp.css">
+    <link rel="stylesheet" href="../../../css/cards/review-order.css">
+    <link rel="stylesheet" href="../../../css/cards/paywall.css">
+    <link rel="stylesheet" href="../../../css/cards/subscription-offers.css">
+    <link rel="stylesheet" href="../../../css/cards/hidden.css">
+
+   
+    
+    <link rel="stylesheet" href="../../../css/site.css">
+<link rel="stylesheet" href="../../../css/style-guide.css">
+
+  </head>
+
+  <body class="">
+    <div class="banner paper">
+      <a href="../../../" style="padding: 0;"><img class="logo" src="../../../img/banner-logo.2.svg"></a>
+      <nav>
+        <a href="https://mjs2430.github.io/saratoga/" class="">
+          <span>style guide</span>
+        </a>
+        <a href="https://mjs2430.github.io/markets/" class="">
+          <span>markets</span>
+        </a>
+        <a href="https://mjs2430.github.io/ads/" class="">
+          <span>ads</span>
+        </a>
+        <a href="https://mjs2430.github.io/email/" class="active">
+          <span>email</span>
+        </a>
+        <a href="https://mjs2430.github.io/labs/" class="">
+          <span>labs</span>
+        </a>
+      </nav>
+    </div>
+<div class="panels">
+  <div class="paper story-body details">
+    <h2 class="page-header">typography
+    </h2>
+    <p>All CSS for default typography is found in the base templates. All text is given a default color of <code>#222222</code>. There are helper classes to add for <code>.bold</code>, <code>.serif</code>, <code>.white</code> and <code>.blue</code>. Note: <code>.serif</code> should only be used for editorial content, such as story headlines.
+<br><br></p>
+<h4 id="our-fonts">Our fonts</h4>
+<p>McClatchy Sans Web <br>
+McClatchy Serif Web</p>
+<h5 id="css-minified---already-included-in-base-templates">CSS (Minified) - Already included in base templates</h5>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/*----------FONTS----------*/</span>
+@<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>;<span style="color:#000080;font-weight:bold">font-style</span>:normal;<span style="color:#000080;font-weight:bold">font-weight</span>:400;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-sans-web-regular</span>.woff)}@<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Sans Web&#39;</span>;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-sans-web-demi</span>.woff);<span style="color:#000080;font-weight:bold">font-weight</span>:600;<span style="color:#000080;font-weight:bold">font-style</span>:normal}@<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>;<span style="color:#000080;font-weight:bold">font-style</span>:normal;<span style="color:#000080;font-weight:bold">font-weight</span>:400;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-serif-web-regular</span>.woff)}@<span style="color:#000080;font-weight:bold">font-face</span>{<span style="color:#000080;font-weight:bold">font-family</span>:<span style="color:#00f">&#39;McClatchy Serif Web&#39;</span>;<span style="color:#000080;font-weight:bold">src</span>:url(<span style="color:#000080;font-weight:bold">https</span>://<span style="color:#000080;font-weight:bold">media</span>.mcclatchy.com/<span style="color:#000080;font-weight:bold">email-assets</span>/<span style="color:#000080;font-weight:bold">global</span>/<span style="color:#000080;font-weight:bold">fonts</span>/<span style="color:#000080;font-weight:bold">mcclatchy-serif-web-demi</span>.woff);<span style="color:#000080;font-weight:bold">font-weight</span>:600;<span style="color:#000080;font-weight:bold">font-style</span>:normal}
+</code></pre></div><hr>
+<h3 id="h1">H1</h3>
+<p><code>.h1</code> is typically used near the beginning of an email and not more than once.
+<br><br></p>
+<h4 id="example">EXAMPLE</h4>
+<p><span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:36px;font-weight:600;line-height:40px;">This is a primary headline</span>
+<br><br></p>
+<h4 id="specifications">SPECIFICATIONS</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Font Stack</td>
+<td>&lsquo;McClatchy Sans Web&rsquo;, Tahoma, sans-serif;</td>
+</tr>
+<tr>
+<td>Font Size</td>
+<td>36px</td>
+</tr>
+<tr>
+<td>Line Height</td>
+<td>40px</td>
+</tr>
+<tr>
+<td>Font Weight</td>
+<td>600</td>
+</tr>
+<tr>
+<td>Text Transform</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="h2">H2</h3>
+<p><code>&lt;h2&gt;</code> is used for subheadings throughout an email.
+<br><br></p>
+<h4 id="example-1">EXAMPLE</h4>
+<p><span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:22px;font-weight:600;line-height:24px;text-transform:uppercase;">This is a secondary headline</span>
+<br><br></p>
+<h4 id="specifications-1">SPECIFICATIONS</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Font Stack</td>
+<td>&lsquo;McClatchy Sans Web&rsquo;, Tahoma, sans-serif;</td>
+</tr>
+<tr>
+<td>Font Size</td>
+<td>22px</td>
+</tr>
+<tr>
+<td>Line Height</td>
+<td>24px</td>
+</tr>
+<tr>
+<td>Font Weight</td>
+<td>600</td>
+</tr>
+<tr>
+<td>Text Transform</td>
+<td>UPPERCASE</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="h3">H3</h3>
+<p><code>&lt;h3&gt;</code> is used as a label for smaller headings.
+<br><br></p>
+<h4 id="example-2">EXAMPLE</h4>
+<p><span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:18px;font-weight:600;line-height:24px;text-transform:uppercase;">This is a tertiary headline</span>
+<br><br></p>
+<h4 id="specifications-2">SPECIFICATIONS</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Font Stack</td>
+<td>&lsquo;McClatchy Sans Web&rsquo;, Tahoma, sans-serif;</td>
+</tr>
+<tr>
+<td>Font Size</td>
+<td>18px</td>
+</tr>
+<tr>
+<td>Line Height</td>
+<td>24px</td>
+</tr>
+<tr>
+<td>Font Weight</td>
+<td>600</td>
+</tr>
+<tr>
+<td>Text Transform</td>
+<td>UPPERCASE</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="h4">H4</h3>
+<p><code>&lt;h4&gt;</code> is used as an alternate for <code>&lt;h3&gt;</code>, typically for editorial content, such as story headlines. It is identical in size and weight to <code>&lt;h3&gt;</code> but is serif and not uppercase.
+<br><br></p>
+<h4 id="example-3">EXAMPLE</h4>
+<p><span style="font-family: 'McClatchy Serif Web', 'Times New Roman', serif;font-size:18px;font-weight:600;line-height:24px;text-transform:none;">This is an editorial email headline</span>
+<br><br></p>
+<h4 id="specifications-3">SPECIFICATIONS</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Font Stack</td>
+<td>&lsquo;McClatchy Serif Web&rsquo;, &lsquo;Times New Roman&rsquo;, serif;</td>
+</tr>
+<tr>
+<td>Font Size</td>
+<td>18px</td>
+</tr>
+<tr>
+<td>Line Height</td>
+<td>24px</td>
+</tr>
+<tr>
+<td>Font Weight</td>
+<td>600</td>
+</tr>
+<tr>
+<td>Text Transform</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="p">.p</h3>
+<p><code>.p</code> is used for body copy throughout an email. It is a class that should be assigned to table cells instead of using the <code>&lt;p&gt;</code> tag. This avoids issues with browsers and clients treating <code>&lt;p&gt;</code> margins and spacing differently.
+<br><br></p>
+<h4 id="example-4">EXAMPLE</h4>
+<p><span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-transform:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+<br><br></p>
+<h4 id="specifications-4">SPECIFICATIONS</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Font Stack</td>
+<td>&lsquo;McClatchy Sans Web&rsquo;, Tahoma, sans-serif;</td>
+</tr>
+<tr>
+<td>Font Size</td>
+<td>16px</td>
+</tr>
+<tr>
+<td>Line Height</td>
+<td>24px</td>
+</tr>
+<tr>
+<td>Font Weight</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Text Transform</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="small">.small</h3>
+<p><code>.small</code>  is used for smaller body copy and is usually paired with <code>&lt;h3&gt;</code> or <code>&lt;h4&gt;</code>.
+<br><br></p>
+<h4 id="example-5">EXAMPLE</h4>
+<p><span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:14px;font-weight:400;line-height:20px;text-transform:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+<br><br></p>
+<h4 id="specifications-5">SPECIFICATIONS</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Font Stack</td>
+<td>&lsquo;McClatchy Sans Web&rsquo;, Tahoma, sans-serif;</td>
+</tr>
+<tr>
+<td>Font Size</td>
+<td>14px</td>
+</tr>
+<tr>
+<td>Line Height</td>
+<td>20px*</td>
+</tr>
+<tr>
+<td>Font Weight</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Text Transform</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:14px;font-weight:400;line-height:20px;text-transform:none;">*This is not a multiple of 8, but it is the best option in this case. The text needs to be smaller than .p, but the 24px line height on .p is too large for a 14px font size, and reducing to a 16px line height is too tight. It also isn&rsquo;t an option to make the text much smaller, because it&rsquo;s best practice to not go smaller than 13px with text size in email (except in the footer). Two lines of .small with 20px line height is a multiple of 8 so it&rsquo;s not a major disruption in the grid and still flows with the established vertical rhythm.
+</span></p>
+<hr>
+<h3 id="link-blue-and-link-white">.link-blue and .link-white</h3>
+<p>These are classes for text links. Blue is for use on a white/light gray background and white is for a dark gray/SB background.
+<br><br></p>
+<h4 id="example-6">EXAMPLE</h4>
+<p><a href="javascript:void(0)" style="font-family: 'McClatchy Sans Web', Tahoma, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-transform:none;color:#31409f;border-bottom:1px solid #31409f;text-decoration: none;">Lorem ipsum dolor sit amet</a>
+<br><br></p>
+<h4 id="specifications-6">SPECIFICATIONS</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Color</td>
+<td>#31409f or #ffffff</td>
+</tr>
+<tr>
+<td>Text Decoration</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Border</td>
+<td>border-bottom: 1px solid #31409f or #ffffff;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+  </div>
+
+  
+<div class="paper digest list">
+  <div class="atoms">
+    <div class="label">
+      <h5>ATOMS</h5>
+    </div>
+    <div class="package">
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/buttons/" class="">buttons</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/campaign-shortcodes/" class="">campaign shortcodes</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/colors/" class="">colors</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/spacing/" class="">spacing</a>
+      </h5>
+      
+      
+      <h5 class="sans bold ">
+        <a href="https://mjs2430.github.io/email/atoms/typography/" class="active">typography</a>
+      </h5>
+      
+    </div>
+  </div>
+
+  <div class="molecules">
+    <div class="label">
+      <h5>MOLECULES</h5>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/email/molecules/sample4/">sample 4</a>
+      </h4>
+      <p class="summary">Goes on the top of the homepage during large news events.</p>
+    </div>
+    
+  </div>
+
+  <div class="layouts">
+    <div class="label">
+      <h5>LAYOUTS</h5>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/email/layouts/two-column-module/">two column module</a>
+      </h4>
+      <p class="summary">two col module</p>
+    </div>
+    
+  </div>
+
+  <div class="templates">
+    <div class="label">
+      <h5>TEMPLATES</h5>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/email/templates/full-width-template/">full width email template</a>
+      </h4>
+      <p class="summary">the full screen email template</p>
+    </div>
+    
+    
+    <div class="package">
+      <h4 class="sans bold">
+        <a class="" href="https://mjs2430.github.io/email/templates/standard-template/">standard email template</a>
+      </h4>
+      <p class="summary">the standard (600px) email template</p>
+    </div>
+    
+  </div>
+
+  <script src="../../../js/style-guide.js"></script>
+</div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/8a8585a39f.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+/**
+ * Ad styling
+ */
+
+/* Pre Zeus (can be removed when merger complete) */
+.ad-widget {
+  text-align: center;
+}
+
+.ad-widget iframe, 
+.ad-widget > div {
+  margin: 0 auto;
+}
+
+/* Zeus integration */
+
+#zeus_mn-gpt-2:not(:empty) {
+  padding: 15px;
+}

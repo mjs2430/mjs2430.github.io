@@ -1,0 +1,16 @@
+/**
+ * Related stories
+ */
+
+.related-stories {
+  --lc: #222;
+  --lhc: #222;
+}
+
+.related-stories h5 {
+  margin-top: 0;
+}
+
+.related-stories hr {
+  margin-top: 15px;
+}

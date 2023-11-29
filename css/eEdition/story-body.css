@@ -1,0 +1,331 @@
+/**
+ * I don't know how your group imports font files.
+ * Change as necessary.
+ */
+
+ /* Lyon */
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-black.woff');
+     font-weight: 900;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-black-italic.woff');
+     font-weight: 900;
+     font-style: italic;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-bold.woff');
+     font-weight: 800;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-bold-italic.woff');
+     font-weight: 800;
+     font-style: italic;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-semi.woff');
+     font-weight: 600;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-semi-italic.woff');
+     font-weight: 600;
+     font-style: italic;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-medium.woff');
+     font-weight: 500;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-medium-italic.woff');
+     font-weight: 500;
+     font-style: italic;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-regular.woff');
+     font-weight: 400;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-regular-italic.woff');
+     font-weight: 400;
+     font-style: italic;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-light.woff');
+     font-weight: 300;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "Lyon";
+     src: url('https://digidist.mcc.cue.cloud/fonts/lyon-light-italic.woff');
+     font-weight: 300;
+     font-style: italic;
+ }
+
+ /*********** McClatchy Sans ***********/
+ @font-face {
+     font-family: "McClatchy Sans";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-black.woff');
+     font-weight: 900;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-bold.woff');
+     font-weight: 800;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-semi.woff');
+     font-weight: 600;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-medium.woff');
+     font-weight: 500;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-regular.woff');
+     font-weight: 400;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-light.woff');
+     font-weight: 300;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-thin.woff');
+     font-weight: 200;
+     font-style: normal;
+ }
+
+ /************ McClatchy Sans Condensed **************/
+ @font-face {
+     font-family: "McClatchy Sans Cond";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-cond-bold.woff');
+     font-weight: 800;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans Cond";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-cond-demi.woff');
+     font-weight: 600;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans Cond";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-cond-medium.woff');
+     font-weight: 500;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Sans Cond";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-sans-cond-regular.woff');
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ /************ McClatchy Serif **************/
+ @font-face {
+     font-family: "McClatchy Serif";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-serif-bold.woff');
+     font-weight: 800;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Serif";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-serif-semi.woff');
+     font-weight: 600;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Serif";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-serif-medium.woff');
+     font-weight: 500;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Serif";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-serif-regular.woff');
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ /***************** McClatchy Slab **************/
+ @font-face {
+     font-family: "McClatchy Slab";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-slab-bold.woff');
+     font-weight: 800;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Slab";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-slab-demi.woff');
+     font-weight: 600;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Slab";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-slab-medium.woff');
+     font-weight: 500;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Slab";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-slab-regular.woff');
+     font-weight: 400;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: "McClatchy Slab";
+     src: url('https://digidist.mcc.cue.cloud/fonts/mcclatchy-slab-light.woff');
+     font-weight: 300;
+     font-style: normal;
+ }
+
+ html {
+   /* the font size in the html tag should not be set as !important.
+   Doing so will break the font sizing functionality in the readers */
+   font: 17px/1.5em "Lyon", serif;
+   color: #222;
+   -webkit-transition: all 0.1s ease;
+   -moz-transition: all 0.1s ease;
+   -o-transition: all 0.1s ease;
+   -ms-transition: all 0.1s ease;
+ }
+
+ body {
+   margin: 15px;
+   background: #ffffff;
+ }
+
+ .taggroup-head {
+   font: 600 1.75rem/1.2em "McClatchy Serif", serif;
+   text-align: center;
+ }
+
+ .taggroup-subhead {
+ }
+
+ .taggroup-body {
+   font: 400 1rem/1.5em "Lyon", serif;
+ }
+
+ .byline {
+   margin: 30px 0;
+ }
+
+ .byline,
+ .byline .byline_name,
+ .endnote_contact {
+   font: 700 .7rem "McClatchy Sans", sans-serif;
+   color: #707070;
+   text-transform: uppercase;
+ }
+
+ .byline a,
+ .byline .byline_email,
+ .endnote_contact a {
+   font: italic 400 .7rem "McClatchy Sans", sans-serif;
+   color: #707070;
+   text-decoration: none;
+ }
+
+ .subhead {
+   font: 600 1.1rem/1.2em "McClatchy Sans", sans-serif;
+   text-transform: uppercase;
+ }
+
+ img {
+   margin: 30px auto;
+   display: block;
+   max-width: 100%;
+   max-height: 600px;
+ }
+
+ .body a {
+   color: #5169B8;
+ }
+
+ /**
+  * Image Gallery overloads to match our style
+  */
+
+ .image-gallery-container {
+   margin: 30px -15px !important;
+ }
+
+ .image-gallery-image {
+   margin-top: 0 !important;
+   margin-bottom: 0 !important;
+ }
+
+ .image-gallery-caption.active {
+   padding: 10px 15px 0;
+ }
+
+ .cutline_credit p, .caption p {
+   font: 14px/1.5em "McClatchy Sans", sans-serif;
+   color: #707070;
+   margin: 0;
+ }
+
+ .cutline_credit p {
+   font-weight: bold;
+   font-size: 11px;
+ }
+
+ .cutline_leadin:after {
+   content: " ";
+ }
+
+ /**
+  * Adjustments for print elements and tags
+  */
+
+  [class*="highline_quote"],
+  [class*="highline_fact"],
+  .jump_to,
+  .jump_from,
+  .z_message,
+  .infobox_label,
+  .statsbox,
+  .refer {
+    display: none;
+  }
+
+  .leadin {
+    font-weight: bold;
+  }
+
+  .head_label p {
+    font: 600 14px/1.2em "McClatchy Sans", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .dateline,
+  .head_kicker {
+    text-transform: uppercase;
+  }
